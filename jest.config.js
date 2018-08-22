@@ -3,13 +3,13 @@
 module.exports = {
   bail: true,
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts'],
+  collectCoverageFrom: ['**/src/**/*.ts'],
   globals: {
     'ts-jest': {
       tsConfigFile: 'tsconfig.json'
     }
   },
-coverageThreshold: {
+  coverageThreshold: {
     global: {
       branches: 80,
       functions: 80,
@@ -22,10 +22,10 @@ coverageThreshold: {
     'js'
   ],
   transform: {
-    '^.+\\.(ts|tsx)$': './node_modules/ts-jest/preprocessor.js'
+    '.(ts|tsx)': './node_modules/ts-jest/preprocessor.js'
   },
   testMatch: [
-    '**/test/**/*.test.(ts|js)'
+    '**/test/**/*.test.(ts|tsx)'
   ],
   testEnvironment: 'node',
   verbose: true
