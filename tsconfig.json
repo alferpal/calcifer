@@ -1,18 +1,22 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
+    "lib": [
+      "es2017"
+    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "dist",
-    "paths": {
-      "~/*": [
-        "packages/*"
-      ]
-    },
     "sourceMap": true,
-    "strictNullChecks": true,
-    "target": "ES2017"
+    "strict": true,
+    "target": "ES2017",
+    "typeRoots": [
+      "packages/calcifer-typings/types",
+      "node_modules/@types"
+    ]
   }
 }

@@ -1,3 +1,3 @@
-# Calcifer Types
+# calcifer-types
 
-Repository with types definitions for the calcifer project
+This package provides type definitions shared across calcifer packages.
