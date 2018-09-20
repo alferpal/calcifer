@@ -1,0 +1,19 @@
+{
+  "name": "@alferpal/calcifer-typings",
+  "version": "1.0.0",
+  "description": "Typings from external packages not found in @types",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alferpal/calcifer.git"
+  },
+  "homepage": "https://github.com/alferpal/calcifer",
+  "bugs": "https://github.com/alferpal/calcifer/issues",
+  "keywords": [],
+  "author": {
+    "email": "alferpal@gmail.com",
+    "name": "Alex Ferrando",
+    "twitter": "alferpal",
+    "url": "https://github.com/alferpal"
+  },
+  "license": "MIT"
+}

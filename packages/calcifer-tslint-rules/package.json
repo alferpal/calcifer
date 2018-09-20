@@ -1,13 +1,7 @@
 {
-  "name": "@alferpal/calcifer-types",
+  "name": "@alferpal/calcifer-tslint-rules",
   "version": "1.0.0",
-  "description": "Provides type definitions shared across calcifer packages",
-  "scripts": {
-    "build": "npm run tsc",
-    "clean": "rimraf dist",
-    "prebuild": "npm clean",
-    "tslint": "tslint -c tslint.json -p tsconfig.json"
-  },
+  "description": "Shared tslint rules for calcifer packages",
   "repository": {
     "type": "git",
     "url": "git@github.com:alferpal/calcifer.git"
@@ -22,12 +16,8 @@
     "url": "https://github.com/alferpal"
   },
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "@alferpal/calcifer-tslint-rules": "~1.0.0",
-    "@alferpal/calcifer-typings": "~1.0.0",
-    "rimraf": "^2.6.2",
     "tslint": "~5.11.0",
-    "typescript": "~3.0.1"
+    "tslint-config-airbnb": "^5.11.0"
   }
 }
