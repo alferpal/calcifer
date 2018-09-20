@@ -2,11 +2,12 @@
   "name": "calcifer-monorepo",
   "description": "Monorepo containing calcifer: a side-project to build somewhat of a CI / CD tool, not pretending to be production-ready in any way",
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "build": "lerna run build --sort",
     "lint": "lerna run tslint --parallel",
     "clean": "lerna run clean --parallel",
     "commit": "git-cz",
-    "postinstall": "lerna bootstrap --hoist",
+    "postinstall": "npm run bootstrap",
     "release": "lerna publish --conventional-commits --npm-tag=next",
     "test": "lerna exec npm test",
     "updateCOC": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
