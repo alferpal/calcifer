@@ -1,7 +1,7 @@
 {
-  "name": "@alferpal/calcifer-api",
+  "name": "@alferpal/change-this-please",
   "version": "1.0.0",
-  "description": "Backend service for calcifer",
+  "description": "change-this-please",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf dist",
@@ -26,7 +26,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@alferpal/calcifer-utils": "~1.0.0",
     "blipp": "~3.0.0",
     "bluebird": "~3.5.1",
     "boom": "~7.2.0",
