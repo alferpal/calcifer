@@ -4,9 +4,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --sort",
-    "lint": "lerna run tslint --parallel",
     "clean": "lerna run clean --parallel",
     "commit": "git-cz",
+    "lint": "lerna run lint --parallel",
     "postinstall": "npm run bootstrap",
     "release": "lerna publish --conventional-commits --npm-tag=next",
     "test": "lerna exec npm test",
@@ -28,10 +28,10 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "commitizen": "^2.10.1",
-    "concurrently": "^4.0.1",
+    "commitizen": "~2.10.1",
+    "concurrently": "~4.0.1",
     "cz-conventional-changelog": "~2.1.0",
-    "lerna": "^3.4.0",
+    "lerna": "~3.4.0",
     "standard-version": "~4.4.0",
     "weallbehave": "~1.2.0",
     "weallcontribute": "~1.0.8"
