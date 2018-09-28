@@ -1,6 +1,6 @@
 {
   "name": "calcifer-monorepo",
-  "description": "Monorepo containing calcifer: a side-project to build somewhat of a CI / CD tool, not pretending to be production-ready in any way",
+  "description": "Monorepo containing calcifer: a side-project to build somewhat of ahome automation tool, not pretending to be production-ready in any way",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --sort",
