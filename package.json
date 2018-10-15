@@ -28,7 +28,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "commitizen": "~2.10.1",
+    "commitizen": "~3.0.2",
     "concurrently": "~4.0.1",
     "cz-conventional-changelog": "~2.1.0",
     "lerna": "~3.4.0",
