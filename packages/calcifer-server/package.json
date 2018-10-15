@@ -27,7 +27,6 @@
   "license": "MIT",
   "dependencies": {
     "@alferpal/calcifer-utils": "~1.0.0",
-    "@alferpal/calcifer-worker": "~1.0.0",
     "blipp": "~3.0.0",
     "bluebird": "~3.5.1",
     "boom": "~7.2.0",
