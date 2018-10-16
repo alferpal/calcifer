@@ -144,8 +144,8 @@ Sometimes, though, you need to get maintainers involved. Maintainers will do the
 
 This Code of Conduct was generated using [WeAllJS Code of Conduct Generator](https://npm.im/weallbehave), which is based on the [WeAllJS Code of
 Conduct](https://wealljs.org/code-of-conduct), which is itself based on
-[Contributor Covenant](http://contributor-covenant.org), version 1.4, available
+[Contributor Covenant](https://contributor-covenant.org), version 1.4, available
 at
-[http://contributor-covenant.org/version/1/4](http://contributor-covenant.org/version/1/4),
+[https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4),
 and the LGBTQ in Technology Slack [Code of
-Conduct](http://lgbtq.technology/coc.html).
+Conduct](https://lgbtq.technology/coc.html).
