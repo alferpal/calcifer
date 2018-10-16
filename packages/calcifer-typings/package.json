@@ -1,7 +1,7 @@
 {
   "name": "@alferpal/calcifer-typings",
   "version": "1.0.0",
-  "description": "Typings from external packages not found in @types",
+  "description": "Typings for dependencies not found in @types",
   "repository": {
     "type": "git",
     "url": "git@github.com:alferpal/calcifer.git"
@@ -15,5 +15,8 @@
     "twitter": "alferpal",
     "url": "https://github.com/alferpal"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
