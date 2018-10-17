@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Provides type definitions shared across calcifer packages",
   "scripts": {
     "build": "npm run tsc",
@@ -23,8 +23,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@alferpal/calcifer-tslint-rules": "^1.0.1",
-    "@alferpal/calcifer-typings": "^1.0.1",
+    "@alferpal/calcifer-tslint-rules": "^1.0.3",
+    "@alferpal/calcifer-typings": "^1.0.3",
     "rimraf": "~2.6.2",
     "tslint": "~5.11.0",
     "typescript": "~3.0.1"

@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shared utilities across calcifer packages",
   "scripts": {
     "build": "tsc",
@@ -24,9 +24,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@alferpal/calcifer-tslint-rules": "^1.0.1",
-    "@alferpal/calcifer-types": "^1.0.1",
-    "@alferpal/calcifer-typings": "^1.0.1",
+    "@alferpal/calcifer-tslint-rules": "^1.0.3",
+    "@alferpal/calcifer-types": "^1.0.3",
+    "@alferpal/calcifer-typings": "^1.0.3",
     "@types/chai": "~4.1.4",
     "@types/jest": "~23.3.1",
     "chai": "~4.1.2",
