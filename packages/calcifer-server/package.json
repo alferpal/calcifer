@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-server",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Main server for calcifer",
   "scripts": {
     "build": "tsc",

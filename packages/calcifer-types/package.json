@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-types",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Provides type definitions shared across calcifer packages",
   "scripts": {
     "build": "npm run tsc",
