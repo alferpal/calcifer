@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Main server for calcifer",
   "scripts": {
     "build": "tsc",
@@ -26,7 +26,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@alferpal/calcifer-utils": "^1.0.1",
+    "@alferpal/calcifer-utils": "^1.0.3",
     "blipp": "~3.0.0",
     "bluebird": "~3.5.1",
     "boom": "~7.2.0",
@@ -39,9 +39,9 @@
     "pino-colada": "~1.4.4"
   },
   "devDependencies": {
-    "@alferpal/calcifer-tslint-rules": "^1.0.1",
-    "@alferpal/calcifer-types": "^1.0.1",
-    "@alferpal/calcifer-typings": "^1.0.1",
+    "@alferpal/calcifer-tslint-rules": "^1.0.3",
+    "@alferpal/calcifer-types": "^1.0.3",
+    "@alferpal/calcifer-typings": "^1.0.3",
     "@types/bluebird": "~3.5.20",
     "@types/boom": "~7.2.0",
     "@types/chai": "~4.1.4",
