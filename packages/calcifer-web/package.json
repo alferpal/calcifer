@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-web",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "web server & UI for calcifer",
   "scripts": {
     "build": "tsc",

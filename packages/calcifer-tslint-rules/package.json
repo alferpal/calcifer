@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-tslint-rules",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shared tslint rules for calcifer packages",
   "repository": {
     "type": "git",
