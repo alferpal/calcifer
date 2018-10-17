@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-typings",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Typings for dependencies not found in @types",
   "repository": {
     "type": "git",
