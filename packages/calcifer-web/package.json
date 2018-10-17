@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-web",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "web server & UI for calcifer",
   "scripts": {
     "build": "tsc",
@@ -38,9 +38,9 @@
     "pino-colada": "~1.4.4"
   },
   "devDependencies": {
-    "@alferpal/calcifer-tslint-rules": "^1.0.1",
-    "@alferpal/calcifer-types": "^1.0.1",
-    "@alferpal/calcifer-typings": "^1.0.1",
+    "@alferpal/calcifer-tslint-rules": "^1.0.3",
+    "@alferpal/calcifer-types": "^1.0.3",
+    "@alferpal/calcifer-typings": "^1.0.3",
     "@types/bluebird": "~3.5.20",
     "@types/boom": "~7.2.0",
     "@types/chai": "~4.1.4",
