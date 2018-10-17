@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared utilities across calcifer packages",
   "scripts": {
     "build": "tsc",
