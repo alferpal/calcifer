@@ -38,9 +38,9 @@
     "pino-colada": "~1.4.4"
   },
   "devDependencies": {
-    "@alferpal/calcifer-tslint-rules": "^1.0.5",
-    "@alferpal/calcifer-types": "^1.0.5",
-    "@alferpal/calcifer-typings": "^1.0.5",
+    "@alferpal/calcifer-tslint-rules": "~1.0.5",
+    "@alferpal/calcifer-types": "~1.0.5",
+    "@alferpal/calcifer-typings": "~1.0.5",
     "@types/bluebird": "~3.5.20",
     "@types/boom": "~7.2.0",
     "@types/chai": "~4.1.4",
@@ -49,7 +49,7 @@
     "@types/jest": "~23.3.1",
     "@types/lodash": "~4.14.109",
     "@types/pino": "~5.6.0",
-    "chai": "~4.1.2",
+    "chai": "~4.2.0",
     "cz-conventional-changelog": "~2.1.0",
     "jest": "~23.6.0",
     "npm-run-all": "~4.1.3",
