@@ -1,5 +1,5 @@
 {
-  "name": "@alferpal/change-this-please",
+  "name": "@alferpal/calcifer-api-template",
   "version": "1.0.0",
   "description": "change-this-please",
   "scripts": {
@@ -62,5 +62,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "private": "true"
 }
