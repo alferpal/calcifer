@@ -9,7 +9,7 @@
     "prebuild": "npm-run-all -p --silent clean lint",
     "prerelease": "npm test --silent",
     "start": "node dist/scripts/server.js | pino-colada",
-    "test": "jest",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
