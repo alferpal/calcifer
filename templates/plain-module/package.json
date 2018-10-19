@@ -1,5 +1,5 @@
 {
-  "name": "@alferpal/change-this-please",
+  "name": "@alferpal/calcifer-plain-module-template",
   "version": "1.0.0",
   "description": "change-this-please",
   "scripts": {
@@ -40,5 +40,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "private": "true"
 }
