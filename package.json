@@ -9,7 +9,7 @@
     "lint": "lerna run lint --parallel",
     "postinstall": "npm run bootstrap",
     "release": "lerna publish --conventional-commits --npm-tag=next",
-    "test": "lerna exec npm test",
+    "test": "lerna run test",
     "updateCOC": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
     "updateContrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
   },
