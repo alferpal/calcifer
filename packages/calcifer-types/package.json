@@ -6,7 +6,8 @@
     "build": "npm run tsc",
     "clean": "rimraf dist",
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "prebuild": "npm clean"
+    "prebuild": "npm clean",
+    "pretest": "npm run build"
   },
   "repository": {
     "type": "git",
