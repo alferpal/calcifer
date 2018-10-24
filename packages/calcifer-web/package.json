@@ -8,6 +8,7 @@
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "prebuild": "npm-run-all -p --silent clean lint",
     "prerelease": "npm test --silent",
+    "pretest": "npm run build",
     "start": "node dist/scripts/server.js | pino-colada",
     "test": "jest"
   },
