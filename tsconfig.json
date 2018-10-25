@@ -10,7 +10,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "outDir": "dist",
     "sourceMap": true,
     "strict": true,
     "target": "ES2017",
