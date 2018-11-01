@@ -25,7 +25,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "make-promises-safe": "~2.0.0"
+    "make-promises-safe": "~3.0.0"
   },
   "devDependencies": {
     "@alferpal/calcifer-tslint-rules": "~1.0.5",
