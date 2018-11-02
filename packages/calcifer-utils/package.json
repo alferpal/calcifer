@@ -33,7 +33,7 @@
     "@alferpal/calcifer-types": "~1.0.5",
     "@alferpal/calcifer-typings": "~1.0.5",
     "@types/chai": "~4.1.7",
-    "@types/jest": "~23.3.8",
+    "@types/jest": "~23.3.9",
     "@types/node": "~10.12.0",
     "chai": "~4.2.0",
     "jest": "~23.6.0",
