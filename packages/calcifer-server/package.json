@@ -34,7 +34,7 @@
     "hapi": "~17.6.0",
     "hapi-pino": "~5.1.0",
     "lodash": "~4.17.10",
-    "make-promises-safe": "~2.0.0",
+    "make-promises-safe": "~3.0.0",
     "pino": "~5.8.0",
     "pino-colada": "~1.4.4"
   },
