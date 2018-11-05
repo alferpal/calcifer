@@ -4,11 +4,7 @@ module.exports = {
   bail: true,
   collectCoverage: true,
   collectCoverageFrom: ['**/src/**/*.ts'],
-  globals: {
-    'ts-jest': {
-      tsConfigFile: 'tsconfig.json'
-    }
-  },
+  coverageReporters: ["clover", "json", "lcov", "text", "text-summary" ],
   coverageThreshold: {
     global: {
       branches: 100,
@@ -17,19 +13,22 @@ module.exports = {
       statements: 100
     },
   },
+  globals: {
+    'ts-jest': {
+      tsConfig: 'tsconfig.json'
+    }
+  },
   moduleFileExtensions: [
     'ts',
     'js'
   ],
+  preset: 'ts-jest',
   projects: [
     'packages/*'
   ],
-  transform: {
-    '.(ts|tsx)': './node_modules/ts-jest/preprocessor.js'
-  },
+  testEnvironment: 'node',
   testMatch: [
     '**/test/**/*.test.(ts|tsx)'
   ],
-  testEnvironment: 'node',
   verbose: true
 }
