@@ -1,9 +1,7 @@
 'use strict'
 
-import log = require('./log')
+import { logger } from './lib/log'
 
-const toExport = {
-  log,
+export {
+  logger as log,
 }
-
-export = toExport
