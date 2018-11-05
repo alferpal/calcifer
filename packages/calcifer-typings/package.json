@@ -20,8 +20,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "@types/node": "~10.12.1",
-    "pino": "~5.8.0",
-    "sonic-boom": "~0.6.1"
+    "@types/node": "~10.12.1"
   }
 }
