@@ -1,21 +1,23 @@
 {
   "compilerOptions": {
+    "alwaysStrict": true,
     "baseUrl": ".",
     "declaration": true,
+    "declarationMap": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "lib": [
-      "es2017"
+      "es2018"
     ],
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES2017",
-    "typeRoots": [
-      "packages/calcifer-typings/types",
-      "node_modules/@types"
-    ]
+    "target": "ES2017"
   }
 }
