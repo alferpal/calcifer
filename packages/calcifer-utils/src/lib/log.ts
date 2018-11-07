@@ -5,4 +5,8 @@ import pino from 'pino'
 const dest = pino.destination()
 const logger = pino(dest)
 
-export { logger }
+function getfinalLogger(logger) {
+  return pino.final(logger)
+}
+
+export { getfinalLogger, logger }

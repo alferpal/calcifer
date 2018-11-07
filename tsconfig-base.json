@@ -6,9 +6,6 @@
     "declarationMap": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
-    "lib": [
-      "es2018"
-    ],
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -18,6 +15,6 @@
     "noUnusedLocals": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES2017"
+    "target": "ES2018"
   }
 }
