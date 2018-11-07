@@ -31,7 +31,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@alferpal/calcifer-utils": "~1.0.5",
+    "@alferpal/calcifer-service-utils": "~1.0.0",
     "blipp": "~3.1.1",
     "bluebird": "~3.5.3",
     "boom": "~7.2.1",
@@ -41,7 +41,6 @@
     "pino-colada": "~1.4.4"
   },
   "devDependencies": {
-    "@alferpal/calcifer-app-utils": "~1.0.5",
     "@alferpal/calcifer-tslint-rules": "~1.0.5",
     "@alferpal/calcifer-types": "~1.0.5",
     "@alferpal/calcifer-typings": "~1.0.5",
