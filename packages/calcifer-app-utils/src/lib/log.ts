@@ -1,9 +1,10 @@
 'use strict'
 
-import { getFinalLogger as innerFinal, log, } from '@alferpal/calcifer-utils'
+import { getFinalLogger as innerFinal, logger } from '@alferpal/calcifer-utils'
+import pino from 'pino'
 
-let childLogger
-let finalLogger
+let childLogger: pino.Logger | undefined
+let finalLogger: pino.Logger | undefined
 
 function getChildLogger(name: string = '', type: string = 'application') {
   const childProperties: { [id: string]: string } = {}
@@ -11,15 +12,15 @@ function getChildLogger(name: string = '', type: string = 'application') {
   childProperties[type] = name
 
   if (!childLogger) {
-    childLogger = log.child(childProperties)
-    finalLogger = childLogger.final()
+    childLogger = logger.child(childProperties)
+    finalLogger = innerFinal(childLogger)
   }
 
   return childLogger
 }
 
 function getFinalLogger() {
-  return innerFinal(childLogger)
+  return finalLogger
 }
 
-export { getchildLogger, getFinalLogger }
+export { getChildLogger, getFinalLogger }
