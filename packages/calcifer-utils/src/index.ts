@@ -1,7 +1,8 @@
 'use strict'
 
-import { logger } from './lib/log'
+import { getFinalLogger, logger } from './lib/log'
 
 export {
-  logger as log,
+  getFinalLogger,
+  logger,
 }
