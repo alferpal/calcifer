@@ -47,7 +47,7 @@
     "@types/boom": "~7.2.0",
     "@types/chai": "~4.1.7",
     "@types/glob": "~7.1.0",
-    "@types/hapi": "~17.6.2",
+    "@types/hapi": "~17.6.3",
     "@types/jest": "~23.3.9",
     "@types/lodash": "~4.14.109",
     "@types/node": "~10.12.2",
