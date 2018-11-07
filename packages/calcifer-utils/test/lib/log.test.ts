@@ -1,7 +1,7 @@
 'use strict'
 
 import { logger as innerLogger } from '../../src/lib/log'
-import { log } from '../../src'
+import { logger } from '../../src'
 
 describe('log', () => {
   test('has a debug level', () => {
@@ -13,6 +13,6 @@ describe('log', () => {
   })
 
   test('has a debug level when exported too', () => {
-    expect(typeof log.debug).toBe('function')
+    expect(typeof logger.debug).toBe('function')
   })
 })

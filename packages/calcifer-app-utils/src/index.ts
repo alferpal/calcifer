@@ -1,8 +1,8 @@
 'use strict'
 
-import { getchildLogger, getFinalLogger } from './lib/log'
+import { getChildLogger, getFinalLogger } from './lib/log'
 
 export {
-  getchildLogger as getLogger,
+  getChildLogger as getLogger,
   getFinalLogger,
 }

@@ -1,10 +1,19 @@
 'use strict'
 
 import * as appUtils from '@alferpal/calcifer-app-utils'
+import pino from 'pino'
 
-function getLog(name: string = '', type: string = 'service') {
+let finalLogger: pino.Logger | undefined
+let logger: pino.Logger | undefined
 
-  return appUtils.getLogger(name, type)
+function getLogger(name: string = '', type: string = 'service') {
+
+  if (!logger) {
+    logger = appUtils.getLogger(name, type)
+    finalLogger = appUtils.getFinalLogger(logger)
+  }
+
+  return logger
 }
 
-export { getLog }
+export { getLogger }
