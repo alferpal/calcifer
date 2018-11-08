@@ -1,18 +1,40 @@
 'use strict'
 
-import { logger as innerLogger } from '../../src/lib/log'
-import { logger } from '../../src'
+import * as innerLib from '../../src/lib/log'
+import * as exported from '../../src'
 
-describe('log', () => {
-  test('has a debug level', () => {
-    expect(typeof innerLogger.debug).toBe('function')
+describe('When log is required directly:', () => {
+  test('logger should be defined', () => {
+    expect(innerLib.logger).toBeDefined()
   })
-
-  test('has not a whatever level or function', () => {
-    expect(typeof innerLogger.whatever).toBe('undefined')
+  test('and have a debug function', () => {
+    expect(typeof innerLib.logger.debug).toBe('function')
   })
+  test('and not have a whatever function', () => {
+    expect(typeof innerLib.logger.whatever).toBe('undefined')
+  })
+  test('finalLogger should be defined', () => {
+    expect(innerLib.logger).toBeDefined()
+  })
+  test('and have a debug function', () => {
+    expect(typeof innerLib.finalLogger.debug).toBe('function')
+  })
+  test('and not have a whatever function', () => {
+    expect(typeof innerLib.finalLogger.whatever).toBe('undefined')
+  })
+})
 
-  test('has a debug level when exported too', () => {
-    expect(typeof logger.debug).toBe('function')
+describe('When log is required from outside', () => {
+  test('logger should be defined', () => {
+    expect(exported.logger).toBeDefined()
+  })
+  test('and have a debug function', () => {
+    expect(typeof exported.logger.debug).toBe('function')
+  })
+  test('and not have a whatever function', () => {
+    expect(typeof exported.logger.whatever).toBe('undefined')
+  })
+  test('finalLogger should not be defined', () => {
+    expect(Object.keys(exported).includes('finalLogger')).toBeFalsy()
   })
 })
