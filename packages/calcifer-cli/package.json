@@ -29,7 +29,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@alferpal/calcifer-app-utils": "~1.0.0"
+    "@alferpal/calcifer-utils": "~1.0.5"
   },
   "devDependencies": {
     "@alferpal/calcifer-tslint-rules": "~1.0.5",
