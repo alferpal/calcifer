@@ -3,7 +3,6 @@
 import * as innerLib from '../../src/lib/process-defaults'
 import * as exported from '../../src'
 import { execFile } from 'child_process'
-import * as path from 'path'
 
 describe('When good-defaults is required directly:', () => {
   test('setProcessDefaults should be defined and be a function', () => {
@@ -21,16 +20,20 @@ describe('When good-defaults is required from outside:', () => {
 
 describe('Warnings', () => {
   test('should be handled once the handler is installed ', (done) => {
-    console.log(path.join(__dirname, '../..'))
     execFile(
       './node_modules/.bin/ts-node',
-      ['--help'],
-      { cwd: path.join(__dirname, '../..') },
+      [
+        '--project',
+        'test/tsconfig.json',
+        'test/fixtures/warningHandler.ts',
+      ],
       (error, stdout, stderr) => {
-        if (error) {
-          throw error
-        }
-        console.dir({ error, stdout, stderr }, { colors: true, depth: null })
+        const output = JSON.parse(stdout)
+        expect(error).toBeNull
+        expect(stderr.includes('fixtureDesignedWarning'))
+        expect(output.level).toEqual(40)
+        expect(output.calciferName).toBeDefined
+        expect(output.calciferType).toBeDefined
         done()
       })
   })

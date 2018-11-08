@@ -14,18 +14,17 @@ function multipleResolves(type: string, promise: Promise<any>, value: any) {
 }
 
 function setProcessDefaults() {
-  const events = {
+  const callbacks = {
     multipleResolves,
     uncaughtException,
     unhandledRejection,
     warning,
   }
 
-  Object.entries(events).map(([event, callback]) => {
-    console.dir({ event, callback }, { colors: true, depth: null })
-    if (process.listenerCount(event) === 0) {
+  Object.keys(callbacks).map((event) => {
+    if (process.listenerCount(event) <= 1) {
       // @ts-ignore
-      process.on(event, callback)
+      process.on(event, callbacks[event])
     }
   })
 }
@@ -47,7 +46,7 @@ function unhandledRejection(reason: Error | any, promise: Promise<any>) {
 }
 
 function warning(warn: Error) {
-  logger.warn('Warning', warn.name, warn.message, warn.stack)
+  logger.warn(warn.name, warn.message, warn.stack)
 }
 
 export { setProcessDefaults }
