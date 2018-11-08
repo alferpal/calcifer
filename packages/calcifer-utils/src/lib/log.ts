@@ -2,11 +2,12 @@
 
 import pino from 'pino'
 
-const dest = pino.destination()
-const logger = pino(dest)
+const logger = pino(pino.destination())
 
-function getFinalLogger(logger: pino.Logger): pino.Logger {
-  return pino.final(logger)
-}
+const childLogger = logger.child({
+  calciferName: process.env.CALCIFER_NAME || 'ENV.CALCIFER_NAME NOT PRESENT',
+  calciferType: process.env.CALCIFER_TYPE || 'ENV.CALCIFER_TYPE NOT PRESENT',
+})
+const finalLogger = pino.final(childLogger)
 
-export { getFinalLogger, logger }
+export { childLogger as logger, finalLogger }
