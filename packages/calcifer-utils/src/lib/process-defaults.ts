@@ -8,13 +8,13 @@ function exit(code: number) {
   })
 }
 
-function multipleResolves(type: string, promise: Promise<any>, value: any) {
-  finalLogger.fatal('multipleResolves', type, promise, value)
+function multipleResolves(type: string, promise: Promise<any>, reason: any) {
+  finalLogger.fatal(`mulipleResolves: ${type}`, { reason, promise })
   exit(1)
 }
 
 function setProcessDefaults() {
-  const callbacks = {
+  const callbacks: { [id: string]: (...args: any) => void } = {
     multipleResolves,
     uncaughtException,
     unhandledRejection,
@@ -22,31 +22,25 @@ function setProcessDefaults() {
   }
 
   Object.keys(callbacks).map((event) => {
-    if (process.listenerCount(event) <= 1) {
-      // @ts-ignore
-      process.on(event, callbacks[event])
-    }
+    process.removeListener(event, callbacks[event])
+    // @ts-ignore
+    process.on(event, callbacks[event])
   })
 }
 
 function uncaughtException(err: Error) {
-  finalLogger.fatal('uncaughtException', err.message, err.stack)
+  finalLogger.fatal(err)
 
   exit(1)
 }
 
 function unhandledRejection(reason: Error | any, promise: Promise<any>) {
-  if (reason.stack && reason.message) {
-    finalLogger.fatal('unhandledRejection', reason.message, reason.stack, promise)
-  } else {
-    finalLogger.fatal('unhandledRejection', reason, promise)
-  }
-
+  finalLogger.fatal(reason, promise)
   exit(1)
 }
 
 function warning(warn: Error) {
-  logger.warn(warn.name, warn.message, warn.stack)
+  logger.warn(warn)
 }
 
 export { setProcessDefaults }
