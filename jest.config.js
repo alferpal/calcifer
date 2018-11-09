@@ -3,7 +3,7 @@
 module.exports = {
   bail: true,
   collectCoverage: true,
-  collectCoverageFrom: ['**/src/**/*.ts'],
+  collectCoverageFrom: ['src/**/*.ts'],
   coverageReporters: ["clover", "json", "lcov", "text", "text-summary" ],
   coverageThreshold: {
     global: {
