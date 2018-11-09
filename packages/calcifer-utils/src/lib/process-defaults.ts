@@ -1,6 +1,15 @@
 'use strict'
 
 import { logger, finalLogger } from './log'
+import os from 'os'
+
+function environmentDefaults() {
+  const cpus = process.env.UV_THREADPOOL_SIZE ?
+    process.env.UV_THREADPOOL_SIZE :
+    os.cpus().length
+
+  process.env.UV_THREADPOOL_SIZE = `${cpus}`
+}
 
 function exit(code: number) {
   setImmediate(() => {
@@ -26,6 +35,8 @@ function setProcessDefaults() {
     // @ts-ignore
     process.on(event, callbacks[event])
   })
+
+  environmentDefaults()
 }
 
 function uncaughtException(err: Error) {

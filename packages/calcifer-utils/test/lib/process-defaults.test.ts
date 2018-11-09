@@ -18,6 +18,32 @@ describe('When good-defaults is required from outside:', () => {
   })
 })
 
+describe('Environment Defaults', () => {
+  test('should be set once setProcessDefaults is called ', (done) => {
+    const child = execFile(
+      './node_modules/.bin/ts-node',
+      [
+        '--project',
+        'test/tsconfig.json',
+        'test/lib/fixtures/process-defaults/environment-defaults.ts',
+      ],
+      (error, stdout, stderr) => {
+        const output = stdout.split('\n')
+        expect(error).toBeNull
+
+        expect(output[0]).toEqual(128)
+
+        expect(stderr).toEqual('')
+
+        setTimeout(done, 1024)
+      })
+
+    child.on('exit', (code) => {
+      expect(code).toEqual(1)
+    })
+  })
+})
+
 describe('Multiple Resolves', () => {
   test('should be handled once the handler is installed ', (done) => {
     const child = execFile(
@@ -25,7 +51,7 @@ describe('Multiple Resolves', () => {
       [
         '--project',
         'test/tsconfig.json',
-        'test/lib/fixtures/multiple-resolves-handler.ts',
+        'test/lib/fixtures/process-defaults/multiple-resolves-handler.ts',
       ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout)
@@ -54,7 +80,7 @@ describe('Uncaught Exception', () => {
       [
         '--project',
         'test/tsconfig.json',
-        'test/lib/fixtures/uncaught-exception-handler.ts',
+        'test/lib/fixtures/process-defaults/uncaught-exception-handler.ts',
       ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout)
@@ -86,7 +112,7 @@ describe('Unhandled Rejection', () => {
       [
         '--project',
         'test/tsconfig.json',
-        'test/lib/fixtures/unhandled-rejection-handler.ts',
+        'test/lib/fixtures/process-defaults/unhandled-rejection-handler.ts',
       ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout)
@@ -118,7 +144,7 @@ describe('Warnings', () => {
       [
         '--project',
         'test/tsconfig.json',
-        'test/lib/fixtures/warning-handler.ts',
+        'test/lib/fixtures/process-defaults/warning-handler.ts',
       ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout)
