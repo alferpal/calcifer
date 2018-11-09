@@ -18,23 +18,124 @@ describe('When good-defaults is required from outside:', () => {
   })
 })
 
-describe('Warnings', () => {
+describe('Multiple Resolves', () => {
   test('should be handled once the handler is installed ', (done) => {
-    execFile(
+    const child = execFile(
       './node_modules/.bin/ts-node',
       [
         '--project',
         'test/tsconfig.json',
-        'test/fixtures/warningHandler.ts',
+        'test/lib/fixtures/multiple-resolves-handler.ts',
       ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout)
         expect(error).toBeNull
-        expect(stderr.includes('fixtureDesignedWarning'))
-        expect(output.level).toEqual(40)
+
         expect(output.calciferName).toBeDefined
         expect(output.calciferType).toBeDefined
-        done()
+        expect(output.level).toEqual(60)
+        expect(output.msg.includes('mulipleResolves'))
+
+        expect(stderr).toEqual('')
+
+        setTimeout(done, 1024)
       })
+
+    child.on('exit', (code) => {
+      expect(code).toEqual(1)
+    })
+  })
+})
+
+describe('Uncaught Exception', () => {
+  test('should be handled once the handler is installed ', (done) => {
+    const child = execFile(
+      './node_modules/.bin/ts-node',
+      [
+        '--project',
+        'test/tsconfig.json',
+        'test/lib/fixtures/uncaught-exception-handler.ts',
+      ],
+      (error, stdout, stderr) => {
+        const output = JSON.parse(stdout)
+
+        expect(error).toBeNull
+
+        expect(output.calciferName).toBeDefined
+        expect(output.calciferType).toBeDefined
+        expect(output.level).toEqual(60)
+        expect(output.msg.includes('catch this!'))
+        expect(output.stack).toBeDefined
+        expect(output.type).toBe('Error')
+
+        expect(stderr).toEqual('')
+
+        setTimeout(done, 1024)
+      })
+
+    child.on('exit', (code) => {
+      expect(code).toEqual(1)
+    })
+  })
+})
+
+describe('Unhandled Rejection', () => {
+  test('should be handled once the handler is installed ', (done) => {
+    const child = execFile(
+      './node_modules/.bin/ts-node',
+      [
+        '--project',
+        'test/tsconfig.json',
+        'test/lib/fixtures/unhandled-rejection-handler.ts',
+      ],
+      (error, stdout, stderr) => {
+        const output = JSON.parse(stdout)
+
+        expect(error).toBeNull
+
+        expect(output.calciferName).toBeDefined
+        expect(output.calciferType).toBeDefined
+        expect(output.level).toEqual(60)
+        expect(output.msg.includes('catch this!'))
+        expect(output.stack).toBeDefined
+        expect(output.type).toBe('Error')
+
+        expect(stderr).toEqual('')
+
+        setTimeout(done, 1024)
+      })
+
+    child.on('exit', (code) => {
+      expect(code).toEqual(1)
+    })
+  })
+})
+
+describe('Warnings', () => {
+  test('should be handled once the handler is installed ', (done) => {
+    const child = execFile(
+      './node_modules/.bin/ts-node',
+      [
+        '--project',
+        'test/tsconfig.json',
+        'test/lib/fixtures/warning-handler.ts',
+      ],
+      (error, stdout, stderr) => {
+        const output = JSON.parse(stdout)
+        expect(error).toBeNull
+
+        expect(output.calciferName).toBeDefined
+        expect(output.calciferType).toBeDefined
+        expect(output.level).toEqual(40)
+        expect(output.msg.includes('fixtureDesignedWarning'))
+
+        expect(stderr.includes('fixtureDesignedWarning'))
+
+        setTimeout(done, 1024)
+      })
+
+    child.on('exit', (code) => {
+      expect(code).toEqual(0)
+    })
   })
 })
