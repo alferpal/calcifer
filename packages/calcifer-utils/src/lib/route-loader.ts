@@ -1,10 +1,11 @@
 'use strict'
 
 import * as Hapi from 'hapi'
-import fastGlob from 'fast-glob'
+import { async as fastGlob } from 'fast-glob'
 
-async function getRoutes(path: string) {
-  const files = await fastGlob(`${path}/.js`, {
+async function getRoutes(path: string, regex: string) {
+  const files = await fastGlob(regex, {
+    cwd: path,
     deep: true,
     onlyFiles: true,
   })
@@ -12,14 +13,11 @@ async function getRoutes(path: string) {
   const routes: Hapi.ServerRoute[] = []
 
   files.map((filePath) => {
-    console.dir(filePath, { colors: true, depth: null })
-
-    /*     require(filePath).routes.map((route: Hapi.ServerRoute) => {
-          routes.push(route)
-        }) */
+    require(`${path}/${filePath}`).routes.map((route: Hapi.ServerRoute) => {
+      routes.push(route)
+    })
   })
   return routes
 }
 
-getRoutes('../../')
 export { getRoutes }
