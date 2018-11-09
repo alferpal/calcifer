@@ -13,7 +13,7 @@
     "prebuild": "npm-run-all -p  clean lint",
     "prerelease": "npm test ",
     "pretest": "npm run build",
-    "start": "node dist/scripts/server.js | pino-colada",
+    "start": "node dist/server.js | pino-colada",
     "test": "jest"
   },
   "repository": {

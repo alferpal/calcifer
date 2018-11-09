@@ -14,7 +14,7 @@ const server = new Hapi.Server({
 })
 
 const init = async () => {
-  const routesPath = path.join(__dirname, '../routes')
+  const routesPath = path.join(__dirname, '/routes')
 
   try {
 
