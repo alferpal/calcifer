@@ -39,7 +39,7 @@ describe('Environment Defaults', () => {
       })
 
     child.on('exit', (code) => {
-      expect(code).toEqual(1)
+      expect(code).toEqual(0)
     })
   })
 })
