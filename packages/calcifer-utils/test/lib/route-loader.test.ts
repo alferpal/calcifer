@@ -4,14 +4,14 @@ import * as innerLib from '../../src/lib/route-loader'
 import * as exported from '../../src'
 import path from 'path'
 
-describe('When good-defaults is required directly:', () => {
+describe('When getRoutes is required directly:', () => {
   test('getRoutes should be defined and be a function', () => {
     expect(innerLib.getRoutes).toBeDefined()
     expect(typeof innerLib.getRoutes).toBe('function')
   })
 })
 
-describe('When good-defaults is required from outside:', () => {
+describe('When getRoutes is required from outside:', () => {
   test('getRoutes should be defined and be a function', () => {
     expect(exported.getRoutes).toBeDefined()
     expect(typeof exported.getRoutes).toBe('function')
