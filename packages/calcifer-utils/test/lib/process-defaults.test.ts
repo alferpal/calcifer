@@ -21,8 +21,11 @@ describe('When good-defaults is required from outside:', () => {
 describe('Environment Defaults', () => {
   test('should be set once setProcessDefaults is called ', (done) => {
     const child = execFile(
-      './node_modules/.bin/ts-node',
+      './node_modules/.bin/nyc',
       [
+        '--reporter',
+        'none',
+        './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
         'test/lib/fixtures/process-defaults/environment-defaults.ts',
@@ -47,8 +50,11 @@ describe('Environment Defaults', () => {
 describe('Multiple Resolves', () => {
   test('should be handled once the handler is installed ', (done) => {
     const child = execFile(
-      './node_modules/.bin/ts-node',
+      './node_modules/.bin/nyc',
       [
+        '--reporter',
+        'none',
+        './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
         'test/lib/fixtures/process-defaults/multiple-resolves-handler.ts',
@@ -76,8 +82,11 @@ describe('Multiple Resolves', () => {
 describe('Uncaught Exception', () => {
   test('should be handled once the handler is installed ', (done) => {
     const child = execFile(
-      './node_modules/.bin/ts-node',
+      './node_modules/.bin/nyc',
       [
+        '--reporter',
+        'none',
+        './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
         'test/lib/fixtures/process-defaults/uncaught-exception-handler.ts',
@@ -108,8 +117,11 @@ describe('Uncaught Exception', () => {
 describe('Unhandled Rejection', () => {
   test('should be handled once the handler is installed ', (done) => {
     const child = execFile(
-      './node_modules/.bin/ts-node',
+      './node_modules/.bin/nyc',
       [
+        '--reporter',
+        'none',
+        './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
         'test/lib/fixtures/process-defaults/unhandled-rejection-handler.ts',
@@ -140,8 +152,11 @@ describe('Unhandled Rejection', () => {
 describe('Warnings', () => {
   test('should be handled once the handler is installed ', (done) => {
     const child = execFile(
-      './node_modules/.bin/ts-node',
+      './node_modules/.bin/nyc',
       [
+        '--reporter',
+        'none',
+        './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
         'test/lib/fixtures/process-defaults/warning-handler.ts',
@@ -157,7 +172,7 @@ describe('Warnings', () => {
 
         expect(stderr.includes('fixtureDesignedWarning'))
 
-        setTimeout(done, 1024)
+        setTimeout(done, 512)
       })
 
     child.on('exit', (code) => {
