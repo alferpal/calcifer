@@ -31,7 +31,7 @@ describe('Environment Defaults', () => {
         const output = stdout.split('\n')
         expect(error).toBeNull
 
-        expect(output[0]).toEqual(128)
+        expect(output[0]).toEqual('128')
 
         expect(stderr).toEqual('')
 
