@@ -2,9 +2,7 @@
 
 module.exports = {
   bail: true,
-  collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts'],
-  coverageReporters: ["none" ],
+  collectCoverage: false,
   globals: {
     'ts-jest': {
       tsConfig: 'test/tsconfig.json'
