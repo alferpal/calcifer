@@ -63,5 +63,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist/**/*.d.ts",
+    "dist/**/*.js"
+  ],
   "private": true
 }
