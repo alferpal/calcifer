@@ -38,7 +38,8 @@
     "hapi": "~17.7.0",
     "hapi-pino": "~5.1.0",
     "lodash": "~4.17.10",
-    "pino-colada": "~1.4.4"
+    "pino-colada": "~1.4.4",
+    "wurst": "~3.0.1"
   },
   "devDependencies": {
     "@alferpal/calcifer-tslint-rules": "~1.0.5",

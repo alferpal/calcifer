@@ -36,7 +36,6 @@
     "@alferpal/calcifer-tslint-rules": "~1.0.5",
     "@alferpal/calcifer-types": "~1.0.5",
     "@alferpal/calcifer-typings": "~1.0.5",
-    "@types/hapi": "~17.6.3",
     "@types/jest": "~23.3.9",
     "@types/node": "~10.12.6",
     "@types/pino": "~5.8.1",

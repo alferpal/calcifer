@@ -1,7 +1,7 @@
 'use strict'
 
+import os = require('os')
 import { logger, finalLogger } from './log'
-import os from 'os'
 
 function environmentDefaults() {
   const cpus = process.env.UV_THREADPOOL_SIZE ?
