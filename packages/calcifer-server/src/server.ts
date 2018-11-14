@@ -2,31 +2,34 @@
 
 global.Promise = require('bluebird')
 
-import * as Hapi from 'hapi'
-import path from 'path'
-import { getRoutes, logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
+import hapi = require('hapi')
+import path = require('path')
+import { logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 
 setProcessDefaults()
 
-const server = new Hapi.Server({
+const server = new hapi.Server({
   port: 8192,
   host: 'localhost',
 })
 
 const init = async () => {
-  const routesPath = path.join(__dirname, '/routes')
-
   try {
-
-    const routes = await getRoutes(routesPath, './**/*.js')
-
-    routes.map((route) => {
-      server.route(route)
-    })
-
     await server.register(require('blipp'))
 
-    await server.register(require('hapi-pino'))
+    await server.register({
+      plugin: require('hapi-pino'),
+      options: {
+        instance: log,
+      },
+    })
+
+    await server.register({
+      plugin: require('wurst'),
+      options: {
+        cwd: path.join(__dirname, 'routes'),
+      },
+    })
 
     await server.start()
 

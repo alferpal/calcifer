@@ -1,6 +1,6 @@
 'use strict'
 
-import pino from 'pino'
+import pino = require('pino')
 
 const logger = pino(pino.destination())
 
