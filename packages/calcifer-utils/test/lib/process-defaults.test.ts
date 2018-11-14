@@ -23,8 +23,8 @@ describe('Environment Defaults', () => {
     const child = execFile(
       './node_modules/.bin/nyc',
       [
-        '--reporter',
-        'none',
+        '--check-coverage',
+        'false',
         './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
@@ -38,7 +38,7 @@ describe('Environment Defaults', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 1024)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
@@ -52,15 +52,15 @@ describe('Multiple Resolves', () => {
     const child = execFile(
       './node_modules/.bin/nyc',
       [
-        '--reporter',
-        'none',
+        '--check-coverage',
+        'false',
         './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
         'test/lib/fixtures/process-defaults/multiple-resolves-handler.ts',
       ],
       (error, stdout, stderr) => {
-        const output = JSON.parse(stdout)
+        const output = JSON.parse(stdout.split('\n')[0])
         expect(error).toBeNull
 
         expect(output.calciferName).toBeDefined
@@ -70,7 +70,7 @@ describe('Multiple Resolves', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 1024)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
@@ -84,15 +84,15 @@ describe('Uncaught Exception', () => {
     const child = execFile(
       './node_modules/.bin/nyc',
       [
-        '--reporter',
-        'none',
+        '--check-coverage',
+        'false',
         './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
         'test/lib/fixtures/process-defaults/uncaught-exception-handler.ts',
       ],
       (error, stdout, stderr) => {
-        const output = JSON.parse(stdout)
+        const output = JSON.parse(stdout.split('\n')[0])
 
         expect(error).toBeNull
 
@@ -105,7 +105,7 @@ describe('Uncaught Exception', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 1024)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
@@ -119,15 +119,15 @@ describe('Unhandled Rejection', () => {
     const child = execFile(
       './node_modules/.bin/nyc',
       [
-        '--reporter',
-        'none',
+        '--check-coverage',
+        'false',
         './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
         'test/lib/fixtures/process-defaults/unhandled-rejection-handler.ts',
       ],
       (error, stdout, stderr) => {
-        const output = JSON.parse(stdout)
+        const output = JSON.parse(stdout.split('\n')[0])
 
         expect(error).toBeNull
 
@@ -140,7 +140,7 @@ describe('Unhandled Rejection', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 1024)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
@@ -154,15 +154,15 @@ describe('Warnings', () => {
     const child = execFile(
       './node_modules/.bin/nyc',
       [
-        '--reporter',
-        'none',
+        '--check-coverage',
+        'false',
         './node_modules/.bin/ts-node',
         '--project',
         'test/tsconfig.json',
         'test/lib/fixtures/process-defaults/warning-handler.ts',
       ],
       (error, stdout, stderr) => {
-        const output = JSON.parse(stdout)
+        const output = JSON.parse(stdout.split('\n')[0])
         expect(error).toBeNull
 
         expect(output.calciferName).toBeDefined
@@ -172,7 +172,7 @@ describe('Warnings', () => {
 
         expect(stderr.includes('fixtureDesignedWarning'))
 
-        setTimeout(done, 512)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
