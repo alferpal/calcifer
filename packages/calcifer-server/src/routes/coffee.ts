@@ -3,7 +3,7 @@
 // Funny / nonsensical route just to test that
 // this API in fact loads multiple routes from multiple files
 
-import boom from 'boom'
+import boom = require('boom')
 
 const routes = [
   {
@@ -21,4 +21,4 @@ const routes = [
   },
 ]
 
-export { routes }
+module.exports = routes
