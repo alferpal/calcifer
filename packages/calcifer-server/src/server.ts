@@ -10,7 +10,6 @@ setProcessDefaults()
 
 const server = new hapi.Server({
   port: 8192,
-  host: 'localhost',
 })
 
 const init = async () => {
