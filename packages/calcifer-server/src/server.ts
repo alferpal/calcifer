@@ -12,7 +12,7 @@ const server = new hapi.Server({
   port: 8192,
 })
 
-const init = async () => {
+const start = async () => {
   try {
     await server.register(require('blipp'))
 
@@ -20,6 +20,14 @@ const init = async () => {
       plugin: require('hapi-pino'),
       options: {
         instance: log,
+      },
+    })
+
+    await server.register({
+      plugin: require('hapi-pulse'),
+      options: {
+        logger: log,
+        timeout: 32768
       },
     })
 
@@ -38,4 +46,4 @@ const init = async () => {
   }
 }
 
-init()
+start()
