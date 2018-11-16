@@ -4,6 +4,16 @@ import * as innerLib from '../../src/lib/process-defaults'
 import * as exported from '../../src'
 import { execFile } from 'child_process'
 
+const nycOptions = [
+  '--check-coverage',
+  'false',
+  './node_modules/.bin/ts-node',
+  '--project',
+  'test/tsconfig.json',
+]
+
+const nycPath = './node_modules/.bin/nyc'
+
 describe('When good-defaults is required directly:', () => {
   test('setProcessDefaults should be defined and be a function', () => {
     expect(innerLib.setProcessDefaults).toBeDefined()
@@ -21,13 +31,8 @@ describe('When good-defaults is required from outside:', () => {
 describe('Environment Defaults', () => {
   test('should be set once setProcessDefaults is called ', (done) => {
     const child = execFile(
-      './node_modules/.bin/nyc',
-      [
-        '--check-coverage',
-        'false',
-        './node_modules/.bin/ts-node',
-        '--project',
-        'test/tsconfig.json',
+      nycPath, [
+        ...nycOptions,
         'test/lib/fixtures/process-defaults/environment-defaults.ts',
       ],
       (error, stdout, stderr) => {
@@ -38,7 +43,7 @@ describe('Environment Defaults', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 256)
+        setTimeout(done, 64)
       })
 
     child.on('exit', (code) => {
@@ -50,13 +55,8 @@ describe('Environment Defaults', () => {
 describe('Multiple Resolves', () => {
   test('should be handled once the handler is installed ', (done) => {
     const child = execFile(
-      './node_modules/.bin/nyc',
-      [
-        '--check-coverage',
-        'false',
-        './node_modules/.bin/ts-node',
-        '--project',
-        'test/tsconfig.json',
+      nycPath, [
+        ...nycOptions,
         'test/lib/fixtures/process-defaults/multiple-resolves-handler.ts',
       ],
       (error, stdout, stderr) => {
@@ -70,7 +70,7 @@ describe('Multiple Resolves', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 256)
+        setTimeout(done, 64)
       })
 
     child.on('exit', (code) => {
@@ -82,13 +82,8 @@ describe('Multiple Resolves', () => {
 describe('Uncaught Exception', () => {
   test('should be handled once the handler is installed ', (done) => {
     const child = execFile(
-      './node_modules/.bin/nyc',
-      [
-        '--check-coverage',
-        'false',
-        './node_modules/.bin/ts-node',
-        '--project',
-        'test/tsconfig.json',
+      nycPath, [
+        ...nycOptions,
         'test/lib/fixtures/process-defaults/uncaught-exception-handler.ts',
       ],
       (error, stdout, stderr) => {
@@ -105,7 +100,7 @@ describe('Uncaught Exception', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 256)
+        setTimeout(done, 64)
       })
 
     child.on('exit', (code) => {
@@ -117,13 +112,8 @@ describe('Uncaught Exception', () => {
 describe('Unhandled Rejection', () => {
   test('should be handled once the handler is installed ', (done) => {
     const child = execFile(
-      './node_modules/.bin/nyc',
-      [
-        '--check-coverage',
-        'false',
-        './node_modules/.bin/ts-node',
-        '--project',
-        'test/tsconfig.json',
+      nycPath, [
+        ...nycOptions,
         'test/lib/fixtures/process-defaults/unhandled-rejection-handler.ts',
       ],
       (error, stdout, stderr) => {
@@ -140,7 +130,7 @@ describe('Unhandled Rejection', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 256)
+        setTimeout(done, 64)
       })
 
     child.on('exit', (code) => {
@@ -152,13 +142,8 @@ describe('Unhandled Rejection', () => {
 describe('Warnings', () => {
   test('should be handled once the handler is installed ', (done) => {
     const child = execFile(
-      './node_modules/.bin/nyc',
-      [
-        '--check-coverage',
-        'false',
-        './node_modules/.bin/ts-node',
-        '--project',
-        'test/tsconfig.json',
+      nycPath, [
+        ...nycOptions,
         'test/lib/fixtures/process-defaults/warning-handler.ts',
       ],
       (error, stdout, stderr) => {
@@ -172,7 +157,7 @@ describe('Warnings', () => {
 
         expect(stderr.includes('fixtureDesignedWarning'))
 
-        setTimeout(done, 256)
+        setTimeout(done, 64)
       })
 
     child.on('exit', (code) => {

@@ -6,4 +6,4 @@ setProcessDefaults()
 
 process.emitWarning('fixtureDesignedWarning')
 
-setTimeout(process.exit, 512)
+setTimeout(process.exit, 16)
