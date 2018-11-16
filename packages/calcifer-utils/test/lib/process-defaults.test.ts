@@ -2,16 +2,16 @@
 
 import * as innerLib from '../../src/lib/process-defaults'
 import * as exported from '../../src'
-import { testHelpers } from '../../src/'
+import { execFile } from 'child_process'
 
-describe('When process-defaults is required directly:', () => {
+describe('When good-defaults is required directly:', () => {
   test('setProcessDefaults should be defined and be a function', () => {
     expect(innerLib.setProcessDefaults).toBeDefined()
     expect(typeof innerLib.setProcessDefaults).toBe('function')
   })
 })
 
-describe('When process-defaults is required from outside:', () => {
+describe('When good-defaults is required from outside:', () => {
   test('setProcessDefaults should be defined and be a function', () => {
     expect(exported.setProcessDefaults).toBeDefined()
     expect(typeof exported.setProcessDefaults).toBe('function')
@@ -20,8 +20,16 @@ describe('When process-defaults is required from outside:', () => {
 
 describe('Environment Defaults', () => {
   test('should be set once setProcessDefaults is called ', (done) => {
-    const child = testHelpers.execFileHelper(
-      'test/lib/fixtures/process-defaults/environment-defaults.ts',
+    const child = execFile(
+      './node_modules/.bin/nyc',
+      [
+        '--check-coverage',
+        'false',
+        './node_modules/.bin/ts-node',
+        '--project',
+        'test/tsconfig.json',
+        'test/lib/fixtures/process-defaults/environment-defaults.ts',
+      ],
       (error, stdout, stderr) => {
         const output = stdout.split('\n')
         expect(error).toBeNull
@@ -30,7 +38,7 @@ describe('Environment Defaults', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 16)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
@@ -41,8 +49,16 @@ describe('Environment Defaults', () => {
 
 describe('Multiple Resolves', () => {
   test('should be handled once the handler is installed ', (done) => {
-    const child = testHelpers.execFileHelper(
-      'test/lib/fixtures/process-defaults/multiple-resolves-handler.ts',
+    const child = execFile(
+      './node_modules/.bin/nyc',
+      [
+        '--check-coverage',
+        'false',
+        './node_modules/.bin/ts-node',
+        '--project',
+        'test/tsconfig.json',
+        'test/lib/fixtures/process-defaults/multiple-resolves-handler.ts',
+      ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
         expect(error).toBeNull
@@ -54,7 +70,7 @@ describe('Multiple Resolves', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 16)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
@@ -65,8 +81,16 @@ describe('Multiple Resolves', () => {
 
 describe('Uncaught Exception', () => {
   test('should be handled once the handler is installed ', (done) => {
-    const child = testHelpers.execFileHelper(
-      'test/lib/fixtures/process-defaults/uncaught-exception-handler.ts',
+    const child = execFile(
+      './node_modules/.bin/nyc',
+      [
+        '--check-coverage',
+        'false',
+        './node_modules/.bin/ts-node',
+        '--project',
+        'test/tsconfig.json',
+        'test/lib/fixtures/process-defaults/uncaught-exception-handler.ts',
+      ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
 
@@ -81,7 +105,7 @@ describe('Uncaught Exception', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 16)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
@@ -92,8 +116,16 @@ describe('Uncaught Exception', () => {
 
 describe('Unhandled Rejection', () => {
   test('should be handled once the handler is installed ', (done) => {
-    const child = testHelpers.execFileHelper(
-      'test/lib/fixtures/process-defaults/unhandled-rejection-handler.ts',
+    const child = execFile(
+      './node_modules/.bin/nyc',
+      [
+        '--check-coverage',
+        'false',
+        './node_modules/.bin/ts-node',
+        '--project',
+        'test/tsconfig.json',
+        'test/lib/fixtures/process-defaults/unhandled-rejection-handler.ts',
+      ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
 
@@ -108,7 +140,7 @@ describe('Unhandled Rejection', () => {
 
         expect(stderr).toEqual('')
 
-        setTimeout(done, 16)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
@@ -119,8 +151,16 @@ describe('Unhandled Rejection', () => {
 
 describe('Warnings', () => {
   test('should be handled once the handler is installed ', (done) => {
-    const child = testHelpers.execFileHelper(
-      'test/lib/fixtures/process-defaults/warning-handler.ts',
+    const child = execFile(
+      './node_modules/.bin/nyc',
+      [
+        '--check-coverage',
+        'false',
+        './node_modules/.bin/ts-node',
+        '--project',
+        'test/tsconfig.json',
+        'test/lib/fixtures/process-defaults/warning-handler.ts',
+      ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
         expect(error).toBeNull
@@ -132,7 +172,7 @@ describe('Warnings', () => {
 
         expect(stderr.includes('fixtureDesignedWarning'))
 
-        setTimeout(done, 16)
+        setTimeout(done, 256)
       })
 
     child.on('exit', (code) => {
