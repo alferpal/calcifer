@@ -6,8 +6,8 @@ setProcessDefaults()
 
 async function crash() {
   return await new Promise((resolve, reject) => {
-    resolve('first')
-    reject(new Error('third'))
+    resolve('click')
+    reject(new Error('boom'))
   })
 }
 crash().then(() => { })
