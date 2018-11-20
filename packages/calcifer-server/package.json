@@ -39,8 +39,7 @@
     "hapi-pino": "~5.1.0",
     "hapi-pulse": "~2.0.0",
     "lodash": "~4.17.10",
-    "pino-colada": "~1.4.4",
-    "wurst": "~3.0.1"
+    "pino-colada": "~1.4.4"
   },
   "devDependencies": {
     "@alferpal/calcifer-tslint-rules": "~1.0.5",
@@ -60,6 +59,7 @@
     "rimraf": "~2.6.2",
     "standard-version": "~4.4.0",
     "ts-jest": "~23.10.1",
+    "ts-node": "~7.0.1",
     "tslint": "~5.11.0",
     "typescript": "~3.1.5"
   },

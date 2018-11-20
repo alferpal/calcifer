@@ -4,7 +4,7 @@ global.Promise = require('bluebird')
 
 import hapi = require('hapi')
 import path = require('path')
-import { logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
+import { getRoutes, logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 
 setProcessDefaults()
 
@@ -12,8 +12,16 @@ const server = new hapi.Server({
   port: 8192,
 })
 
-const start = async () => {
+async function init() {
+  const routesPath = path.join(__dirname, 'routes')
+
   try {
+    const routes = await getRoutes(routesPath)
+
+    routes.map((route) => {
+      server.route(route)
+    })
+
     await server.register(require('blipp'))
 
     await server.register({
@@ -27,23 +35,20 @@ const start = async () => {
       plugin: require('hapi-pulse'),
       options: {
         logger: log,
-        timeout: 32768
+        timeout: 32768,
       },
     })
 
-    await server.register({
-      plugin: require('wurst'),
-      options: {
-        cwd: path.join(__dirname, 'routes'),
-      },
-    })
+    if (!module.parent) {
+      await server.start()
 
-    await server.start()
-
-    log.info(`Server running at: ${server.info.uri}`)
+      log.info(`Server running at: ${server.info.uri}`)
+    }
   } catch (err) {
     log.fatal('Error starting the server', err.stack)
   }
 }
 
-start()
+init()
+
+export = server
