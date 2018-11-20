@@ -18,4 +18,4 @@ const routes = [
   },
 ]
 
-module.exports = routes
+export { routes }
