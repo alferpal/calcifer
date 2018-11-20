@@ -50,7 +50,7 @@
     "@types/hapi": "~17.6.3",
     "@types/jest": "~23.3.9",
     "@types/lodash": "~4.14.109",
-    "@types/node": "~10.12.6",
+    "@types/node": "~10.12.9",
     "cz-conventional-changelog": "~2.1.0",
     "jest": "~23.6.0",
     "npm-run-all": "~4.1.3",
