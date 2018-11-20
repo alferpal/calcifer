@@ -1,16 +1,16 @@
 {
   "all": true,
-  "branches": 99,
+  "branches": 83,
   "cache": true,
   "check-coverage": true,
   "extension": [
     ".ts"
   ],
-  "functions": 99,
+  "functions": 83,
   "include": [
     "src/**/*.ts"
   ],
-  "lines": 99,
+  "lines": 83,
   "per-file": true,
   "reporter": [
     "clover",
@@ -20,5 +20,23 @@
     "text",
     "text-summary"
   ],
-  "statements": 99
+  "statements": 83,
+  "watermarks": {
+    "lines": [
+      83,
+      95
+    ],
+    "functions": [
+      83,
+      95
+    ],
+    "branches": [
+      83,
+      95
+    ],
+    "statements": [
+      83,
+      95
+    ]
+  }
 }
