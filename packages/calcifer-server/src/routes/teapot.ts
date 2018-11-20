@@ -1,8 +1,5 @@
 'use strict'
 
-// Funny / nonsensical route just to test that
-// this API in fact loads multiple routes from multiple files
-
 import boom = require('boom')
 
 const routes = [
