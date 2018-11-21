@@ -34,7 +34,7 @@
   "devDependencies": {
     "commitizen": "~3.0.4",
     "cz-conventional-changelog": "~2.1.0",
-    "husky": "~1.1.2",
+    "husky": "~1.2.0",
     "lerna": "~3.4.0",
     "standard-version": "~4.4.0",
     "weallbehave": "~1.2.0",
