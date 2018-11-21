@@ -12,7 +12,7 @@
     "lint:test": "tslint -c tslint.json -p test",
     "prebuild": "npm-run-all -p  clean lint",
     "pretest": "npm run build",
-    "test": "nyc jest"
+    "test": "NODE_ENV=test nyc jest"
   },
   "repository": {
     "type": "git",

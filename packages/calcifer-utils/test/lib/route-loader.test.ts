@@ -7,14 +7,14 @@ import path from 'path'
 describe('When good-defaults is required directly:', () => {
   test('getRoutes should be defined and be a function', () => {
     expect(innerLib.getRoutes).toBeDefined()
-    expect(typeof innerLib.getRoutes).toBe('function')
+    expect(typeof innerLib.getRoutes).toEqual('function')
   })
 })
 
 describe('When good-defaults is required from outside:', () => {
   test('getRoutes should be defined and be a function', () => {
     expect(exported.getRoutes).toBeDefined()
-    expect(typeof exported.getRoutes).toBe('function')
+    expect(typeof exported.getRoutes).toEqual('function')
   })
 })
 
