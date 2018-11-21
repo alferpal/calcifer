@@ -6,10 +6,14 @@ import hapi = require('hapi')
 import path = require('path')
 import { getRoutes, logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 
+const port = process.env.CALCIFER_SERVER_PORT
+  ? process.env.CALCIFER_SERVER_PORT
+  : '0'
+
 setProcessDefaults()
 
 const server = new hapi.Server({
-  port: 8192,
+  port,
 })
 
 async function init() {
@@ -22,7 +26,14 @@ async function init() {
       server.route(route)
     })
 
-    await server.register(require('blipp'))
+    await server.register({
+      plugin: require('blipp'),
+      options: {
+        showAuth: true,
+        showScope: true,
+        showStart: true,
+      },
+    })
 
     await server.register({
       plugin: require('hapi-pino'),
@@ -45,10 +56,12 @@ async function init() {
       log.info(`Server running at: ${server.info.uri}`)
     }
   } catch (err) {
-    log.fatal('Error starting the server', err.stack)
+    log.fatal('Error preparing the server', err.stack)
   }
 }
 
-init()
+if (!module.parent) {
+  init()
+}
 
-export = server
+export { init as prepareServer, server }

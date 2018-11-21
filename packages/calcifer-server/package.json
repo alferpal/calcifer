@@ -14,7 +14,7 @@
     "prerelease": "npm test ",
     "pretest": "npm run build",
     "start": "node dist/server.js | pino-colada",
-    "test": "nyc jest"
+    "test": "NODE_ENV=test nyc jest"
   },
   "repository": {
     "type": "git",
