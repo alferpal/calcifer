@@ -7,6 +7,10 @@ import { execFile } from 'child_process'
 const nycOptions = [
   '--check-coverage',
   'false',
+  '--reporter',
+  'none',
+  '--silent',
+  'true',
   './node_modules/.bin/ts-node',
   '--project',
   'test/tsconfig.json',
@@ -17,14 +21,14 @@ const nycPath = './node_modules/.bin/nyc'
 describe('When good-defaults is required directly:', () => {
   test('setProcessDefaults should be defined and be a function', () => {
     expect(innerLib.setProcessDefaults).toBeDefined()
-    expect(typeof innerLib.setProcessDefaults).toBe('function')
+    expect(typeof innerLib.setProcessDefaults).toEqual('function')
   })
 })
 
 describe('When good-defaults is required from outside:', () => {
   test('setProcessDefaults should be defined and be a function', () => {
     expect(exported.setProcessDefaults).toBeDefined()
-    expect(typeof exported.setProcessDefaults).toBe('function')
+    expect(typeof exported.setProcessDefaults).toEqual('function')
   })
 })
 
@@ -96,7 +100,7 @@ describe('Uncaught Exception', () => {
         expect(output.level).toEqual(60)
         expect(output.msg.includes('catch this!'))
         expect(output.stack).toBeDefined
-        expect(output.type).toBe('Error')
+        expect(output.type).toEqual('Error')
 
         expect(stderr).toEqual('')
 
@@ -126,7 +130,7 @@ describe('Unhandled Rejection', () => {
         expect(output.level).toEqual(60)
         expect(output.msg.includes('catch this!'))
         expect(output.stack).toBeDefined
-        expect(output.type).toBe('Error')
+        expect(output.type).toEqual('Error')
 
         expect(stderr).toEqual('')
 
