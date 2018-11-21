@@ -38,7 +38,7 @@
     "@alferpal/calcifer-typings": "~1.0.5",
     "@types/hapi": "~17.6.3",
     "@types/jest": "~23.3.9",
-    "@types/node": "~10.12.9",
+    "@types/node": "~10.12.10",
     "@types/pino": "~5.8.1",
     "jest": "~23.6.0",
     "npm-run-all": "~4.1.3",
