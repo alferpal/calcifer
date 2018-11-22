@@ -3,7 +3,11 @@
 import * as Hapi from 'hapi'
 import fastGlob = require('fast-glob')
 
-const toFind = ['./**/*.js', './**/*.ts', '!./**/*.d.ts']
+const toFind = [
+  './**/*.js',
+  './**/*.ts',
+  '!./**/*.d.ts',
+]
 
 async function getRoutes(path: string) {
   const files = await fastGlob(toFind, {
