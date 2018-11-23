@@ -2,7 +2,26 @@
 
 module.exports = {
   bail: true,
-  collectCoverage: false,
+  collectCoverage: true,
+  collectCoverageFrom: [
+    'src/**/*.ts'
+  ],
+  coverageReporters: [
+    'clover',
+    'html',
+    'json',
+    'lcov',
+    'text',
+    'text-summary',
+  ],
+  coverageThreshold: {
+    global: {
+      branches: 83,
+      functions: 83,
+      lines: 83,
+      statements: 83
+    },
+  },
   globals: {
     'ts-jest': {
       tsConfig: 'test/tsconfig.json'
@@ -13,12 +32,9 @@ module.exports = {
     'js'
   ],
   preset: 'ts-jest',
-  projects: [
-    'packages/*'
-  ],
   testEnvironment: 'node',
   testMatch: [
-    '**/test/**/*.test.(ts|tsx)'
+    '**/*.test.(ts|tsx)'
   ],
   verbose: true
 }
