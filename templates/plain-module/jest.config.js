@@ -2,6 +2,8 @@
 
 const jestBase = require('../../jest.config.js')
 
-module.exports = {
+const config = {
   ...jestBase
 }
+
+module.exports=config
