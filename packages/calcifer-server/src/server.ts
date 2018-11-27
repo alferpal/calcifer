@@ -8,7 +8,7 @@ import { getRoutes, logger as log, setProcessDefaults } from '@alferpal/calcifer
 
 const port = process.env.CALCIFER_SERVER_PORT
   ? process.env.CALCIFER_SERVER_PORT
-  : '0'
+  : 0
 
 setProcessDefaults()
 

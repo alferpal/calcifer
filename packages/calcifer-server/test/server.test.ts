@@ -68,12 +68,12 @@ describe('When launching server directly', () => {
         () => {
           child.kill()
         },
-        4096)
+        2048)
 
       child.on('exit', (code) => {
         expect(child.killed).toEqual(true)
         expect(code).toEqual(0)
       })
     },
-    8192)
+    4096)
 })
