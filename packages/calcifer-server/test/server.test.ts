@@ -3,19 +3,12 @@
 import { execFile } from 'child_process'
 import { prepareServer, server } from '../src/server'
 
-const nycOptions = [
-  '--check-coverage',
-  'false',
-  '--reporter',
-  'none',
-  '--silent',
-  'true',
-  './node_modules/.bin/ts-node',
+const execOptions = [
   '--project',
   'test/tsconfig.json',
 ]
 
-const nycPath = './node_modules/.bin/nyc'
+const execPath = './node_modules/.bin/ts-node'
 
 describe('When importing server as a module', () => {
   test('prepareServer should be defined and be a function', () => {
@@ -55,13 +48,11 @@ describe('When launching server directly', () => {
     'should start by itself and stop when recieving SIGTERM',
     (done) => {
       const child = execFile(
-        nycPath, [
-          ...nycOptions,
+        execPath, [
+          ...execOptions,
           'src/server.ts',
         ],
         (error, stdout, stderr) => {
-          console.dir({ error, stderr, stdout: stdout.split('\n') }, { colors: true, depth: null })
-
           const stdoutLines = stdout.split('\n')
           const lastLine = JSON.parse(stdoutLines[stdoutLines.length - 2])
           expect(error).toBeNull
