@@ -1,4 +1,9 @@
 {
+  "command": {
+    "publish": {
+      "allowBranch": "master"
+    }
+  },
   "packages": [
     "packages/*",
     "templates/*"
