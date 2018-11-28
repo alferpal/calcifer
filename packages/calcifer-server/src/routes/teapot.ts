@@ -6,13 +6,13 @@ const routes = [
   {
     method: ['GET'],
     path: '/coffee',
-    handler: function coffeeHandler() {
+    handler: () => {
       return boom.teapot()
     },
   }, {
     method: ['GET'],
     path: '/tea',
-    handler: function teaHandler() {
+    handler: () => {
       return boom.teapot('I\'m a server, not a teapot!')
     },
   },
