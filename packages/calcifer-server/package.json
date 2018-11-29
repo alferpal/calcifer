@@ -34,7 +34,7 @@
     "@alferpal/calcifer-utils": "~1.0.5",
     "blipp": "~3.1.1",
     "bluebird": "~3.5.3",
-    "boom": "~7.2.1",
+    "boom": "~7.3.0",
     "hapi": "~17.8.1",
     "hapi-pino": "~5.1.0",
     "hapi-pulse": "~2.0.0",
