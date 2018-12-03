@@ -2,6 +2,9 @@
   "command": {
     "publish": {
       "allowBranch": "master"
+    },
+    "run": {
+      "ignore": "@alferpal/*-template"
     }
   },
   "packages": [
