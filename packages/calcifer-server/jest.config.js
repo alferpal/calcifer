@@ -9,8 +9,8 @@ const config = {
 config.coverageThreshold['./src/server'] = {
   branches: 50,
   functions: 83,
-  lines: 81.82,
-  statements: 82.61
+  lines: 83,
+  statements: 83
 }
 
 module.exports=config

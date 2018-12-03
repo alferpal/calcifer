@@ -19,44 +19,38 @@ const server = new hapi.Server({
 async function init() {
   const routesPath = path.join(__dirname, 'routes')
 
-  try {
-    const routes = await getRoutes(routesPath)
+  const routes = await getRoutes(routesPath)
 
-    routes.map((route) => {
-      server.route(route)
-    })
+  server.route(routes)
 
-    await server.register({
-      plugin: require('blipp'),
-      options: {
-        showAuth: true,
-        showScope: true,
-        showStart: true,
-      },
-    })
+  await server.register({
+    plugin: require('blipp'),
+    options: {
+      showAuth: true,
+      showScope: true,
+      showStart: true,
+    },
+  })
 
-    await server.register({
-      plugin: require('hapi-pino'),
-      options: {
-        instance: log,
-      },
-    })
+  await server.register({
+    plugin: require('hapi-pino'),
+    options: {
+      instance: log,
+    },
+  })
 
-    await server.register({
-      plugin: require('hapi-pulse'),
-      options: {
-        logger: log,
-        timeout: 32768,
-      },
-    })
+  await server.register({
+    plugin: require('hapi-pulse'),
+    options: {
+      logger: log,
+      timeout: 32768,
+    },
+  })
 
-    if (!module.parent) {
-      await server.start()
+  if (!module.parent) {
+    await server.start()
 
-      log.info(`Server running at: ${server.info.uri}`)
-    }
-  } catch (err) {
-    log.fatal('Error preparing the server', err.stack)
+    log.info(`Server running at: ${server.info.uri}`)
   }
 }
 
