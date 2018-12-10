@@ -5,6 +5,7 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --no-bail --stream",
     "clean": "lerna run clean --parallel --stream",
+    "codecov": "lerna run codecov",
     "commit": "git-cz",
     "lint": "lerna run lint --parallel --stream",
     "nuke": "npx rimraf **/node_modules **/package-lock.json",
