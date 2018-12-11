@@ -70,9 +70,10 @@ describe('When launching server directly', () => {
         },
         2048)
 
-      child.on('exit', (code) => {
+      child.on('exit', (code, signal) => {
         expect(child.killed).toEqual(true)
-        expect(code).toEqual(0)
+        expect(code).toBeNull()
+        expect(signal).toEqual('SIGTERM')
       })
     },
     4096)

@@ -6,13 +6,13 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.ts'
   ],
+  coverageDirectory: 'coverage-jest',
   coverageReporters: [
     'clover',
     'html',
     'json',
     'lcov',
     'text',
-    'text-summary',
   ],
   coverageThreshold: {
     global: {
