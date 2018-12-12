@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "description": "Provides type definitions shared across calcifer packages",
   "scripts": {
-    "build": "npm-run-all -p build:*",
+    "//build": "npm-run-all -p build:*",
     "build:src": "tsc -p src",
     "clean": "rimraf .nyc_output coverage* dist",
     "lint": "npm-run-all -p lint:*",
