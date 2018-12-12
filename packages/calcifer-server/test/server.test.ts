@@ -64,17 +64,17 @@ describe('When launching server directly', () => {
           setTimeout(done, 64)
         })
 
-      setTimeout(
-        () => {
+      child.stdout.on('data', (chunk) => {
+        if (chunk.includes('server started')) {
           child.kill()
-        },
-        2048)
+        }
+      })
 
       child.on('exit', (code, signal) => {
         expect(child.killed).toEqual(true)
-        expect(code).toBeNull()
-        expect(signal).toEqual('SIGTERM')
+        expect(code).toEqual(0)
+        expect(signal).toBeNull()
       })
     },
-    4096)
+    8192)
 })
