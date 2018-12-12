@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "description": "web server & UI for calcifer",
   "scripts": {
-    "build": "npm-run-all -p build:*",
+    "//build": "npm-run-all -p build:*",
     "build:src": "tsc -p src",
     "build:test": "tsc -p test",
     "clean": "rimraf .nyc_output coverage* dist",
@@ -14,7 +14,7 @@
     "prerelease": "npm test ",
     "pretest": "npm run build",
     "start": "node dist/server.js | pino-colada",
-    "test": "nyc jest"
+    "//test": "nyc jest"
   },
   "repository": {
     "type": "git",
