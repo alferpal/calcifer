@@ -37,7 +37,7 @@
     "@alferpal/calcifer-types": "~1.0.5",
     "@alferpal/calcifer-typings": "~1.0.5",
     "@types/hapi": "~17.8.2",
-    "@types/jest": "~23.3.9",
+    "@types/jest": "~23.3.11",
     "@types/node": "~10.12.15",
     "@types/pino": "~5.8.1",
     "jest": "~23.6.0",
