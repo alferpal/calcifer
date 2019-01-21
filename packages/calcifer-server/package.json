@@ -47,7 +47,7 @@
     "@alferpal/calcifer-typings": "~1.0.5",
     "@types/bluebird": "~3.5.25",
     "@types/boom": "~7.2.0",
-    "@types/hapi": "~17.8.2",
+    "@types/hapi": "~17.8.4",
     "@types/jest": "~23.3.12",
     "@types/lodash": "~4.14.120",
     "@types/node": "~10.12.15",
