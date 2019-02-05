@@ -19,7 +19,7 @@ describe('When route-loader is required from outside:', () => {
 })
 
 describe('getRoutes', () => {
-  test('should  return an array with 4 routes from the fixtures folder ', async () => {
+  test('should return an array with 4 routes from the fixtures folder ', async () => {
     const routesPath = path.join(__dirname, '../../test/lib/fixtures/route-loader')
     const routes = await innerLib.getRoutes(routesPath)
 
