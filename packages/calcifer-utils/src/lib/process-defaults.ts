@@ -45,7 +45,7 @@ function multipleResolves(type: string, promise: Promise<any>, reason: any) {
  *  - warning
  */
 function setProcessDefaults() {
-  const callbacks: { [id: string]: (...args: any) => void } = {
+  const callbacks: { [id: string]: (...args: any[]) => void } = {
     multipleResolves,
     uncaughtException,
     unhandledRejection,
