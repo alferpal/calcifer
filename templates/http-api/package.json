@@ -18,7 +18,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:alferpal/calcifer.git"
+    "url": "git@github.com:alferpal/calcifer.git",
+    "directory": "packages/calcifer-api-template"
   },
   "homepage": "https://github.com/alferpal/calcifer",
   "bugs": "https://github.com/alferpal/calcifer/issues",
