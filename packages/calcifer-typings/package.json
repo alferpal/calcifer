@@ -4,7 +4,8 @@
   "description": "Typings for dependencies not found in @types",
   "repository": {
     "type": "git",
-    "url": "git@github.com:alferpal/calcifer.git"
+    "url": "git@github.com:alferpal/calcifer.git",
+    "directory": "packages/calcifer-typings"
   },
   "homepage": "https://github.com/alferpal/calcifer",
   "bugs": "https://github.com/alferpal/calcifer/issues",
