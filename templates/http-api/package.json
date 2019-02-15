@@ -48,7 +48,7 @@
     "@types/bluebird": "~3.5.25",
     "@types/boom": "~7.2.0",
     "@types/hapi": "~18.0.1",
-    "@types/jest": "~24.0.4",
+    "@types/jest": "~24.0.5",
     "@types/lodash": "~4.14.121",
     "@types/node": "~10.12.26",
     "cz-conventional-changelog": "~2.1.0",
