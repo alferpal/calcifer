@@ -8,7 +8,7 @@ beforeAll(async () => {
   await server.initialize()
 })
 
-describe('About the /coffee route', async () => {
+describe('About the /coffee route', () => {
   test('It should return a 418 error', async () => {
     const options = {
       method: 'GET',
@@ -24,7 +24,7 @@ describe('About the /coffee route', async () => {
   })
 })
 
-describe('About the /tea route', async () => {
+describe('About the /tea route', () => {
   test('It should return a 418 error with a custom message', async () => {
     const options = {
       method: 'GET',
