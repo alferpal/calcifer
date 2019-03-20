@@ -20,7 +20,7 @@
   "dependencies": {
     "tslint": "~5.13.1",
     "tslint-config-airbnb": "~5.11.0",
-    "typescript": "~3.3.3333"
+    "typescript": "~3.3.4000"
   },
   "main": "tslint.json",
   "publishConfig": {
