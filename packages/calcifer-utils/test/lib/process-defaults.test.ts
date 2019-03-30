@@ -63,7 +63,7 @@ describe('Multiple Resolves', () => {
         expect(output.calciferName).toBeDefined
         expect(output.calciferType).toBeDefined
         expect(output.level).toEqual(60)
-        expect(output.msg.includes('mulipleResolves'))
+        expect(output.msg.includes('mulipleResolves')).toBe(true)
 
         expect(stderr).toEqual('')
 
@@ -91,7 +91,7 @@ describe('Uncaught Exception', () => {
         expect(output.calciferName).toBeDefined
         expect(output.calciferType).toBeDefined
         expect(output.level).toEqual(60)
-        expect(output.msg.includes('catch this!'))
+        expect(output.msg.includes('catch this!')).toBe(true)
         expect(output.stack).toBeDefined
         expect(output.type).toEqual('Error')
 
@@ -121,7 +121,7 @@ describe('Unhandled Rejection', () => {
         expect(output.calciferName).toBeDefined
         expect(output.calciferType).toBeDefined
         expect(output.level).toEqual(60)
-        expect(output.msg.includes('catch this!'))
+        expect(output.msg.includes('catch this!')).toBe(true)
         expect(output.stack).toBeDefined
         expect(output.type).toEqual('Error')
 
