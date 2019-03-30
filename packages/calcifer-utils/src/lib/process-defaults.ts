@@ -76,10 +76,10 @@ function uncaughtException(err: Error) {
  * Handler for unhandledRejection
  * Prints the error synchronously and exits the process
  * - @param reason The error
- * - @param promise The promise with an unhandled rejection
  */
-function unhandledRejection(reason: Error | any, promise: Promise<any>) {
-  finalLogger.fatal(reason, promise)
+function unhandledRejection(reason: Error | any) {
+  finalLogger.fatal(reason)
+
   exit(1)
 }
 
