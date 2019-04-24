@@ -62,7 +62,7 @@
     "ts-jest": "~24.0.2",
     "ts-node": "~8.1.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.4"
+    "typescript": "~3.4.5"
   },
   "publishConfig": {
     "access": "public"
