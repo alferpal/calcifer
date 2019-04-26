@@ -1,6 +1,6 @@
 'use strict'
 
-import boom = require('boom')
+import boom = require('@hapi/boom')
 
 const routes = [
   {

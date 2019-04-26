@@ -1,6 +1,6 @@
 'use strict'
 
-import * as Hapi from 'hapi'
+import * as Hapi from '@hapi/hapi'
 import fastGlob = require('fast-glob')
 
 const toFind = [
