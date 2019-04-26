@@ -2,7 +2,7 @@
 
 global.Promise = require('bluebird')
 
-import hapi = require('hapi')
+import hapi = require('@hapi/hapi')
 import path = require('path')
 import { getRoutes, logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 
