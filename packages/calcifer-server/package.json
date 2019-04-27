@@ -33,10 +33,10 @@
   "license": "MIT",
   "dependencies": {
     "@alferpal/calcifer-utils": "~1.0.5",
-    "blipp": "~4.0.0",
-    "bluebird": "~3.5.4",
     "@hapi/boom": "~7.4.2",
     "@hapi/hapi": "~18.3.1",
+    "blipp": "~4.0.0",
+    "bluebird": "~3.5.4",
     "hapi-pino": "~5.4.0",
     "hapi-pulse": "~2.2.1",
     "lodash": "~4.17.10",
