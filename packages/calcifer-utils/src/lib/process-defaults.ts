@@ -52,7 +52,7 @@ function setProcessDefaults() {
     warning,
   }
 
-  Object.keys(callbacks).map((event) => {
+  Object.keys(callbacks).forEach((event) => {
     process.removeListener(event, callbacks[event])
     // @ts-ignore
     process.on(event, callbacks[event])
