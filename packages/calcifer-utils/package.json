@@ -31,7 +31,7 @@
   "license": "MIT",
   "dependencies": {
     "fast-glob": "~2.2.7",
-    "pino": "~5.12.5"
+    "pino": "~5.12.6"
   },
   "devDependencies": {
     "@alferpal/calcifer-tslint-rules": "~1.0.5",
