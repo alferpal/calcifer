@@ -36,7 +36,7 @@
     "@alferpal/calcifer-tslint-rules": "~1.0.5",
     "@alferpal/calcifer-types": "~1.0.5",
     "@alferpal/calcifer-typings": "~1.0.5",
-    "@types/bluebird": "~3.5.26",
+    "@types/bluebird": "~3.5.27",
     "@types/jest": "~24.0.13",
     "@types/node": "~10.14.7",
     "jest": "~24.8.0",
