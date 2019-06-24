@@ -30,7 +30,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "fast-glob": "~2.2.7",
+    "fast-glob": "~3.0.2",
     "pino": "~5.12.6"
   },
   "devDependencies": {
