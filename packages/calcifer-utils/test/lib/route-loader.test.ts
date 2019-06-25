@@ -25,7 +25,7 @@ describe('getRoutes', () => {
 
     expect(routes.length).toEqual(4)
 
-    routes.map((route) => {
+    routes.forEach((route) => {
       expect(route.method).toBeDefined
       expect(typeof route.method[0]).toEqual('string')
 
