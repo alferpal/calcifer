@@ -13,17 +13,17 @@ async function getRoutes(path: string) {
   const files = await fastGlob(toFind, {
     absolute: true,
     cwd: path,
-    deep: true,
     onlyFiles: true,
   })
 
   const routes: Hapi.ServerRoute[] = []
 
-  files.map((filePath) => {
-    require(`${filePath}`).routes.map((route: Hapi.ServerRoute) => {
+  files.forEach((filePath) => {
+    require(`${filePath}`).routes.forEach((route: Hapi.ServerRoute) => {
       routes.push(route)
     })
   })
+
   return routes
 }
 
