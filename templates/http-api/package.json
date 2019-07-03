@@ -39,7 +39,7 @@
     "bluebird": "~3.5.5",
     "hapi-pino": "~6.0.1",
     "lodash": "~4.17.10",
-    "pino-colada": "~1.4.4"
+    "pino-colada": "~1.4.5"
   },
   "devDependencies": {
     "@alferpal/calcifer-tslint-rules": "~1.0.5",
