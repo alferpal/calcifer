@@ -50,7 +50,7 @@
     "@types/hapi__boom": "~7.4.0",
     "@types/hapi__hapi": "~18.2.5",
     "@types/jest": "~24.0.15",
-    "@types/lodash": "~4.14.135",
+    "@types/lodash": "~4.14.136",
     "@types/node": "~10.14.12",
     "cz-conventional-changelog": "~2.1.0",
     "jest": "~24.8.0",
