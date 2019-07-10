@@ -39,7 +39,7 @@
     "bluebird": "~3.5.5",
     "hapi-pino": "~6.0.1",
     "hapi-pulse": "~2.2.1",
-    "lodash": "~4.17.10",
+    "lodash": "~4.17.13",
     "pino-colada": "~1.4.5"
   },
   "devDependencies": {
