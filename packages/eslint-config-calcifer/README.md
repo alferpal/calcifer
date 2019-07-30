@@ -1,4 +1,4 @@
-# calcifer-tslint-rules
+# eslint-config-calcifer
 
 This package provides tslint configuration shared across calcifer packages.
 
