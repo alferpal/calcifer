@@ -1,7 +1,7 @@
-'use strict'
+
+import { prepareServer, server } from '../../src/server'
 
 import boom = require('@hapi/boom')
-import { prepareServer, server } from '../../src/server'
 
 beforeAll(async () => {
   await prepareServer()
@@ -32,6 +32,7 @@ describe('About the /tea route', () => {
     }
 
     const response = await server.inject(options)
+
     const payload: boom.Payload = JSON.parse(response.payload)
 
     expect(payload.statusCode).toEqual(418)

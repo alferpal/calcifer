@@ -1,4 +1,3 @@
-'use strict'
 
 import boom = require('@hapi/boom')
 
@@ -6,15 +5,11 @@ const routes = [
   {
     method: ['GET'],
     path: '/coffee',
-    handler: () => {
-      return boom.teapot()
-    },
+    handler: () => boom.teapot(),
   }, {
     method: ['GET'],
     path: '/tea',
-    handler: () => {
-      return boom.teapot('I\'m a server, not a teapot!')
-    },
+    handler: () => boom.teapot('I\'m a server, not a teapot!'),
   },
 ]
 
