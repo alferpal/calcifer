@@ -1,5 +1,3 @@
-'use strict'
-
 const routes = [
   {
     method: ['GET'],

@@ -1,4 +1,3 @@
-'use strict'
 
 import * as innerLib from '../../src/lib/log'
 import * as exported from '../../src'

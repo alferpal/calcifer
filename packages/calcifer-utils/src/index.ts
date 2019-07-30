@@ -1,4 +1,3 @@
-'use strict'
 
 import { getRoutes } from './lib/route-loader'
 import { logger } from './lib/log'

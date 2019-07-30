@@ -1,8 +1,7 @@
-'use strict'
 
+import path from 'path'
 import * as innerLib from '../../src/lib/route-loader'
 import * as exported from '../../src'
-import path from 'path'
 
 describe('When route-loader is required directly:', () => {
   test('getRoutes should be defined and be a function', () => {
@@ -25,14 +24,14 @@ describe('getRoutes', () => {
 
     expect(routes.length).toEqual(4)
 
-    routes.forEach((route) => {
-      expect(route.method).toBeDefined
+    routes.forEach(route => {
+      expect(route.method).toBeDefined()
       expect(typeof route.method[0]).toEqual('string')
 
-      expect(route.path).toBeDefined
+      expect(route.path).toBeDefined()
       expect(typeof route.path).toEqual('string')
 
-      expect(route.handler).toBeDefined
+      expect(route.handler).toBeDefined()
       expect(typeof route.handler).toEqual('function')
     })
   })

@@ -1,5 +1,3 @@
-'use strict'
-
 import pino = require('pino')
 
 const logger = pino(pino.destination())
