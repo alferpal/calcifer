@@ -1,0 +1,11 @@
+{
+  "eslint.workingDirectories": [
+    "./packages/calcifer-cli",
+    "./packages/calcifer-server",
+    "./packages/calcifer-types",
+    "./packages/calcifer-typings",
+    "./packages/calcifer-utils",
+    "./packages/calcifer-web",
+    "./packages/eslint-config-calcifer",
+  ]
+}
