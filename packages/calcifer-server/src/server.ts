@@ -1,10 +1,10 @@
-'use strict'
+
+import { getRoutes, logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 
 global.Promise = require('bluebird')
 
 import hapi = require('@hapi/hapi')
 import path = require('path')
-import { getRoutes, logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 
 const port = process.env.CALCIFER_SERVER_PORT
   ? process.env.CALCIFER_SERVER_PORT
@@ -22,6 +22,8 @@ async function init() {
   const routes = await getRoutes(routesPath)
 
   server.route(routes)
+
+  /* eslint-disable global-require */
 
   await server.register({
     plugin: require('blipp'),
@@ -46,6 +48,8 @@ async function init() {
       timeout: 32768,
     },
   })
+
+  /* eslint-enable global-require */
 
   if (!module.parent) {
     await server.start()
