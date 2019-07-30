@@ -1,8 +1,7 @@
-'use strict'
 
+import { execFile } from 'child_process'
 import * as innerLib from '../../src/lib/process-defaults'
 import * as exported from '../../src'
-import { execFile } from 'child_process'
 
 const execOptions = [
   '--project',
@@ -26,7 +25,7 @@ describe('When good-defaults is required from outside:', () => {
 })
 
 describe('Environment Defaults', () => {
-  test('should be set once setProcessDefaults is called ', (done) => {
+  test('should be set once setProcessDefaults is called ', done => {
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -34,23 +33,24 @@ describe('Environment Defaults', () => {
       ],
       (error, stdout, stderr) => {
         const output = stdout.split('\n')
-        expect(error).toBeNull
+        expect(error).toBeNull()
 
         expect(output[0]).toEqual('128')
 
         expect(stderr).toEqual('')
 
         setTimeout(done, 64)
-      })
+      },
+    )
 
-    child.on('exit', (code) => {
+    child.on('exit', code => {
       expect(code).toEqual(0)
     })
   })
 })
 
 describe('Multiple Resolves', () => {
-  test('should be handled once the handler is installed ', (done) => {
+  test('should be handled once the handler is installed ', done => {
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -58,26 +58,27 @@ describe('Multiple Resolves', () => {
       ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
-        expect(error).toBeNull
+        expect(error).toBeNull()
 
-        expect(output.calciferName).toBeDefined
-        expect(output.calciferType).toBeDefined
+        expect(output.calciferName).toBeDefined()
+        expect(output.calciferType).toBeDefined()
         expect(output.level).toEqual(60)
         expect(output.msg.includes('mulipleResolves')).toBe(true)
 
         expect(stderr).toEqual('')
 
         setTimeout(done, 64)
-      })
+      },
+    )
 
-    child.on('exit', (code) => {
+    child.on('exit', code => {
       expect(code).toEqual(1)
     })
   })
 })
 
 describe('Uncaught Exception', () => {
-  test('should be handled once the handler is installed ', (done) => {
+  test('should be handled once the handler is installed ', done => {
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -86,28 +87,29 @@ describe('Uncaught Exception', () => {
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
 
-        expect(error).toBeNull
+        expect(error).toBeNull()
 
-        expect(output.calciferName).toBeDefined
-        expect(output.calciferType).toBeDefined
+        expect(output.calciferName).toBeDefined()
+        expect(output.calciferType).toBeDefined()
         expect(output.level).toEqual(60)
         expect(output.msg.includes('catch this!')).toBe(true)
-        expect(output.stack).toBeDefined
+        expect(output.stack).toBeDefined()
         expect(output.type).toEqual('Error')
 
         expect(stderr).toEqual('')
 
         setTimeout(done, 64)
-      })
+      },
+    )
 
-    child.on('exit', (code) => {
+    child.on('exit', code => {
       expect(code).toEqual(1)
     })
   })
 })
 
 describe('Unhandled Rejection', () => {
-  test('should be handled once the handler is installed ', (done) => {
+  test('should be handled once the handler is installed ', done => {
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -116,28 +118,29 @@ describe('Unhandled Rejection', () => {
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
 
-        expect(error).toBeNull
+        expect(error).toBeNull()
 
-        expect(output.calciferName).toBeDefined
-        expect(output.calciferType).toBeDefined
+        expect(output.calciferName).toBeDefined()
+        expect(output.calciferType).toBeDefined()
         expect(output.level).toEqual(60)
         expect(output.msg.includes('catch this!')).toBe(true)
-        expect(output.stack).toBeDefined
+        expect(output.stack).toBeDefined()
         expect(output.type).toEqual('Error')
 
         expect(stderr).toEqual('')
 
         setTimeout(done, 64)
-      })
+      },
+    )
 
-    child.on('exit', (code) => {
+    child.on('exit', code => {
       expect(code).toEqual(1)
     })
   })
 })
 
 describe('Warnings', () => {
-  test('should be handled once the handler is installed ', (done) => {
+  test('should be handled once the handler is installed ', done => {
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -145,19 +148,21 @@ describe('Warnings', () => {
       ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
-        expect(error).toBeNull
 
-        expect(output.calciferName).toBeDefined
-        expect(output.calciferType).toBeDefined
+        expect(error).toBeNull()
+
+        expect(output.calciferName).toBeDefined()
+        expect(output.calciferType).toBeDefined()
         expect(output.level).toEqual(40)
         expect(output.msg.includes('fixtureDesignedWarning'))
 
         expect(stderr.includes('fixtureDesignedWarning'))
 
         setTimeout(done, 64)
-      })
+      },
+    )
 
-    child.on('exit', (code) => {
+    child.on('exit', code => {
       expect(code).toEqual(0)
     })
   })
