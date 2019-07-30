@@ -58,7 +58,7 @@ describe('Multiple Resolves', () => {
       ],
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
-        expect(error).toBeNull()
+        expect(error).not.toBeNull()
 
         expect(output.calciferName).toBeDefined()
         expect(output.calciferType).toBeDefined()
@@ -87,7 +87,7 @@ describe('Uncaught Exception', () => {
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
 
-        expect(error).toBeNull()
+        expect(error).not.toBeNull()
 
         expect(output.calciferName).toBeDefined()
         expect(output.calciferType).toBeDefined()
@@ -118,7 +118,7 @@ describe('Unhandled Rejection', () => {
       (error, stdout, stderr) => {
         const output = JSON.parse(stdout.split('\n')[0])
 
-        expect(error).toBeNull()
+        expect(error).not.toBeNull()
 
         expect(output.calciferName).toBeDefined()
         expect(output.calciferType).toBeDefined()
