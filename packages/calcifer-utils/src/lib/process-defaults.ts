@@ -1,7 +1,7 @@
-'use strict'
+
+import { logger, finalLogger } from './log'
 
 import os = require('os')
-import { logger, finalLogger } from './log'
 
 /**
  *  Sets some environmental defaults as listed:
@@ -9,9 +9,9 @@ import { logger, finalLogger } from './log'
  * - UV_THREADPOOL_SIZE: Already existing value or number of CPUs if not defined
  */
 function environmentDefaults() {
-  const cpus = process.env.UV_THREADPOOL_SIZE ?
-    process.env.UV_THREADPOOL_SIZE :
-    os.cpus().length
+  const cpus = process.env.UV_THREADPOOL_SIZE
+    ? process.env.UV_THREADPOOL_SIZE
+    : os.cpus().length
 
   process.env.UV_THREADPOOL_SIZE = `${cpus}`
 }
@@ -52,7 +52,7 @@ function setProcessDefaults() {
     warning,
   }
 
-  Object.keys(callbacks).forEach((event) => {
+  Object.keys(callbacks).forEach(event => {
     process.removeListener(event, callbacks[event])
     // @ts-ignore
     process.on(event, callbacks[event])
