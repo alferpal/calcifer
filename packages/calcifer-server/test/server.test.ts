@@ -1,4 +1,3 @@
-'use strict'
 
 import { execFile } from 'child_process'
 import { prepareServer, server } from '../src/server'
@@ -46,7 +45,7 @@ describe('When importing server as a module', () => {
 describe('When launching server directly', () => {
   test(
     'should start by itself and stop when recieving SIGTERM',
-    (done) => {
+    done => {
       const child = execFile(
         execPath, [
           ...execOptions,
@@ -55,16 +54,18 @@ describe('When launching server directly', () => {
         (error, stdout, stderr) => {
           const stdoutLines = stdout.split('\n')
           const lastLine = JSON.parse(stdoutLines[stdoutLines.length - 2])
-          expect(error).toBeNull
+
+          expect(error).toBeNull()
 
           expect(lastLine.msg).toEqual('server stopped')
 
           expect(stderr).toEqual('')
 
           setTimeout(done, 64)
-        })
+        },
+      )
 
-      child.stdout.on('data', (chunk) => {
+      child.stdout.on('data', chunk => {
         if (chunk.includes('server started')) {
           child.kill()
         }
@@ -76,5 +77,6 @@ describe('When launching server directly', () => {
         expect(signal).toBeNull()
       })
     },
-    8192)
+    8192,
+  )
 })
