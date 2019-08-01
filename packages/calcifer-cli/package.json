@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI for operating calcifer",
   "scripts": {
     "//build": "npm-run-all -p build:*",
@@ -30,12 +30,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@alferpal/calcifer-utils": "~1.0.5"
+    "@alferpal/calcifer-utils": "^1.0.6"
   },
   "devDependencies": {
-    "@alferpal/calcifer-types": "~1.0.5",
-    "@alferpal/calcifer-typings": "~1.0.5",
-    "@alferpal/eslint-config-calcifer": "~1.0.5",
+    "@alferpal/calcifer-types": "^1.0.6",
+    "@alferpal/calcifer-typings": "^1.0.6",
+    "@alferpal/eslint-config-calcifer": "^1.0.6",
     "@types/jest": "~24.0.16",
     "@types/node": "~10.14.13",
     "@typescript-eslint/eslint-plugin": "~1.13.0",

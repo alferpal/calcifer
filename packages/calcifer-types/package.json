@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-types",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Provides type definitions shared across calcifer packages",
   "scripts": {
     "//build": "npm-run-all -p build:*",
@@ -26,8 +26,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@alferpal/calcifer-typings": "~1.0.5",
-    "@alferpal/eslint-config-calcifer": "~1.0.5",
+    "@alferpal/calcifer-typings": "^1.0.6",
+    "@alferpal/eslint-config-calcifer": "^1.0.6",
     "@types/node": "~10.14.13",
     "@typescript-eslint/eslint-plugin": "~1.13.0",
     "@typescript-eslint/parser": "~1.13.0",
