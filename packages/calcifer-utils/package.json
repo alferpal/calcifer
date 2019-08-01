@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Shared utilities across calcifer packages",
   "scripts": {
     "build": "npm-run-all -p build:*",
@@ -34,9 +34,9 @@
     "pino": "~5.13.1"
   },
   "devDependencies": {
-    "@alferpal/calcifer-types": "~1.0.5",
-    "@alferpal/calcifer-typings": "~1.0.5",
-    "@alferpal/eslint-config-calcifer": "~1.0.5",
+    "@alferpal/calcifer-types": "^1.0.6",
+    "@alferpal/calcifer-typings": "^1.0.6",
+    "@alferpal/eslint-config-calcifer": "^1.0.6",
     "@types/hapi__hapi": "~18.2.5",
     "@types/jest": "~24.0.16",
     "@types/node": "~10.14.13",

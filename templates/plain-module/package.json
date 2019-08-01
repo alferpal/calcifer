@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-plain-module-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "change-this-please",
   "scripts": {
     "build": "npm-run-all -p build:*",
@@ -33,9 +33,9 @@
     "bluebird": "~3.5.5"
   },
   "devDependencies": {
-    "@alferpal/calcifer-types": "~1.0.5",
-    "@alferpal/calcifer-typings": "~1.0.5",
-    "@alferpal/eslint-config-calcifer": "~1.0.5",
+    "@alferpal/calcifer-types": "^1.0.6",
+    "@alferpal/calcifer-typings": "^1.0.6",
+    "@alferpal/eslint-config-calcifer": "^1.0.6",
     "@types/bluebird": "~3.5.27",
     "@types/jest": "~24.0.16",
     "@types/node": "~10.14.13",

@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-server",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Main server for calcifer",
   "scripts": {
     "build": "npm-run-all -p build:*",
@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@alferpal/calcifer-utils": "~1.0.5",
+    "@alferpal/calcifer-utils": "^1.0.6",
     "@hapi/boom": "~7.4.2",
     "@hapi/hapi": "~18.3.1",
     "blipp": "~4.0.0",
@@ -43,9 +43,9 @@
     "pino-colada": "~1.4.5"
   },
   "devDependencies": {
-    "@alferpal/calcifer-types": "~1.0.5",
-    "@alferpal/calcifer-typings": "~1.0.5",
-    "@alferpal/eslint-config-calcifer": "~1.0.5",
+    "@alferpal/calcifer-types": "^1.0.6",
+    "@alferpal/calcifer-typings": "^1.0.6",
+    "@alferpal/eslint-config-calcifer": "^1.0.6",
     "@types/bluebird": "~3.5.27",
     "@types/hapi__boom": "~7.4.0",
     "@types/hapi__hapi": "~18.2.5",
