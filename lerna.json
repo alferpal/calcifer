@@ -7,6 +7,9 @@
       "ignore": "@alferpal/*-template"
     }
   },
+  "ignoreChanges": [
+    "templates/**"
+  ],
   "packages": [
     "packages/*",
     "templates/*"
