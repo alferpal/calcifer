@@ -36,7 +36,7 @@
     "@alferpal/calcifer-types": "^1.0.6",
     "@alferpal/calcifer-typings": "^1.0.6",
     "@alferpal/eslint-config-calcifer": "^1.0.6",
-    "@types/jest": "~24.0.16",
+    "@types/jest": "~24.0.17",
     "@types/node": "~10.14.14",
     "@typescript-eslint/eslint-plugin": "~1.13.0",
     "@typescript-eslint/parser": "~1.13.0",
