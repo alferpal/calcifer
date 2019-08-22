@@ -9,43 +9,51 @@ const execOptions = [
 
 const execPath = './node_modules/.bin/ts-node'
 
-describe('When importing server as a module', () => {
-  test('prepareServer should be defined and be a function', () => {
+describe('when importing server as a module', () => {
+  it('prepareServer should be defined and be a function', () => {
+    expect.assertions(2)
+
     expect(prepareServer).toBeDefined()
-    expect(typeof prepareServer).toEqual('function')
+    expect(typeof prepareServer).toStrictEqual('function')
   })
 
-  test('server should be defined and be a hapi server', async () => {
+  it('server should be defined and be a hapi server', async () => {
+    expect.assertions(6)
+
     expect(server).toBeDefined()
 
     expect(server.info).toBeDefined()
 
     expect(server.stop).toBeDefined()
-    expect(typeof server.stop).toEqual('function')
+    expect(typeof server.stop).toStrictEqual('function')
 
     expect(server.start).toBeDefined()
-    expect(typeof server.start).toEqual('function')
+    expect(typeof server.start).toStrictEqual('function')
   })
 
-  test('server should be able to start and stop via methods', async () => {
+  it('server should be able to start and stop via methods', async () => {
+    expect.assertions(3)
+
     await prepareServer()
 
-    expect(server.info.started).toEqual(0)
+    expect(server.info.started).toStrictEqual(0)
 
     await server.start()
 
-    expect(server.info.started).not.toEqual(0)
+    expect(server.info.started).not.toStrictEqual(0)
 
     await server.stop()
 
-    expect(server.info.started).toEqual(0)
+    expect(server.info.started).toStrictEqual(0)
   })
 })
 
-describe('When launching server directly', () => {
-  test(
+describe('when launching server directly', () => {
+  it(
     'should start by itself and stop when recieving SIGTERM',
     done => {
+      expect.assertions(6)
+
       const child = execFile(
         execPath, [
           ...execOptions,
@@ -57,9 +65,9 @@ describe('When launching server directly', () => {
 
           expect(error).toBeNull()
 
-          expect(lastLine.msg).toEqual('server stopped')
+          expect(lastLine.msg).toStrictEqual('server stopped')
 
-          expect(stderr).toEqual('')
+          expect(stderr).toStrictEqual('')
 
           setTimeout(done, 64)
         },
@@ -72,8 +80,8 @@ describe('When launching server directly', () => {
       })
 
       child.on('exit', (code, signal) => {
-        expect(child.killed).toEqual(true)
-        expect(code).toEqual(0)
+        expect(child.killed).toStrictEqual(true)
+        expect(code).toStrictEqual(0)
         expect(signal).toBeNull()
       })
     },
