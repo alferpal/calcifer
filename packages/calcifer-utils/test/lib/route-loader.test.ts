@@ -3,36 +3,42 @@ import path from 'path'
 import * as innerLib from '../../src/lib/route-loader'
 import * as exported from '../../src'
 
-describe('When route-loader is required directly:', () => {
-  test('getRoutes should be defined and be a function', () => {
+describe('when route-loader is required directly:', () => {
+  it('getRoutes should be defined and be a function', () => {
+    expect.assertions(2)
+
     expect(innerLib.getRoutes).toBeDefined()
-    expect(typeof innerLib.getRoutes).toEqual('function')
+    expect(typeof innerLib.getRoutes).toStrictEqual('function')
   })
 })
 
-describe('When route-loader is required from outside:', () => {
-  test('getRoutes should be defined and be a function', () => {
+describe('when route-loader is required from outside:', () => {
+  it('getRoutes should be defined and be a function', () => {
+    expect.assertions(2)
+
     expect(exported.getRoutes).toBeDefined()
-    expect(typeof exported.getRoutes).toEqual('function')
+    expect(typeof exported.getRoutes).toStrictEqual('function')
   })
 })
 
 describe('getRoutes', () => {
-  test('should return an array with 4 routes from the fixtures folder ', async () => {
+  it('should return an array with 4 routes from the fixtures folder ', async () => {
+    expect.assertions(25)
+
     const routesPath = path.join(__dirname, '../../test/lib/fixtures/route-loader')
     const routes = await innerLib.getRoutes(routesPath)
 
-    expect(routes.length).toEqual(4)
+    expect(routes).toHaveLength(4)
 
     routes.forEach(route => {
       expect(route.method).toBeDefined()
-      expect(typeof route.method[0]).toEqual('string')
+      expect(typeof route.method[0]).toStrictEqual('string')
 
       expect(route.path).toBeDefined()
-      expect(typeof route.path).toEqual('string')
+      expect(typeof route.path).toStrictEqual('string')
 
       expect(route.handler).toBeDefined()
-      expect(typeof route.handler).toEqual('function')
+      expect(typeof route.handler).toStrictEqual('function')
     })
   })
 })

@@ -10,22 +10,28 @@ const execOptions = [
 
 const execPath = './node_modules/.bin/ts-node'
 
-describe('When good-defaults is required directly:', () => {
-  test('setProcessDefaults should be defined and be a function', () => {
+describe('when good-defaults is required directly:', () => {
+  it('setProcessDefaults should be defined and be a function', () => {
+    expect.assertions(2)
+
     expect(innerLib.setProcessDefaults).toBeDefined()
-    expect(typeof innerLib.setProcessDefaults).toEqual('function')
+    expect(typeof innerLib.setProcessDefaults).toStrictEqual('function')
   })
 })
 
-describe('When good-defaults is required from outside:', () => {
-  test('setProcessDefaults should be defined and be a function', () => {
+describe('when good-defaults is required from outside:', () => {
+  it('setProcessDefaults should be defined and be a function', () => {
+    expect.assertions(2)
+
     expect(exported.setProcessDefaults).toBeDefined()
-    expect(typeof exported.setProcessDefaults).toEqual('function')
+    expect(typeof exported.setProcessDefaults).toStrictEqual('function')
   })
 })
 
-describe('Environment Defaults', () => {
-  test('should be set once setProcessDefaults is called ', done => {
+describe('environment Defaults', () => {
+  it('should be set once setProcessDefaults is called ', () => new Promise(done => {
+    expect.assertions(4)
+
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -35,22 +41,24 @@ describe('Environment Defaults', () => {
         const output = stdout.split('\n')
         expect(error).toBeNull()
 
-        expect(output[0]).toEqual('128')
+        expect(output[0]).toStrictEqual('128')
 
-        expect(stderr).toEqual('')
+        expect(stderr).toStrictEqual('')
 
         setTimeout(done, 64)
       },
     )
 
     child.on('exit', code => {
-      expect(code).toEqual(0)
+      expect(code).toStrictEqual(0)
     })
-  })
+  }))
 })
 
-describe('Multiple Resolves', () => {
-  test('should be handled once the handler is installed ', done => {
+describe('multiple Resolves', () => {
+  it('should be handled once the handler is installed ', () => new Promise(done => {
+    expect.assertions(7)
+
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -62,23 +70,25 @@ describe('Multiple Resolves', () => {
 
         expect(output.calciferName).toBeDefined()
         expect(output.calciferType).toBeDefined()
-        expect(output.level).toEqual(60)
-        expect(output.msg.includes('mulipleResolves')).toBe(true)
+        expect(output.level).toStrictEqual(60)
+        expect(output.msg).toContain('mulipleResolves')
 
-        expect(stderr).toEqual('')
+        expect(stderr).toStrictEqual('')
 
         setTimeout(done, 64)
       },
     )
 
     child.on('exit', code => {
-      expect(code).toEqual(1)
+      expect(code).toStrictEqual(1)
     })
-  })
+  }))
 })
 
-describe('Uncaught Exception', () => {
-  test('should be handled once the handler is installed ', done => {
+describe('uncaught Exception', () => {
+  it('should be handled once the handler is installed ', () => new Promise(done => {
+    expect.assertions(9)
+
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -91,25 +101,27 @@ describe('Uncaught Exception', () => {
 
         expect(output.calciferName).toBeDefined()
         expect(output.calciferType).toBeDefined()
-        expect(output.level).toEqual(60)
-        expect(output.msg.includes('catch this!')).toBe(true)
+        expect(output.level).toStrictEqual(60)
+        expect(output.msg).toContain('catch this!')
         expect(output.stack).toBeDefined()
-        expect(output.type).toEqual('Error')
+        expect(output.type).toStrictEqual('Error')
 
-        expect(stderr).toEqual('')
+        expect(stderr).toStrictEqual('')
 
         setTimeout(done, 64)
       },
     )
 
     child.on('exit', code => {
-      expect(code).toEqual(1)
+      expect(code).toStrictEqual(1)
     })
-  })
+  }))
 })
 
-describe('Unhandled Rejection', () => {
-  test('should be handled once the handler is installed ', done => {
+describe('unhandled Rejection', () => {
+  it('should be handled once the handler is installed ', () => new Promise(done => {
+    expect.assertions(9)
+
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -122,25 +134,27 @@ describe('Unhandled Rejection', () => {
 
         expect(output.calciferName).toBeDefined()
         expect(output.calciferType).toBeDefined()
-        expect(output.level).toEqual(60)
-        expect(output.msg.includes('catch this!')).toBe(true)
+        expect(output.level).toStrictEqual(60)
+        expect(output.msg).toContain('catch this!')
         expect(output.stack).toBeDefined()
-        expect(output.type).toEqual('Error')
+        expect(output.type).toStrictEqual('Error')
 
-        expect(stderr).toEqual('')
+        expect(stderr).toStrictEqual('')
 
         setTimeout(done, 64)
       },
     )
 
     child.on('exit', code => {
-      expect(code).toEqual(1)
+      expect(code).toStrictEqual(1)
     })
-  })
+  }))
 })
 
-describe('Warnings', () => {
-  test('should be handled once the handler is installed ', done => {
+describe('warnings', () => {
+  it('should be handled once the handler is installed ', () => new Promise(done => {
+    expect.assertions(7)
+
     const child = execFile(
       execPath, [
         ...execOptions,
@@ -153,17 +167,17 @@ describe('Warnings', () => {
 
         expect(output.calciferName).toBeDefined()
         expect(output.calciferType).toBeDefined()
-        expect(output.level).toEqual(40)
-        expect(output.msg.includes('fixtureDesignedWarning'))
+        expect(output.level).toStrictEqual(40)
+        expect(output.msg).toContain('fixtureDesignedWarning')
 
-        expect(stderr.includes('fixtureDesignedWarning'))
+        expect(stderr).toContain('fixtureDesignedWarning')
 
         setTimeout(done, 64)
       },
     )
 
     child.on('exit', code => {
-      expect(code).toEqual(0)
+      expect(code).toStrictEqual(0)
     })
-  })
+  }))
 })
