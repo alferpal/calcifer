@@ -2,38 +2,67 @@
 import * as innerLib from '../../src/lib/log'
 import * as exported from '../../src'
 
-describe('When log is required directly:', () => {
-  test('logger should be defined', () => {
-    expect(innerLib.logger).toBeDefined()
+describe('when log is required directly:', () => {
+  describe('logger', () => {
+    it('should be defined', () => {
+      expect.assertions(1)
+
+      expect(innerLib.logger).toBeDefined()
+    })
+
+    it('and have a debug function', () => {
+      expect.assertions(1)
+
+      expect(typeof innerLib.logger.debug).toStrictEqual('function')
+    })
+
+    it('and not have a whatever function', () => {
+      expect.assertions(1)
+
+      expect(typeof innerLib.logger.whatever).toStrictEqual('undefined')
+    })
   })
-  test('and have a debug function', () => {
-    expect(typeof innerLib.logger.debug).toEqual('function')
-  })
-  test('and not have a whatever function', () => {
-    expect(typeof innerLib.logger.whatever).toEqual('undefined')
-  })
-  test('finalLogger should be defined', () => {
-    expect(innerLib.logger).toBeDefined()
-  })
-  test('and have a debug function', () => {
-    expect(typeof innerLib.finalLogger.debug).toEqual('function')
-  })
-  test('and not have a whatever function', () => {
-    expect(typeof innerLib.finalLogger.whatever).toEqual('undefined')
+
+  describe('finalLogger', () => {
+    it('should be defined', () => {
+      expect.assertions(1)
+
+      expect(innerLib.logger).toBeDefined()
+    })
+
+    it('and have a debug function', () => {
+      expect.assertions(1)
+
+      expect(typeof innerLib.finalLogger.debug).toStrictEqual('function')
+    })
+
+    it('and not have a whatever function', () => {
+      expect.assertions(1)
+
+      expect(typeof innerLib.finalLogger.whatever).toStrictEqual('undefined')
+    })
   })
 })
 
-describe('When log is required from outside', () => {
-  test('logger should be defined', () => {
+describe('when log is required from outside', () => {
+  it('logger should be defined', () => {
+    expect.assertions(1)
+
     expect(exported.logger).toBeDefined()
   })
-  test('and have a debug function', () => {
-    expect(typeof exported.logger.debug).toEqual('function')
+  it('and have a debug function', () => {
+    expect.assertions(1)
+
+    expect(typeof exported.logger.debug).toStrictEqual('function')
   })
-  test('and not have a whatever function', () => {
-    expect(typeof exported.logger.whatever).toEqual('undefined')
+  it('and not have a whatever function', () => {
+    expect.assertions(1)
+
+    expect(typeof exported.logger.whatever).toStrictEqual('undefined')
   })
-  test('finalLogger should not be defined', () => {
-    expect(Object.keys(exported).includes('finalLogger')).toBeFalsy()
+  it('finalLogger should not be defined', () => {
+    expect.assertions(1)
+
+    expect(Object.keys(exported)).not.toContain('finalLogger')
   })
 })
