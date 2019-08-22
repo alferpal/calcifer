@@ -3,13 +3,16 @@ import { prepareServer, server } from '../../src/server'
 
 import boom = require('@hapi/boom')
 
+// eslint-disable-next-line jest/no-hooks
 beforeAll(async () => {
   await prepareServer()
   await server.initialize()
 })
 
-describe('About the /coffee route', () => {
-  test('It should return a 418 error', async () => {
+describe('about the /coffee route', () => {
+  it('it should return a 418 error', async () => {
+    expect.assertions(3)
+
     const options = {
       method: 'GET',
       url: '/coffee',
@@ -18,14 +21,16 @@ describe('About the /coffee route', () => {
     const response = await server.inject(options)
     const payload: boom.Payload = JSON.parse(response.payload)
 
-    expect(payload.statusCode).toEqual(418)
-    expect(payload.message).toEqual('I\'m a teapot')
-    expect(payload.error).toEqual(payload.message)
+    expect(payload.statusCode).toStrictEqual(418)
+    expect(payload.message).toStrictEqual('I\'m a teapot')
+    expect(payload.error).toStrictEqual(payload.message)
   })
 })
 
-describe('About the /tea route', () => {
-  test('It should return a 418 error with a custom message', async () => {
+describe('about the /tea route', () => {
+  it('it should return a 418 error with a custom message', async () => {
+    expect.assertions(3)
+
     const options = {
       method: 'GET',
       url: '/tea',
@@ -35,8 +40,8 @@ describe('About the /tea route', () => {
 
     const payload: boom.Payload = JSON.parse(response.payload)
 
-    expect(payload.statusCode).toEqual(418)
-    expect(payload.message).toEqual('I\'m a server, not a teapot!')
-    expect(payload.error).not.toEqual(payload.message)
+    expect(payload.statusCode).toStrictEqual(418)
+    expect(payload.message).toStrictEqual('I\'m a server, not a teapot!')
+    expect(payload.error).not.toStrictEqual(payload.message)
   })
 })
