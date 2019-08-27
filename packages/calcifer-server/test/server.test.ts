@@ -73,6 +73,7 @@ describe('when launching server directly', () => {
         },
       )
 
+      // @ts-ignore
       child.stdout.on('data', chunk => {
         if (chunk.includes('server started')) {
           child.kill()
