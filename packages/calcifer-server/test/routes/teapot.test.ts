@@ -4,7 +4,6 @@ import { prepareServer, server } from '../../src/server'
 import boom = require('@hapi/boom')
 
 describe('teapot tests', () => {
-
   // eslint-disable-next-line jest/no-hooks
   beforeAll(async () => {
     await prepareServer()
