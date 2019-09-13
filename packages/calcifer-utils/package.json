@@ -31,7 +31,7 @@
   "license": "MIT",
   "dependencies": {
     "fast-glob": "~3.0.4",
-    "pino": "~5.13.2"
+    "pino": "~5.13.3"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "^1.0.6",
