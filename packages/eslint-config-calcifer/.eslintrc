@@ -16,6 +16,12 @@
     "jest"
   ],
   "rules": {
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
     "@typescript-eslint/semi": [
       "error",
       "never"
@@ -33,6 +39,6 @@
       {
         "functions": false
       }
-    ],
+    ]
   }
 }
