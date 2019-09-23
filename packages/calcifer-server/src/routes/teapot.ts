@@ -1,15 +1,15 @@
 
-import boom = require('@hapi/boom')
+import Boom from '@hapi/boom'
 
 const routes = [
   {
     method: ['GET'],
     path: '/coffee',
-    handler: () => boom.teapot(),
+    handler: () => Boom.teapot(),
   }, {
     method: ['GET'],
     path: '/tea',
-    handler: () => boom.teapot('I\'m a server, not a teapot!'),
+    handler: () => Boom.teapot('I\'m a server, not a teapot!'),
   },
 ]
 

@@ -1,7 +1,6 @@
+import Boom from '@hapi/boom'
 
 import { prepareServer, server } from '../../src/server'
-
-import boom = require('@hapi/boom')
 
 describe('teapot tests', () => {
   // eslint-disable-next-line jest/no-hooks
@@ -20,7 +19,7 @@ describe('teapot tests', () => {
       }
 
       const response = await server.inject(options)
-      const payload: boom.Payload = JSON.parse(response.payload)
+      const payload: Boom.Payload = JSON.parse(response.payload)
 
       expect(payload.statusCode).toStrictEqual(418)
       expect(payload.message).toStrictEqual('I\'m a teapot')
@@ -39,7 +38,7 @@ describe('teapot tests', () => {
 
       const response = await server.inject(options)
 
-      const payload: boom.Payload = JSON.parse(response.payload)
+      const payload: Boom.Payload = JSON.parse(response.payload)
 
       expect(payload.statusCode).toStrictEqual(418)
       expect(payload.message).toStrictEqual('I\'m a server, not a teapot!')
