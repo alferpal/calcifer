@@ -1,6 +1,6 @@
 # eslint-config-calcifer
 
-This package provides tslint configuration shared across calcifer packages.
+This package provides eslint configuration shared across calcifer packages.
 
 ## License
 
