@@ -10,7 +10,7 @@ describe('teapot tests', () => {
   })
 
   describe('about the /coffee route', () => {
-    it('it should return a 418 error', async () => {
+    it('should return a 418 error', async () => {
       expect.assertions(3)
 
       const options = {
@@ -28,7 +28,7 @@ describe('teapot tests', () => {
   })
 
   describe('about the /tea route', () => {
-    it('it should return a 418 error with a custom message', async () => {
+    it('should return a 418 error with a custom message', async () => {
       expect.assertions(3)
 
       const options = {
