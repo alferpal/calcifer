@@ -1,7 +1,12 @@
 'use strict'
 
+const {name} = require('./package')
 const jestBase = require('../../jest.config.js')
 
-module.exports = {
-  ...jestBase
+const config = {
+  ...jestBase,
+  displayName: name,
+  name,
 }
+
+module.exports = config
