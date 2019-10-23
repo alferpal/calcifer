@@ -30,7 +30,7 @@ describe('getRoutes', () => {
 
     expect(routes).toHaveLength(4)
 
-    routes.forEach(route => {
+    routes.forEach((route) => {
       expect(route.method).toBeDefined()
       expect(typeof route.method[0]).toStrictEqual('string')
 

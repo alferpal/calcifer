@@ -51,11 +51,12 @@ describe('when importing server as a module', () => {
 describe('when launching server directly', () => {
   it(
     'should start by itself and stop when recieving SIGTERM',
-    done => {
+    (done) => {
       expect.assertions(6)
 
       const child = execFile(
-        execPath, [
+        execPath,
+        [
           ...execOptions,
           'src/server.ts',
         ],
@@ -74,7 +75,7 @@ describe('when launching server directly', () => {
       )
 
       // @ts-ignore
-      child.stdout.on('data', chunk => {
+      child.stdout.on('data', (chunk) => {
         if (chunk.includes('server started')) {
           child.kill()
         }
