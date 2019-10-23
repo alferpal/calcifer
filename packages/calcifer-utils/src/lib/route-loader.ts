@@ -18,7 +18,7 @@ async function getRoutes(path: string) {
 
   const routes: Hapi.ServerRoute[] = []
 
-  files.forEach(filePath => {
+  files.forEach((filePath) => {
     // eslint-disable-next-line global-require, import/no-dynamic-require
     require(`${filePath}`).routes.forEach((route: Hapi.ServerRoute) => {
       routes.push(route)
