@@ -22,7 +22,7 @@ describe('when route-loader is required from outside:', () => {
 })
 
 describe('getRoutes', () => {
-  it('should return an array with 4 routes from the fixtures folder ', async () => {
+  it('should return an array with 4 routes from the fixtures folder', async () => {
     expect.assertions(25)
 
     const routesPath = path.join(__dirname, '../../test/lib/fixtures/route-loader')

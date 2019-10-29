@@ -29,7 +29,7 @@ describe('when good-defaults is required from outside:', () => {
 })
 
 describe('environment Defaults', () => {
-  it('should be set once setProcessDefaults is called ', () => new Promise((done) => {
+  it('should be set once setProcessDefaults is called', () => new Promise((done) => {
     expect.assertions(4)
 
     const child = execFile(
@@ -56,7 +56,7 @@ describe('environment Defaults', () => {
 })
 
 describe('multiple Resolves', () => {
-  it('should be handled once the handler is installed ', () => new Promise((done) => {
+  it('should be handled once the handler is installed', () => new Promise((done) => {
     expect.assertions(7)
 
     const child = execFile(
@@ -86,7 +86,7 @@ describe('multiple Resolves', () => {
 })
 
 describe('uncaught Exception', () => {
-  it('should be handled once the handler is installed ', () => new Promise((done) => {
+  it('should be handled once the handler is installed', () => new Promise((done) => {
     expect.assertions(9)
 
     const child = execFile(
@@ -119,7 +119,7 @@ describe('uncaught Exception', () => {
 })
 
 describe('unhandled Rejection', () => {
-  it('should be handled once the handler is installed ', () => new Promise((done) => {
+  it('should be handled once the handler is installed', () => new Promise((done) => {
     expect.assertions(9)
 
     const child = execFile(
@@ -152,7 +152,7 @@ describe('unhandled Rejection', () => {
 })
 
 describe('warnings', () => {
-  it('should be handled once the handler is installed ', () => new Promise((done) => {
+  it('should be handled once the handler is installed', () => new Promise((done) => {
     expect.assertions(7)
 
     const child = execFile(
