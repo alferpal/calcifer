@@ -50,7 +50,7 @@
     "@types/hapi__hapi": "~18.2.6",
     "@types/jest": "~24.0.22",
     "@types/lodash": "~4.14.145",
-    "@types/node": "~12.12.6",
+    "@types/node": "~12.12.7",
     "@typescript-eslint/eslint-plugin": "~2.6.1",
     "@typescript-eslint/parser": "~2.6.1",
     "conventional-changelog": "~3.1.12",
