@@ -39,7 +39,7 @@
     "@types/jest": "~24.0.23",
     "@types/node": "~12.12.7",
     "@typescript-eslint/eslint-plugin": "~2.7.0",
-    "@typescript-eslint/parser": "~2.7.0",
+    "@typescript-eslint/parser": "~2.8.0",
     "conventional-changelog": "~3.1.14",
     "eslint": "~6.6.0",
     "eslint-config-airbnb-typescript": "~6.3.0",
