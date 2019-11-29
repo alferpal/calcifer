@@ -30,7 +30,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bluebird": "~3.7.1"
+    "bluebird": "~3.7.2"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "^1.0.6",
