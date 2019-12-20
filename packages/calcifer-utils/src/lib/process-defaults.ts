@@ -25,28 +25,14 @@ function exit(code: number) {
 }
 
 /**
- * Handler for multipleReslves
- * Prints the error synchronously and exits the process
- * - @param type The error type
- * - @param promise The promise with more than one reject or rresolve
- * - @param reason The value that caused the multiple resolution
- */
-function multipleResolves(type: string, promise: Promise<any>, reason: any) {
-  finalLogger.fatal(`mulipleResolves: ${type}`, { reason, promise })
-  exit(1)
-}
-
-/**
  * Sets environment process defaults and installs handlers for:
 
- *  - multiple resolves
  *  - uncaught exception
  *  - unhandled rejection
  *  - warning
  */
 function setProcessDefaults() {
   const callbacks: { [id: string]: (...args: any[]) => void } = {
-    multipleResolves,
     uncaughtException,
     unhandledRejection,
     warning,
