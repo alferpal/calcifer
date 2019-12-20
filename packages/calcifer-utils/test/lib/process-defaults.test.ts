@@ -55,36 +55,6 @@ describe('environment Defaults', () => {
   }))
 })
 
-describe('multiple Resolves', () => {
-  it('should be handled once the handler is installed', () => new Promise((done) => {
-    expect.assertions(7)
-
-    const child = execFile(
-      execPath, [
-        ...execOptions,
-        'test/lib/fixtures/process-defaults/multiple-resolves-handler.ts',
-      ],
-      (error, stdout, stderr) => {
-        const output = JSON.parse(stdout.split('\n')[0])
-        expect(error).not.toBeNull()
-
-        expect(output.calciferName).toBeDefined()
-        expect(output.calciferType).toBeDefined()
-        expect(output.level).toStrictEqual(60)
-        expect(output.msg).toContain('mulipleResolves')
-
-        expect(stderr).toStrictEqual('')
-
-        setTimeout(done, 64)
-      },
-    )
-
-    child.on('exit', (code) => {
-      expect(code).toStrictEqual(1)
-    })
-  }))
-})
-
 describe('uncaught Exception', () => {
   it('should be handled once the handler is installed', () => new Promise((done) => {
     expect.assertions(9)
