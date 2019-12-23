@@ -31,7 +31,7 @@
     "eslint": "~6.7.1",
     "eslint-plugin-import": "~2.19.1",
     "eslint-plugin-jest": "~23.1.1",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.4"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "~2.12.0",
@@ -39,6 +39,6 @@
     "eslint": "~6.7.1",
     "eslint-plugin-import": "~2.19.1",
     "eslint-plugin-jest": "~23.1.1",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.4"
   }
 }
