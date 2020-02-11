@@ -70,6 +70,7 @@ describe('when launching server directly', () => {
 
           expect(stderr).toStrictEqual('')
 
+          // eslint-disable-next-line @typescript-eslint/no-implied-eval
           setTimeout(done, 64)
         },
       )
