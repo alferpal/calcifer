@@ -9,6 +9,7 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2019,
+    "project": "../../tsconfig-base.json",
     "sourceType": "module"
   },
   "plugins": [
