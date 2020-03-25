@@ -37,7 +37,7 @@
     "@alferpal/calcifer-typings": "^1.0.6",
     "@alferpal/eslint-config-calcifer": "^1.0.6",
     "@types/jest": "~25.1.4",
-    "@types/node": "~12.12.30",
+    "@types/node": "~12.12.31",
     "@typescript-eslint/eslint-plugin": "~2.25.0",
     "@typescript-eslint/parser": "~2.25.0",
     "conventional-changelog": "~3.1.14",
