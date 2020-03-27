@@ -39,7 +39,7 @@
     "bluebird": "~3.7.2",
     "hapi-pino": "~6.5.0",
     "lodash": "~4.17.15",
-    "pino-colada": "~1.5.1"
+    "pino-colada": "~2.0.0"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "^1.0.6",
