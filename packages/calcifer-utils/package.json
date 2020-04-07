@@ -38,7 +38,7 @@
     "@alferpal/calcifer-typings": "^1.0.6",
     "@alferpal/eslint-config-calcifer": "^1.0.6",
     "@types/hapi__hapi": "~19.0.2",
-    "@types/jest": "~25.1.4",
+    "@types/jest": "~25.2.1",
     "@types/node": "~12.12.34",
     "@types/pino": "~5.17.0",
     "@typescript-eslint/eslint-plugin": "~2.27.0",
