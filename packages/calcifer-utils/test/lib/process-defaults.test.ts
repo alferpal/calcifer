@@ -10,6 +10,8 @@ const execOptions = [
 
 const execPath = './node_modules/.bin/ts-node'
 
+jest.setTimeout(8192)
+
 describe('when good-defaults is required directly:', () => {
   it('setProcessDefaults should be defined and be a function', () => {
     expect.assertions(2)
