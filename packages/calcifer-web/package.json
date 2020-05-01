@@ -14,7 +14,9 @@
     "prerelease": "npm test ",
     "pretest": "npm run build",
     "start": "node dist/server.js | pino-colada",
-    "//test": "nyc jest --runInBand"
+    "//test": "nyc jest --runInBand",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -39,7 +41,8 @@
     "bluebird": "~3.7.2",
     "hapi-pino": "~8.0.0",
     "lodash": "~4.17.15",
-    "pino-colada": "~2.0.0"
+    "pino-colada": "~2.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "^1.0.6",
@@ -74,5 +77,6 @@
   "files": [
     "dist/**/*.d.ts",
     "dist/**/*.js"
-  ]
+  ],
+  "snyk": true
 }
