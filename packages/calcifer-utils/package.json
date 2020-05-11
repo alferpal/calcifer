@@ -43,7 +43,7 @@
     "@types/pino": "~6.0.0",
     "@typescript-eslint/eslint-plugin": "~2.31.0",
     "@typescript-eslint/parser": "~2.31.0",
-    "conventional-changelog": "~3.1.14",
+    "conventional-changelog": "~3.1.21",
     "eslint": "~6.8.0",
     "eslint-config-airbnb-typescript": "~7.2.1",
     "eslint-plugin-import": "~2.20.2",
