@@ -65,7 +65,7 @@
     "onchange": "~7.0.2",
     "rimraf": "~3.0.2",
     "standard-version": "~8.0.0",
-    "ts-jest": "~25.5.0",
+    "ts-jest": "~25.5.1",
     "ts-node": "~8.10.1",
     "typescript": "~3.8.3"
   },
