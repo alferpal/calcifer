@@ -48,7 +48,7 @@
     "@alferpal/eslint-config-calcifer": "^1.0.6",
     "@types/bluebird": "~3.5.30",
     "@types/hapi__hapi": "~19.0.3",
-    "@types/jest": "~25.2.1",
+    "@types/jest": "~25.2.2",
     "@types/lodash": "~4.14.150",
     "@types/node": "~14.0.1",
     "@typescript-eslint/eslint-plugin": "~2.33.0",
