@@ -1,6 +1,7 @@
 
 import { logger, finalLogger } from './log'
 
+// eslint-disable-next-line import/order
 import os = require('os')
 
 /**
