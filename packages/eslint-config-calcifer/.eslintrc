@@ -4,7 +4,8 @@
   },
   "extends": [
     "airbnb-typescript/base",
-    "plugin:jest/all"
+    "plugin:jest/all",
+    "plugin:node/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -14,7 +15,8 @@
   },
   "plugins": [
     "@typescript-eslint/eslint-plugin",
-    "jest"
+    "jest",
+    "node"
   ],
   "rules": {
     "@typescript-eslint/no-use-before-define": [
@@ -40,6 +42,8 @@
       {
         "functions": false
       }
-    ]
+    ],
+    "node/no-unsupported-features/es-syntax": "off",
+    "node/no-missing-import": "off"
   }
 }
