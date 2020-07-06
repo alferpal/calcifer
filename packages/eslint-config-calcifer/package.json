@@ -30,7 +30,7 @@
     "conventional-changelog": "~3.1.21",
     "eslint": "~7.4.0",
     "eslint-plugin-import": "~2.22.0",
-    "eslint-plugin-jest": "~23.17.1",
+    "eslint-plugin-jest": "~23.18.0",
     "eslint-plugin-node": "~11.1.0",
     "typescript": "~3.9.6"
   },
@@ -40,7 +40,7 @@
     "conventional-changelog": "~3.1.21",
     "eslint": "~7.4.0",
     "eslint-plugin-import": "~2.22.0",
-    "eslint-plugin-jest": "~23.17.1",
+    "eslint-plugin-jest": "~23.18.0",
     "eslint-plugin-node": "~11.1.0",
     "typescript": "~3.9.6"
   }
