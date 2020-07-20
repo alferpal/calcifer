@@ -22,7 +22,7 @@
     "access": "public"
   },
   "dependencies": {
-    "eslint-config-airbnb-typescript": "~8.0.2"
+    "eslint-config-airbnb-typescript": "~9.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "~3.6.1",
