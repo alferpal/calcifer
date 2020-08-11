@@ -40,7 +40,7 @@
     "hapi-pino": "~8.0.1",
     "hapi-pulse": "~3.0.0",
     "lodash": "~4.17.19",
-    "pino-colada": "~2.0.1"
+    "pino-colada": "~2.1.0"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "^1.0.6",
