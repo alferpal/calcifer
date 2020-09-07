@@ -37,7 +37,7 @@
     "@hapi/hapi": "~20.0.0",
     "blipp": "~4.0.1",
     "bluebird": "~3.7.2",
-    "hapi-pino": "~8.2.0",
+    "hapi-pino": "~8.3.0",
     "lodash": "~4.17.20",
     "pino-colada": "~2.1.0"
   },
