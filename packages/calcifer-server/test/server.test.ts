@@ -51,7 +51,7 @@ describe('when importing server as a module', () => {
 describe('when launching server directly', () => {
   it(
     'should start by itself and stop when recieving SIGTERM',
-    (done) => {
+    () => new Promise((done) => {
       expect.assertions(6)
 
       const child = execFile(
@@ -70,7 +70,6 @@ describe('when launching server directly', () => {
 
           expect(stderr).toStrictEqual('')
 
-          // eslint-disable-next-line @typescript-eslint/no-implied-eval
           setTimeout(done, 64)
         },
       )
@@ -87,7 +86,7 @@ describe('when launching server directly', () => {
         expect(code).toStrictEqual(0)
         expect(signal).toBeNull()
       })
-    },
+    }),
     8192,
   )
 })
