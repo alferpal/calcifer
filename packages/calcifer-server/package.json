@@ -46,7 +46,7 @@
     "@alferpal/calcifer-types": "^1.0.6",
     "@alferpal/calcifer-typings": "^1.0.6",
     "@alferpal/eslint-config-calcifer": "^1.0.6",
-    "@types/bluebird": "~3.5.32",
+    "@types/bluebird": "~3.5.33",
     "@types/hapi__hapi": "~20.0.1",
     "@types/jest": "~26.0.15",
     "@types/lodash": "~4.14.162",
