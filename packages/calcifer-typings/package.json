@@ -24,6 +24,6 @@
     "types"
   ],
   "devDependencies": {
-    "conventional-changelog": "~3.1.23"
+    "conventional-changelog": "~3.1.24"
   }
 }
