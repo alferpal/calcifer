@@ -34,7 +34,7 @@
   "dependencies": {
     "@alferpal/calcifer-utils": "^1.0.6",
     "@hapi/boom": "~9.1.0",
-    "@hapi/hapi": "~20.0.1",
+    "@hapi/hapi": "~20.0.2",
     "blipp": "~4.0.1",
     "bluebird": "~3.7.2",
     "hapi-pino": "~8.3.0",
