@@ -1,6 +1,6 @@
 # Calcifer
 
-[![Build Status](https://travis-ci.org/alferpal/calcifer.svg?branch=master)](https://travis-ci.org/alferpal/calcifer)
+![Calcifer checks](https://github.com/alferpal/calcifer/workflows/Calcifer%20checks/badge.svg?branch=main)
 [![codecov](https://codecov.io/gh/alferpal/calcifer/branch/master/graph/badge.svg)](https://codecov.io/gh/alferpal/calcifer)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=alferpal/calcifer)](https://dependabot.com)
 
