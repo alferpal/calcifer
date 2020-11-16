@@ -1,0 +1,11 @@
+version = 1
+
+[merge]
+method = "squash"
+
+[merge.message]
+body = "empty"
+title = "github_default"
+
+[update]
+always = true
