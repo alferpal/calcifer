@@ -9,7 +9,7 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2019,
+    "ecmaVersion": 2020,
     "project": "../../tsconfig-base.json",
     "sourceType": "module"
   },
@@ -37,6 +37,7 @@
         "max": 1
       }
     ],
+    "no-return-await": "off",
     "no-use-before-define": [
       "error",
       {

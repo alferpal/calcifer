@@ -2,5 +2,5 @@
   "compilerOptions": {
     "noEmit": true
   },
-  "extends": "./tsconfig-base",
+  "extends": "./tsconfig-base"
 }

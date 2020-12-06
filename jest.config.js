@@ -1,5 +1,3 @@
-'use strict'
-
 module.exports = {
   bail: true,
   collectCoverage: true,
@@ -7,24 +5,26 @@ module.exports = {
     'src/**/*.ts'
   ],
   coverageDirectory: 'coverage-jest',
+  coveragePathIgnorePatterns: ['fixtures'],
   coverageReporters: [
     'clover',
     'html',
     'json',
     'lcov',
     'text',
+    'text-summary'
   ],
   coverageThreshold: {
     global: {
-      branches: 83,
-      functions: 83,
-      lines: 83,
-      statements: 83
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100
     },
   },
   globals: {
     'ts-jest': {
-      tsconfig: 'test/tsconfig.json'
+      tsconfig: 'tsconfig-test.json'
     }
   },
   moduleFileExtensions: [
@@ -33,8 +33,6 @@ module.exports = {
   ],
   preset: 'ts-jest',
   testEnvironment: 'node',
-  testMatch: [
-    '**/*.test.(ts|tsx)'
-  ],
-  verbose: true
+  testMatch: ['**/__tests__/**/*.test.(ts|tsx)'],
+  verbose: true,
 }
