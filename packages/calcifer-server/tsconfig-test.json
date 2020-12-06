@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "../calcifer-typings/types",
+      "node_modules/@types"
+    ]
+  },
+  "extends": "../../tsconfig-test",
+  "include": [
+    "./**/*.ts"
+  ]
+}

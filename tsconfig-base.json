@@ -15,6 +15,6 @@
     "noUnusedLocals": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2019"
+    "target": "ES2020"
   }
 }

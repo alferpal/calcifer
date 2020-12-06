@@ -1,10 +1,10 @@
 
 import { getRoutes, logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 
-global.Promise = require('bluebird')
-
 import hapi = require('@hapi/hapi')
 import path = require('path')
+
+const isMain = Object.keys(require.main?.exports).length > 0
 
 const port = process.env.CALCIFER_SERVER_PORT
   ? process.env.CALCIFER_SERVER_PORT
@@ -17,7 +17,7 @@ const server = new hapi.Server({
 })
 
 async function init() {
-  const routesPath = path.join(__dirname, 'routes')
+  const routesPath = path.join(__dirname, 'components')
 
   const routes = await getRoutes(routesPath)
 
@@ -51,14 +51,14 @@ async function init() {
 
   /* eslint-enable global-require */
 
-  if (!module.parent) {
+  if (isMain) {
     await server.start()
 
     log.info(`Server running at: ${server.info.uri}`)
   }
 }
 
-if (!module.parent) {
+if (isMain) {
   init()
 }
 
