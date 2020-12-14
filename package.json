@@ -29,7 +29,7 @@
     "twitter": "alferpal",
     "url": "https://github.com/alferpal"
   },
-  "license": "MIT",
+  "license": "Parity-7.0.0",
   "devDependencies": {
     "codecov": "~3.8.1",
     "commitizen": "~4.2.2",

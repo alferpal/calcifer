@@ -24,7 +24,7 @@
     "twitter": "alferpal",
     "url": "https://github.com/alferpal"
   },
-  "license": "MIT",
+  "license": "Parity-7.0.0",
   "dependencies": {},
   "devDependencies": {
     "@alferpal/calcifer-types": "~1.0.6",

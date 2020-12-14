@@ -22,7 +22,7 @@
     "twitter": "alferpal",
     "url": "https://github.com/alferpal"
   },
-  "license": "MIT",
+  "license": "Parity-7.0.0",
   "devDependencies": {
     "@alferpal/calcifer-typings": "~1.0.6",
     "@alferpal/eslint-config-calcifer": "~1.0.6",
