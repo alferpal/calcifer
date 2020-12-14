@@ -48,7 +48,7 @@
     "@alferpal/calcifer-typings": "~1.0.6",
     "@alferpal/eslint-config-calcifer": "~1.0.6",
     "@jest/globals": "~26.6.2",
-    "@types/hapi__hapi": "~20.0.2",
+    "@types/hapi__hapi": "~20.0.3",
     "@types/jest": "~26.0.19",
     "@types/lodash": "~4.14.165",
     "@types/node": "~14.14.13",
