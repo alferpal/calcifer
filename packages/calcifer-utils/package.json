@@ -24,7 +24,7 @@
     "twitter": "alferpal",
     "url": "https://github.com/alferpal"
   },
-  "license": "MIT",
+  "license": "Parity-7.0.0",
   "dependencies": {
     "fast-glob": "~3.2.4",
     "pino": "~6.8.0"
