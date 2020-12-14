@@ -19,7 +19,7 @@ If you'd like to know the reasoning behind something that raises your eyebrows, 
 
 ## License
 
-MIT
+This project is licensed under [Parity](./LICENSE) terms, without offering private licenses for use in closed source.
 
 ## Acknowledgements
 
