@@ -2,25 +2,6 @@ import { describe, expect, it } from '@jest/globals'
 
 import path from 'path'
 import * as innerLib from '../route-loader'
-import * as exported from '../..'
-
-describe('when route-loader is required directly:', () => {
-  it('getRoutes should be defined and be a function', () => {
-    expect.assertions(2)
-
-    expect(innerLib.getRoutes).toBeDefined()
-    expect(typeof innerLib.getRoutes).toStrictEqual('function')
-  })
-})
-
-describe('when route-loader is required from outside:', () => {
-  it('getRoutes should be defined and be a function', () => {
-    expect.assertions(2)
-
-    expect(exported.getRoutes).toBeDefined()
-    expect(typeof exported.getRoutes).toStrictEqual('function')
-  })
-})
 
 describe('getRoutes', () => {
   it('should return an array with 4 routes from the fixtures folder', async () => {
