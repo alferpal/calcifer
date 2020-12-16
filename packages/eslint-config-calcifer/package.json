@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/eslint-config-calcifer",
-  "version": "1.0.6",
+  "version": "0.0.0",
   "description": "Shared eslint rules for calcifer packages",
   "repository": {
     "type": "git",
