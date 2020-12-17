@@ -32,7 +32,7 @@
   "license": "Parity-7.0.0",
   "dependencies": {
     "@alferpal/calcifer-utils": "~1.0.6",
-    "@hapi/boom": "~9.1.0",
+    "@hapi/boom": "~9.1.1",
     "@hapi/hapi": "~20.0.3",
     "blipp": "~4.0.2",
     "bluebird": "~3.7.2",
