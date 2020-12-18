@@ -22,6 +22,7 @@ async function init() {
         },
       },
     }],
+    validateJWTHandler: () => ({ isValid: true }),
   })
 
   if (isMain) {
