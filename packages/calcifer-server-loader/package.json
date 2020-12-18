@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "description": "Hapi server loading logic common to calcifer servers",
   "scripts": {
+    "build:fast": "tsc --build tsconfig-src.json",
+    "build:watch": "onchange -i -k -v \"src/**/*.ts\" -- npm run build",
     "build": "tsc --build tsconfig-src.json",
-    "build:watch": "onchange -i -k \"src/**/*.ts\" -- npm run build",
     "clean": "rimraf .nyc_output coverage* dist",
     "lint": "eslint --ext .ts src",
+    "prebuild:fast": "npm run lint",
     "prebuild": "npm-run-all -p clean lint",
     "prerelease": "npm test",
     "pretest": "npm run build",
@@ -28,14 +30,20 @@
   },
   "license": "Parity-7.0.0",
   "dependencies": {
+    "@alferpal/calcifer-errors": "~0.0.0",
+    "@alferpal/calcifer-policies": "~0.0.0",
     "@alferpal/calcifer-utils": "~0.0.0",
     "@hapi/boom": "~9.1.0",
     "@hapi/hapi": "~20.0.2",
+    "@hapi/inert": "~6.0.3",
+    "@hapi/vision": "~6.0.1",
     "async": "~3.2.0",
     "blipp": "~4.0.1",
+    "hapi-auth-jwt2": "~10.2.0",
     "hapi-pino": "~8.3.0",
     "hapi-pulse": "~3.0.0",
-    "lodash": "~4.17.20"
+    "hapi-swagger": "~14.0.0",
+    "mrhorse": "~6.0.1"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "~0.0.0",
@@ -47,6 +55,7 @@
     "@types/jest": "~26.0.19",
     "@types/lodash": "~4.14.165",
     "@types/node": "~14.14.14",
+    "@types/pino": "~6.3.4",
     "@typescript-eslint/eslint-plugin": "~4.10.0",
     "@typescript-eslint/parser": "~4.10.0",
     "conventional-changelog": "~3.1.24",

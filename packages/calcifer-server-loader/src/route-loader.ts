@@ -8,7 +8,6 @@ import fastGlob = require('fast-glob')
  * due to how testing doesn't actually emit the files and so it needs the .ts ones,
  * but running code requires .js files
  */
-
 const toFind = ['./**/*-controller.(js|ts)', '!./**/*.d.ts']
 
 async function getRoutes(routesPath: string, baseApiPath: string = '') {
