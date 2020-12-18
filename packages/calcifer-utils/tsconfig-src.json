@@ -8,7 +8,7 @@
   },
   "extends": "../../tsconfig-src.json",
   "include": [
-    "./**/*.ts"
+    "./src/**/*.ts"
   ],
   "exclude": [
     "**/__tests__/**/*.ts"
