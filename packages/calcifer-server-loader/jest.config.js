@@ -9,10 +9,10 @@ const config = {
 }
 
 config.coverageThreshold['./src/server-loader.ts'] = {
-  branches: 66.67,
+  branches: 77.78,
   functions: 100,
-  lines: 93.33,
-  statements: 93.75,
+  lines: 96.15,
+  statements: 96.3,
 }
 
 module.exports = config

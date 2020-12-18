@@ -32,12 +32,26 @@ describe('when importing server as a module', () => {
     expect(typeof server.start).toStrictEqual('function')
   })
 
+  it('prepareServer should throw if no signature is present', async () => {
+    expect.assertions(1)
+
+    await expect(prepareServer({
+      routesPath: '',
+      validateJWTHandler: () => ({ isValid: true }),
+    })).rejects.toThrow('No signature for JWT found in process.env.JWT_SIGNATURE')
+  })
+
   it('server should be able to start and stop via methods', async () => {
     expect.assertions(3)
 
+    process.env.JWT_SIGNATURE = 'test'
+
     await prepareServer({
       routesPath: '',
+      validateJWTHandler: () => ({ isValid: true }),
     })
+
+    process.env.JWT_SIGNATURE = undefined
 
     expect(server.info.started).toStrictEqual(0)
 
@@ -48,7 +62,7 @@ describe('when importing server as a module', () => {
     await server.stop()
 
     expect(server.info.started).toStrictEqual(0)
-  })
+  }, 16384)
 })
 
 describe('when launching server directly', () => {
@@ -63,7 +77,7 @@ describe('when launching server directly', () => {
           ...execOptions,
           'src/__tests__/fixtures/server-fixture.ts',
         ],
-        { env: { ...process.env, CALCIFER_SERVER_PORT: '8192' } },
+        { env: { ...process.env, CALCIFER_SERVER_PORT: '0', JWT_SIGNATURE: 'test' } },
         (error, stdout, stderr) => {
           const stdoutLines = stdout.split('\n')
           const lastLine = JSON.parse(stdoutLines[stdoutLines.length - 2])
@@ -91,6 +105,6 @@ describe('when launching server directly', () => {
         expect(signal).toBeNull()
       })
     }),
-    8192,
+    16384,
   )
 })
