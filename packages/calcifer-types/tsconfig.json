@@ -8,6 +8,6 @@
   },
   "extends": "../../tsconfig-src",
   "include": [
-    "./**/*.ts"
+    "./src/**/*.ts"
   ]
 }

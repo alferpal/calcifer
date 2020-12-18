@@ -1,6 +1,5 @@
-'use strict'
 
-const {name} = require('./package')
+const { name } = require('./package')
 const jestBase = require('../../jest.config.js')
 
 const config = {
