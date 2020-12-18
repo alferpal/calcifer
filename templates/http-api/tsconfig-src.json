@@ -8,9 +8,9 @@
   },
   "extends": "../../tsconfig-src.json",
   "include": [
-    "./**/*.ts"
+    "./src/**/*.ts"
   ],
   "exclude": [
-    "**/__tests__"
+    "**/__tests__/**/*.ts"
   ]
 }
