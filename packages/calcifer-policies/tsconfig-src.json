@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "typeRoots": [
+      "../calcifer-typings/types",
+      "node_modules/@types"
+    ]
+  },
+  "extends": "../../tsconfig-src.json",
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "**/__tests__/**/*.ts"
+  ]
+}
