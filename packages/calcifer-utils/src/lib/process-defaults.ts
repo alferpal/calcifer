@@ -33,7 +33,7 @@ function exit(code: number) {
  *  - warning
  */
 function setProcessDefaults() {
-  const callbacks: { [id: string]: (...args: any[]) => void } = {
+  const callbacks: { [id: string]: (...args: any[]) => void, } = {
     uncaughtException,
     unhandledRejection,
     warning,

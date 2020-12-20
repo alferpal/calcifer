@@ -1,4 +1,5 @@
 export interface UserAuth {
-  login: string;
-  roles: string[];
+  tokenId: string,
+  login: string,
+  roles: string[],
 }

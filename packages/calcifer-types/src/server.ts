@@ -9,15 +9,15 @@ export interface CalciferHapiServer extends Hapi.Server {
 }
 
 export interface CalciferHapiRequest extends Hapi.Request {
-  logger: Pino.Logger
+  logger: Pino.Logger,
 }
 
 export interface CalciferDecodedRequestAuth extends Omit<Hapi.RequestAuth, 'credentials'> {
-  credentials: UserAuth
+  credentials: UserAuth,
 }
 
 export interface CalciferAuthenticatedRequest extends Omit<CalciferHapiRequest, 'auth'> {
-  readonly auth: CalciferDecodedRequestAuth
+  readonly auth: CalciferDecodedRequestAuth,
 }
 
 export interface CalciferServerOptions {
@@ -26,9 +26,8 @@ export interface CalciferServerOptions {
     [name: string]: (
       request: CalciferAuthenticatedRequest,
       h: Hapi.ResponseToolkit
-    ) => symbol
+    ) => symbol,
   },
-  plugins?: Array<Hapi.ServerRegisterPluginObject<unknown>>
+  plugins?: Array<Hapi.ServerRegisterPluginObject<unknown>>,
   routesPath: string,
-  validateJWTHandler: (decoded: CalciferHapiDecodedCredentials) => {isValid: boolean}
 }
