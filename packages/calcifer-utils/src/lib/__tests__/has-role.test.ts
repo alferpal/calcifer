@@ -24,7 +24,7 @@ describe('when has-role is required from outside', () => {
   it('hasRole should be defined', () => {
     expect.assertions(1)
 
-    expect(exported.logger).toBeDefined()
+    expect(exported.hasRole).toBeDefined()
   })
   it('and be a function', () => {
     expect.assertions(1)
@@ -37,7 +37,11 @@ describe('hasRole', () => {
   it('should return false for users with no permissions', () => {
     expect.assertions(2)
 
-    const user: CalciferTypes.User.UserAuth = { login: 'test', roles: [] }
+    const user: CalciferTypes.User.UserAuth = {
+      login: 'test',
+      roles: [],
+      tokenId: '1',
+    }
 
     expect(exported.hasRole(user, 'whatever')).toStrictEqual(false)
 
@@ -49,7 +53,11 @@ describe('hasRole', () => {
   it('should return false for users not having the specified role', () => {
     expect.assertions(1)
 
-    const user: CalciferTypes.User.UserAuth = { login: 'test', roles: ['whatever'] }
+    const user: CalciferTypes.User.UserAuth = {
+      login: 'test',
+      roles: ['whatever'],
+      tokenId: '1',
+    }
 
     expect(exported.hasRole(user, 'tests')).toStrictEqual(false)
   })
@@ -57,7 +65,11 @@ describe('hasRole', () => {
   it('should return true for users with the right permissions', () => {
     expect.assertions(1)
 
-    const user: CalciferTypes.User.UserAuth = { login: 'test', roles: ['tests'] }
+    const user: CalciferTypes.User.UserAuth = {
+      login: 'test',
+      roles: ['tests'],
+      tokenId: '1',
+    }
 
     expect(exported.hasRole(user, 'tests')).toStrictEqual(true)
   })
@@ -65,7 +77,11 @@ describe('hasRole', () => {
   it('should return true for admins', () => {
     expect.assertions(1)
 
-    const user: CalciferTypes.User.UserAuth = { login: 'test', roles: ['admin'] }
+    const user: CalciferTypes.User.UserAuth = {
+      login: 'test',
+      roles: ['admin'],
+      tokenId: '1',
+    }
 
     expect(exported.hasRole(user, 'whatever')).toStrictEqual(true)
   })
