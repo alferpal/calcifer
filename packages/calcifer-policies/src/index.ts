@@ -6,7 +6,7 @@ import * as CalciferTypes from '@alferpal/calcifer-types'
 
 interface PolicyToGenerate {
   name: string,
-  property: string
+  property: string,
 }
 
 function generatePolicies(policiesToGenerate: PolicyToGenerate[]) {
@@ -14,7 +14,7 @@ function generatePolicies(policiesToGenerate: PolicyToGenerate[]) {
     [name: string]: (
       request: CalciferTypes.Server.CalciferAuthenticatedRequest,
       h: Hapi.ResponseToolkit
-    ) => symbol;
+    ) => symbol,
   } = {}
 
   policiesToGenerate.forEach(({ name, property }) => {
@@ -71,7 +71,7 @@ const policies: {
   [name: string]: (
     request: CalciferTypes.Server.CalciferAuthenticatedRequest,
     h: Hapi.ResponseToolkit
-  ) => symbol;
+  ) => symbol,
 } = { ...generatePolicies(policiesList), isLogged }
 
 export default policies

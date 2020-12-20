@@ -19,6 +19,19 @@
     "node"
   ],
   "rules": {
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "comma", // 'none' or 'semi' or 'comma'
+          "requireLast": true
+        },
+        "singleline": {
+          "delimiter": "comma", // 'semi' or 'comma'
+          "requireLast": true
+        }
+      }
+    ],
     "@typescript-eslint/no-use-before-define": [
       "error",
       {
