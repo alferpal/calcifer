@@ -58,7 +58,7 @@ describe('environment Defaults', () => {
 
 describe('uncaught Exception', () => {
   it('should be handled once the handler is installed', () => new Promise((done) => {
-    expect.assertions(9)
+    expect.assertions(8)
 
     const child = execFile(
       execPath, [
@@ -70,8 +70,8 @@ describe('uncaught Exception', () => {
 
         expect(error).not.toBeNull()
 
-        expect(output.calciferName).toBeDefined()
-        expect(output.calciferType).toBeDefined()
+        expect(output.calciferService).toBeDefined()
+
         expect(output.level).toStrictEqual(60)
         expect(output.msg).toContain('catch this!')
         expect(output.stack).toBeDefined()
@@ -91,7 +91,7 @@ describe('uncaught Exception', () => {
 
 describe('unhandled Rejection', () => {
   it('should be handled once the handler is installed', () => new Promise((done) => {
-    expect.assertions(9)
+    expect.assertions(8)
 
     const child = execFile(
       execPath, [
@@ -103,8 +103,8 @@ describe('unhandled Rejection', () => {
 
         expect(error).not.toBeNull()
 
-        expect(output.calciferName).toBeDefined()
-        expect(output.calciferType).toBeDefined()
+        expect(output.calciferService).toBeDefined()
+
         expect(output.level).toStrictEqual(60)
         expect(output.msg).toContain('catch this!')
         expect(output.stack).toBeDefined()
@@ -124,7 +124,7 @@ describe('unhandled Rejection', () => {
 
 describe('warnings', () => {
   it('should be handled once the handler is installed', () => new Promise((done) => {
-    expect.assertions(7)
+    expect.assertions(6)
 
     const child = execFile(
       execPath, [
@@ -136,8 +136,8 @@ describe('warnings', () => {
 
         expect(error).toBeNull()
 
-        expect(output.calciferName).toBeDefined()
-        expect(output.calciferType).toBeDefined()
+        expect(output.calciferService).toBeDefined()
+
         expect(output.level).toStrictEqual(40)
         expect(output.msg).toContain('fixtureDesignedWarning')
 
