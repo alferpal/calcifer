@@ -1,17 +1,17 @@
 import hyperid from 'hyperid'
-import got from 'got'
+import got, { ExtendOptions } from 'got'
 
 const idGenerator = hyperid()
 
-function getClient() {
-  return got.extend({
+function getClient(options: ExtendOptions = {}) {
+  return got.extend(got.mergeOptions(options, {
     hooks: {
-      beforeRequest: [(options) => {
+      beforeRequest: [(requestOptions) => {
         // eslint-disable-next-line no-param-reassign
-        options.headers['x-request-id'] = options.headers['x-request-id'] ?? idGenerator()
+        requestOptions.headers['x-request-id'] = requestOptions.headers['x-request-id'] ?? idGenerator()
       }],
     },
-  })
+  }))
 }
 
 export { getClient }
