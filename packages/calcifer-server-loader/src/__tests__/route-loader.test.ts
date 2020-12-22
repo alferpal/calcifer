@@ -1,6 +1,6 @@
+import path from 'path'
 import { describe, expect, it } from '@jest/globals'
 
-import path from 'path'
 import * as innerLib from '../route-loader'
 
 describe('getRoutes', () => {

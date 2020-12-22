@@ -28,6 +28,7 @@ export interface CalciferServerOptions {
       h: Hapi.ResponseToolkit
     ) => symbol,
   },
+  initTokenValidation?: boolean,
   plugins?: Array<Hapi.ServerRegisterPluginObject<unknown>>,
   routesPath: string,
 }

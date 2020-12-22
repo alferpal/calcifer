@@ -5,6 +5,7 @@ const isMain = Object.keys(require.main?.exports).length > 0
 async function init() {
   await prepareServer({
     routesPath: '',
+    initTokenValidation: false,
     plugins: [{
       plugin: {
         name: 'myPlugin',
@@ -22,7 +23,6 @@ async function init() {
         },
       },
     }],
-    validateJWTHandler: () => ({ isValid: true }),
   })
 
   if (isMain) {
