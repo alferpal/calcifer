@@ -1,8 +1,7 @@
-
+import * as CalciferTypes from '@alferpal/calcifer-types'
 import * as Hapi from '@hapi/hapi'
 import boom from '@hapi/boom'
 import { hasRole } from '@alferpal/calcifer-utils'
-import * as CalciferTypes from '@alferpal/calcifer-types'
 
 interface PolicyToGenerate {
   name: string,

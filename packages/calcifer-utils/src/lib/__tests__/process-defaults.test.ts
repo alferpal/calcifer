@@ -1,8 +1,8 @@
 import { describe, expect, it } from '@jest/globals'
-
 import { execFile } from 'child_process'
-import * as innerLib from '../process-defaults'
+
 import * as exported from '../..'
+import * as innerLib from '../process-defaults'
 
 const execOptions = [
   '--project',
