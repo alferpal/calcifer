@@ -11,7 +11,7 @@ A side-project to build somewhat of a home automation tool, not pretending to be
 ## Warning
 Calcifer is and always will be a testing ground for me to play with things.
 
-This means that, sometimes, how things are made or done will intentionaly not a _best practice_ or _the best option_.
+This means that, sometimes, how things are made or done will intentionaly not be a _best practice_ or _the best option_.
 
 If you'd like to know the reasoning behind something that raises your eyebrows, please, open an issue and ask :smile:
 
