@@ -1,6 +1,6 @@
 import { prepareServer, server } from '../../server-loader'
 
-const isMain = Object.keys(require.main?.exports).length > 0
+const isMain = Object.keys(require.main?.exports ?? {}).length > 0
 
 async function init() {
   await prepareServer({
