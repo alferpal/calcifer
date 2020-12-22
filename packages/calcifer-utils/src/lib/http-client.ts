@@ -1,5 +1,5 @@
-import hyperid from 'hyperid'
 import got, { ExtendOptions } from 'got'
+import hyperid from 'hyperid'
 
 const idGenerator = hyperid()
 

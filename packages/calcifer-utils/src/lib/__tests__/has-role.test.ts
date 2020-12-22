@@ -1,8 +1,8 @@
-import { describe, expect, it } from '@jest/globals'
 import * as CalciferTypes from '@alferpal/calcifer-types'
+import { describe, expect, it } from '@jest/globals'
 
-import * as innerLib from '../has-role'
 import * as exported from '../..'
+import * as innerLib from '../has-role'
 
 describe('when has-role is required directly:', () => {
   describe('hasRole', () => {
