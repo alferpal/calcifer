@@ -1,8 +1,5 @@
-
+import os from 'os'
 import { logger, finalLogger } from './log'
-
-// eslint-disable-next-line import/order
-import os = require('os')
 
 /**
  *  Sets some environmental defaults as listed:

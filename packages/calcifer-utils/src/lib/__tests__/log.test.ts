@@ -1,7 +1,7 @@
 import { describe, expect, it } from '@jest/globals'
 
-import * as innerLib from '../log'
 import * as exported from '../..'
+import * as innerLib from '../log'
 
 describe('when log is required directly:', () => {
   describe('logger', () => {

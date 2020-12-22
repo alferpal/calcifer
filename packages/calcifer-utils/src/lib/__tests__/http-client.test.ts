@@ -1,8 +1,8 @@
-import { describe, expect, it } from '@jest/globals'
 import nock from 'nock'
+import { describe, expect, it } from '@jest/globals'
 
-import * as innerLib from '../http-client'
 import * as exported from '../..'
+import * as innerLib from '../http-client'
 
 describe('when http-client is required directly:', () => {
   describe('getClient', () => {
