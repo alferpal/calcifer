@@ -5,7 +5,8 @@ const isMain = Object.keys(require.main?.exports).length > 0
 async function init() {
   await prepareServer({
     routesPath: __dirname,
-    validateJWTHandler: () => ({ isValid: true }),
+    /* istanbul ignore next */
+    initTokenValidation: process.env.NODE_ENV !== 'test',
   })
 
   if (isMain) {
