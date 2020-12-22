@@ -31,8 +31,10 @@ jobs:
           ${{ runner.OS }}-node-
           ${{ runner.OS }}-
     - name: Install
-      run: npm ci
-    - name: Build & test
+      run: npm install
+    - name: Build
+      run: npm run build
+    - name: Test
       run: npm run test
     - name: Upload Coverage
       run: npm run codecov
