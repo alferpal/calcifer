@@ -6,13 +6,14 @@ const config = {
   ...jestBase,
   displayName: name,
   name,
+  setupFilesAfterEnv: ['./jest-setup.js'],
 }
 
 config.coverageThreshold['./src/server-loader.ts'] = {
-  branches: 77.78,
+  branches: 75,
   functions: 100,
-  lines: 96.15,
-  statements: 96.3,
+  lines: 96.55,
+  statements: 96.67,
 }
 
 module.exports = config
