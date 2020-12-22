@@ -44,6 +44,7 @@
     ],
     "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
+    "jest/no-hooks": "off",
     "no-multiple-empty-lines": [
       "error",
       {
