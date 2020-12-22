@@ -2,7 +2,7 @@
   "compilerOptions": {
     "typeRoots": [
       "../calcifer-typings/types",
-      "./node_modules/@types"
+      "./node_modules/@types",
     ]
   },
   "extends": "../../tsconfig-test.json",

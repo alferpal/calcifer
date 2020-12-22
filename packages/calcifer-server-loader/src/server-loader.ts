@@ -1,13 +1,14 @@
-import { ServerError } from '@alferpal/calcifer-errors'
-import policies from '@alferpal/calcifer-policies'
-import { logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 import CalciferTypes from '@alferpal/calcifer-types'
-import { getRoutes } from './route-loader'
-// eslint-disable-next-line import/order
-import hapi = require('@hapi/hapi')
+import hapi from '@hapi/hapi'
+import policies from '@alferpal/calcifer-policies'
+import { ServerError } from '@alferpal/calcifer-errors'
+import { logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 
-const port = process.env.CALCIFER_SERVER_PORT
-  ? process.env.CALCIFER_SERVER_PORT
+import { getRoutes } from './route-loader'
+import { init as initValidation, validateJWTHandler } from './jwt-validator'
+
+const port = process.env.PORT
+  ? process.env.PORT
   : 0
 
 setProcessDefaults()
@@ -18,7 +19,7 @@ const server = new hapi.Server({
 
 async function init(options: CalciferTypes.Server.CalciferServerOptions) {
   const {
-    baseApiPath = '', extraPolicies = {}, plugins = [], routesPath, validateJWTHandler,
+    baseApiPath = '', extraPolicies = {}, initTokenValidation = true, plugins = [], routesPath,
   } = options
 
   const JWTSignature = process.env.JWT_SIGNATURE as string
@@ -30,6 +31,10 @@ async function init(options: CalciferTypes.Server.CalciferServerOptions) {
   const routes = await getRoutes(routesPath, baseApiPath)
 
   server.route(routes)
+
+  if (initTokenValidation) {
+    await initValidation()
+  }
 
   /* eslint-disable global-require */
 

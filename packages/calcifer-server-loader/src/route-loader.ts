@@ -1,6 +1,4 @@
-
 import * as Hapi from '@hapi/hapi'
-
 import fastGlob = require('fast-glob')
 
 /*

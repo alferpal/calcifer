@@ -1,6 +1,11 @@
-import { describe, expect, it } from '@jest/globals'
-
+import {
+  describe, expect, jest, it,
+} from '@jest/globals'
 import { execFile } from 'child_process'
+
+jest.mock('../jwt-validator')
+
+// eslint-disable-next-line import/first
 import { prepareServer, server } from '../server-loader'
 
 const execOptions = [
@@ -37,7 +42,6 @@ describe('when importing server as a module', () => {
 
     await expect(prepareServer({
       routesPath: '',
-      validateJWTHandler: () => ({ isValid: true }),
     })).rejects.toThrow('No signature for JWT found in process.env.JWT_SIGNATURE')
   })
 
@@ -48,7 +52,6 @@ describe('when importing server as a module', () => {
 
     await prepareServer({
       routesPath: '',
-      validateJWTHandler: () => ({ isValid: true }),
     })
 
     process.env.JWT_SIGNATURE = undefined
@@ -77,7 +80,7 @@ describe('when launching server directly', () => {
           ...execOptions,
           'src/__tests__/fixtures/server-fixture.ts',
         ],
-        { env: { ...process.env, CALCIFER_SERVER_PORT: '0', JWT_SIGNATURE: 'test' } },
+        { env: { ...process.env, PORT: '0', JWT_SIGNATURE: 'test' } },
         (error, stdout, stderr) => {
           const stdoutLines = stdout.split('\n')
           const lastLine = JSON.parse(stdoutLines[stdoutLines.length - 2])
