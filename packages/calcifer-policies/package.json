@@ -30,7 +30,7 @@
   },
   "license": "Parity-7.0.0",
   "dependencies": {
-    "@alferpal/calcifer-utils": "~1.0.6",
+    "@alferpal/calcifer-utils": "~0.0.0",
     "@hapi/boom": "~9.1.1"
   },
   "devDependencies": {
@@ -42,7 +42,6 @@
     "@types/jest": "~26.0.20",
     "@typescript-eslint/eslint-plugin": "~4.12.0",
     "@typescript-eslint/parser": "~4.12.0",
-    "conventional-changelog": "~3.1.24",
     "cz-conventional-changelog": "~3.3.0",
     "eslint": "~7.17.0",
     "eslint-config-airbnb-typescript": "~12.0.0",

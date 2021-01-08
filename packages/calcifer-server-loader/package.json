@@ -32,7 +32,7 @@
   "dependencies": {
     "@alferpal/calcifer-errors": "~0.0.0",
     "@alferpal/calcifer-policies": "~0.0.0",
-    "@alferpal/calcifer-utils": "~1.0.6",
+    "@alferpal/calcifer-utils": "~0.0.0",
     "@hapi/boom": "~9.1.1",
     "@hapi/hapi": "~20.0.3",
     "@hapi/inert": "~6.0.3",
@@ -64,7 +64,6 @@
     "@types/set-interval-async": "~1.0.0",
     "@typescript-eslint/eslint-plugin": "~4.12.0",
     "@typescript-eslint/parser": "~4.12.0",
-    "conventional-changelog": "~3.1.24",
     "cz-conventional-changelog": "~3.3.0",
     "dotenv": "~8.2.0",
     "eslint": "~7.17.0",

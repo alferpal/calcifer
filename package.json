@@ -4,6 +4,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --no-bail --stream",
+    "changelogs": "lerna exec --concurrency 1 --no-sort --stream --ignore '@alferpal/*-template' -- conventional-changelog --preset angular --infile CHANGELOG.md --same-file --lerna-package \\$LERNA_PACKAGE_NAME --commit-path \\$PWD",
     "clean": "lerna run clean --parallel --stream",
     "codecov": "codecov --clear",
     "commit": "git-cz",
