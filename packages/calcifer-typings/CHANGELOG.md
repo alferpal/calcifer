@@ -2,18 +2,4 @@
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
-# 1.0.0 (2021-01-08)
-
-
-### Features
-
-* **calcifer-types:** add server and user types ([64e9e8f](https://github.com/alferpal/calcifer/commit/64e9e8f9bb84d3f200d2d17e06efb4ed40e53d74))
-* **log:** Remove definitions not needed anymore ([f7cb83f](https://github.com/alferpal/calcifer/commit/f7cb83f790894f4d9ca2ed644ed368b1314a03a6))
-* **utils:** Add log in utils, also update / fix some deps ([f69a172](https://github.com/alferpal/calcifer/commit/f69a172e0e9a0ca5bf023b14231f9f7e97cef430))
-
-
-
-
-
 # 1.0.0 (2021-01-08)
