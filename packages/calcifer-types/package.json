@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-types",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Provides type definitions shared across calcifer packages",
   "scripts": {
     "build:fast": "tsc --build tsconfig.json",
@@ -28,8 +28,8 @@
   },
   "license": "Parity-7.0.0",
   "devDependencies": {
-    "@alferpal/calcifer-typings": "~0.0.0",
-    "@alferpal/eslint-config-calcifer": "~0.0.0",
+    "@alferpal/calcifer-typings": "^1.0.0",
+    "@alferpal/eslint-config-calcifer": "^1.0.0",
     "@types/hapi__hapi": "~20.0.3",
     "@types/node": "~14.14.20",
     "@types/pino": "~6.3.5",

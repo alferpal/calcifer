@@ -1,6 +1,6 @@
 {
   "name": "@alferpal/calcifer-server-loader",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Hapi server loading logic common to calcifer servers",
   "scripts": {
     "build:fast": "tsc --build tsconfig-src.json",
@@ -30,9 +30,9 @@
   },
   "license": "Parity-7.0.0",
   "dependencies": {
-    "@alferpal/calcifer-errors": "~0.0.0",
-    "@alferpal/calcifer-policies": "~0.0.0",
-    "@alferpal/calcifer-utils": "~0.0.0",
+    "@alferpal/calcifer-errors": "^1.0.0",
+    "@alferpal/calcifer-policies": "^1.0.0",
+    "@alferpal/calcifer-utils": "^1.0.0",
     "@hapi/boom": "~9.1.1",
     "@hapi/hapi": "~20.0.3",
     "@hapi/inert": "~6.0.3",
@@ -50,9 +50,9 @@
     "set-interval-async": "~1.0.34"
   },
   "devDependencies": {
-    "@alferpal/calcifer-types": "~0.0.0",
-    "@alferpal/calcifer-typings": "~0.0.0",
-    "@alferpal/eslint-config-calcifer": "~0.0.0",
+    "@alferpal/calcifer-types": "^1.0.0",
+    "@alferpal/calcifer-typings": "^1.0.0",
+    "@alferpal/eslint-config-calcifer": "^1.0.0",
     "@jest/globals": "~26.6.2",
     "@types/hapi-pino": "~8.0.1",
     "@types/hapi__hapi": "~20.0.3",
