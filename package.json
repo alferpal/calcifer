@@ -4,7 +4,6 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --no-bail --stream",
-    "changelogs": "lerna exec --concurrency 1 --no-sort --stream --ignore '@alferpal/*-template' -- conventional-changelog --preset angular --infile CHANGELOG.md --same-file --lerna-package \\$LERNA_PACKAGE_NAME --commit-path \\$PWD",
     "clean": "lerna run clean --parallel --stream",
     "codecov": "codecov --clear",
     "commit": "git-cz",
@@ -12,7 +11,6 @@
     "nuke": "npx rimraf **/node_modules **/package-lock.json",
     "postinstall": "npm run bootstrap",
     "postnuke": "npm install",
-    "publish": "lerna publish --conventional-commits --ignore-changes 'templates/**'",
     "test": "lerna run test --no-bail --stream",
     "updateCOC": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
     "updateContrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
