@@ -24,6 +24,10 @@ async function logInAuth(): Promise<string> {
 }
 
 // * Missing got cache option due to https://github.com/sindresorhus/got/issues/1567
+
+/**
+* Inits periodic get of invalid tokens from auth service
+*/
 async function init() {
   if (!client) {
     const token = await logInAuth()
@@ -72,6 +76,9 @@ async function loadInvalid() {
   invalid = invalidTokens
 }
 
+/**
+* Validates a decoded JWT
+*/
 function validateJWTHandler(
   decoded: CalciferTypes.Server.CalciferHapiDecodedCredentials,
 ): {isValid: boolean, } {

@@ -4,7 +4,7 @@ import fastGlob = require('fast-glob')
 /*
  * This has to include both .js and .ts files
  * due to how testing doesn't actually emit the files and so it needs the .ts ones,
- * but running code requires .js files
+ * but built code requires .js files
  */
 const toFind = ['./**/*-controller.(js|ts)', '!./**/*.d.ts']
 
