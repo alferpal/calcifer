@@ -17,6 +17,10 @@ const server = new hapi.Server({
   port,
 }) as CalciferTypes.Server.CalciferHapiServer
 
+/**
+ * Prepares the server instance exported in this module according to the options passed.
+ * @param options - The options for preparing the server
+ */
 async function init(options: CalciferTypes.Server.CalciferServerOptions) {
   const {
     baseApiPath = '', extraPolicies = {}, initTokenValidation = true, plugins = [], routesPath,
