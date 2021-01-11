@@ -16,7 +16,7 @@ function environmentDefaults() {
 
 /**
  * Exists the process in the next tick
- * - @param code The numeric code to be used as exist code
+ * @param code The numeric code to be used as exist code
  */
 function exit(code: number) {
   process.nextTick(process.exit, code)
@@ -38,7 +38,7 @@ function setProcessDefaults() {
 
   Object.keys(callbacks).forEach((event) => {
     process.removeListener(event, callbacks[event])
-    // @ts-ignore
+
     process.on(event, callbacks[event])
   })
 
@@ -46,9 +46,9 @@ function setProcessDefaults() {
 }
 
 /**
- * Handler four uncaughtException
+ * Handler for uncaughtException
  * Prints the error synchronously and exits the process
- * - @param err The uncaught error
+ * @param err The uncaught error
  */
 function uncaughtException(err: Error) {
   finalLogger.fatal(err)
@@ -59,7 +59,7 @@ function uncaughtException(err: Error) {
 /**
  * Handler for unhandledRejection
  * Prints the error synchronously and exits the process
- * - @param reason The error
+ * @param reason The error
  */
 function unhandledRejection(reason: Error | any) {
   finalLogger.fatal(reason)
@@ -70,7 +70,7 @@ function unhandledRejection(reason: Error | any) {
 /**
  * Handler for warnings
  * Prints the warning
- * - @param warn The error
+ * @param warn The error
  */
 function warning(warn: Error) {
   logger.warn(warn)
