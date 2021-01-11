@@ -32,7 +32,7 @@
   "dependencies": {
     "got": "~11.8.1",
     "hyperid": "~2.1.0",
-    "pino": "~6.9.0"
+    "pino": "~6.10.0"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "^1.0.0",
