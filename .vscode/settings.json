@@ -1,6 +1,6 @@
 {
   "eslint.workingDirectories": [
-    "./packages/calcifer-auth-server",
+    "./packages/calcifer-auth-service",
     "./packages/calcifer-errors",
     "./packages/calcifer-policies",
     "./packages/calcifer-server-loader",
