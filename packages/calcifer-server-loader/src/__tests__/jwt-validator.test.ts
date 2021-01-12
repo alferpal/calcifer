@@ -11,16 +11,27 @@ import * as jwtValidator from '../jwt-validator'
 
 describe('jwt-validator', () => {
   describe('init', () => {
+    let failInvalid = false
+
     beforeEach(() => {
+      let authFirstCall = true
       let getFirstCall = true
 
       nock('http://auth.calcifer')
         .persist()
         .post('/login')
-        .reply(200, JSON.stringify({ token: 'token' }))
+        .reply(() => {
+          if (authFirstCall) {
+            authFirstCall = false
+
+            return [401]
+          }
+
+          return [200, JSON.stringify({ token: 'token' })]
+        })
         .get('/invalid-tokens')
         .reply(() => {
-          if (getFirstCall) {
+          if (getFirstCall || failInvalid) {
             getFirstCall = false
 
             return [401]
@@ -34,6 +45,8 @@ describe('jwt-validator', () => {
     it('should set interval on first call, and clear and reset after', async () => {
       expect.assertions(4)
 
+      failInvalid = false
+
       const clearSpy = jest.spyOn(SIA, 'clearIntervalAsync')
       const setSpy = jest.spyOn(SIAD, 'setIntervalAsync')
 
@@ -46,6 +59,23 @@ describe('jwt-validator', () => {
 
       expect(clearSpy).toHaveBeenCalledTimes(1)
       expect(setSpy).toHaveBeenCalledTimes(2)
+
+      clearSpy.mockRestore()
+      setSpy.mockRestore()
+    })
+
+    it('should not throw even if errors occur', async () => {
+      expect.assertions(2)
+
+      failInvalid = true
+
+      const clearSpy = jest.spyOn(SIA, 'clearIntervalAsync')
+      const setSpy = jest.spyOn(SIAD, 'setIntervalAsync')
+
+      await jwtValidator.init()
+
+      expect(clearSpy).toHaveBeenCalledTimes(1)
+      expect(setSpy).toHaveBeenCalledTimes(1)
 
       clearSpy.mockRestore()
       setSpy.mockRestore()
