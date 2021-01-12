@@ -1,7 +1,7 @@
 import * as CalciferTypes from '@alferpal/calcifer-types'
 import { Got } from 'got'
 import { clearIntervalAsync } from 'set-interval-async'
-import { getClient } from '@alferpal/calcifer-utils'
+import { getClient, logger } from '@alferpal/calcifer-utils'
 import { setIntervalAsync, SetIntervalAsyncTimer } from 'set-interval-async/dynamic'
 
 const { AUTH_PASSWORD, AUTH_URL, AUTH_USER } = process.env
@@ -29,8 +29,14 @@ async function logInAuth(): Promise<string> {
 * Inits periodic get of invalid tokens from auth service
 */
 async function init() {
+  let token = ''
+
   if (!client) {
-    const token = await logInAuth()
+    try {
+      token = await logInAuth()
+    } catch (error) {
+      logger.error(error)
+    }
 
     client = getClient({
       headers: {
@@ -71,9 +77,13 @@ async function init() {
 }
 
 async function loadInvalid() {
-  const { invalidTokens }: CalciferTypes.AuthService.InvalidTokensResponseBody = await client.get(`${AUTH_URL}/invalid-tokens`).json()
+  try {
+    const { invalidTokens }: CalciferTypes.AuthService.InvalidTokensResponseBody = await client.get(`${AUTH_URL}/invalid-tokens`).json()
 
-  invalid = invalidTokens
+    invalid = invalidTokens
+  } catch (error) {
+    logger.error(error, 'failed to load invalid tokens')
+  }
 }
 
 /**
