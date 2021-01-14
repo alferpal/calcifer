@@ -28,8 +28,8 @@
   },
   "license": "Parity-7.0.0",
   "devDependencies": {
-    "@alferpal/calcifer-typings": "~ 1.0.0",
-    "@alferpal/eslint-config-calcifer": "~ 1.0.0",
+    "@alferpal/calcifer-typings": "workspace:~1.0.0",
+    "@alferpal/eslint-config-calcifer": "workspace:~1.0.0",
     "@types/hapi__hapi": "~20.0.3",
     "@types/node": "~14.14.20",
     "@types/pino": "~6.3.5",
