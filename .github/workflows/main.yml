@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,17 +18,21 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
     - name: Cache Node.js modules
       uses: actions/cache@v2
       with:
-        path: ~/.npm
-        key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+        path: ~/.pnpm-store
+        key: ${{ runner.OS }}-node-${{ hashFiles('pnpm-lock.yaml') }}
         restore-keys: |
           ${{ runner.OS }}-node-
           ${{ runner.OS }}-
+    - name: Install pnpm
+      uses: pnpm/action-setup@v1.2.1
+      with:
+        version: latest
     - name: Install
       run: npm install
     - name: Build

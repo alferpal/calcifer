@@ -30,9 +30,9 @@
   },
   "license": "Parity-7.0.0",
   "devDependencies": {
-    "@alferpal/calcifer-types": "~ 1.0.0",
-    "@alferpal/calcifer-typings": "~ 1.0.0",
-    "@alferpal/eslint-config-calcifer": "~ 1.0.0",
+    "@alferpal/calcifer-types": "workspace:~1.0.0",
+    "@alferpal/calcifer-typings": "workspace:~1.0.0",
+    "@alferpal/eslint-config-calcifer": "workspace:~1.0.0",
     "@jest/globals": "~26.6.2",
     "@types/bluebird": "~3.5.33",
     "@types/jest": "~26.0.20",
