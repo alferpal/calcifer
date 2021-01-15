@@ -45,7 +45,7 @@
     "hapi-pulse": "~3.0.0",
     "hapi-swagger": "~14.1.0",
     "mrhorse": "~6.0.1",
-    "quick-lru": "~5.1.1",
+    "quick-lru": "~6.0.0",
     "set-interval-async": "~1.0.34"
   },
   "devDependencies": {
