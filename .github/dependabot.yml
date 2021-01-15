@@ -1,13 +1,13 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "08:16"
-    timezone: Etc/UCT
-  labels:
-    - "automerge"
-    - "dependencies"
-  open-pull-requests-limit: 64
-  versioning-strategy: increase
+#- package-ecosystem: npm
+#  directory: "/"
+#  schedule:
+#    interval: daily
+#    time: "08:16"
+#    timezone: Etc/UCT
+#  labels:
+#    - "automerge"
+#    - "dependencies"
+#  open-pull-requests-limit: 0
+#  versioning-strategy: increase
