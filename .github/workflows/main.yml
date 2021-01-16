@@ -36,7 +36,7 @@ jobs:
     - name: Install
       run: pnpm install
     - name: Build
-      run: nppm run build
+      run: pnpm run build
     - name: Test
       run: pnpm run test
     - name: Upload Coverage
