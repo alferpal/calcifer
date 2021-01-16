@@ -34,12 +34,12 @@ jobs:
       with:
         version: latest
     - name: Install
-      run: npm install
+      run: pnpm install
     - name: Build
-      run: npm run build
+      run: nppm run build
     - name: Test
-      run: npm run test
+      run: pnpm run test
     - name: Upload Coverage
-      run: npm run codecov
+      run: pnpm run codecov
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

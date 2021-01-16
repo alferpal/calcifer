@@ -8,8 +8,6 @@
     "codecov": "codecov --clear",
     "commit": "git-cz",
     "lint": "pnpm run lint -r --parallel --stream",
-    "nuke": "pnpx rimraf **/node_modules **/package-lock.json",
-    "postnuke": "pnpm install",
     "updateAll": "pnpm update -r --latest",
     "test": "pnpm run test -r --no-bail --stream",
     "updateCOC": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
