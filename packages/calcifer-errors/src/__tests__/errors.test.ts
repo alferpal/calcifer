@@ -25,8 +25,6 @@ describe('errors', () => {
       expect(error.name).toStrictEqual(ErrorClass.name)
 
       expect(error.code).toStrictEqual(ErrorClass.ERROR_CODE)
-
-      // console.dir(error)
     })
   })
 })
