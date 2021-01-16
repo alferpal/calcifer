@@ -2,6 +2,7 @@
 
 ![Calcifer checks](https://github.com/alferpal/calcifer/workflows/Calcifer%20checks/badge.svg?branch=main)
 [![codecov](https://codecov.io/gh/alferpal/calcifer/branch/master/graph/badge.svg)](https://codecov.io/gh/alferpal/calcifer)
+[![DeepScan grade](https://deepscan.io/api/teams/5359/projects/7154/branches/278553/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5359&pid=7154&bid=278553)
 
 A side-project to build somewhat of a home automation tool, not pretending to be production-ready in any way. Might burn things or power moving castles.
 
