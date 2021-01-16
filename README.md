@@ -2,7 +2,6 @@
 
 ![Calcifer checks](https://github.com/alferpal/calcifer/workflows/Calcifer%20checks/badge.svg?branch=main)
 [![codecov](https://codecov.io/gh/alferpal/calcifer/branch/master/graph/badge.svg)](https://codecov.io/gh/alferpal/calcifer)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=alferpal/calcifer)](https://dependabot.com)
 
 A side-project to build somewhat of a home automation tool, not pretending to be production-ready in any way. Might burn things or power moving castles.
 
