@@ -4,6 +4,6 @@
 
 ### Features
 
-- **calcifer-server-loader:** add jwt checking and policy loading ([a88420e](https://github.com/alferpal/calcifer/commit/a88420e0530318617afcdbd7a991a4289f206b19))
-- **calcifer-server-loader:** move route loading from utils to new package with common hapi logic ([76b6aca](https://github.com/alferpal/calcifer/commit/76b6aca6fc655cdb3758a5dafe9f66ac0afbe949))
-- **calcifer-server-loader, calcifer-types:** add jwt validation logic in server loader, corresponding types ([f8c6b47](https://github.com/alferpal/calcifer/commit/f8c6b476c63575b70b0c5e48a8cd8149f78e3150))
+- **calcifer-server-loader:** add jwt checking and policy loading ([c685555(https://github.com/alferpal/calcifer/commit/c6855556904c06c9176d176645d8ca8d3fe46df5)])
+- **calcifer-server-loader:** move route loading from utils to new package with common hapi logic ([085d085(https://github.com/alferpal/calcifer/commit/085d085eb059ae0a5f0185592fb38f5f22c14608)])
+- **calcifer-server-loader, calcifer-types:** add jwt validation logic in server loader, corresponding types ([0a8164b(https://github.com/alferpal/calcifer/commit/0a8164bb173b6ef13bfef2f3056ab9831f6fe081)])
