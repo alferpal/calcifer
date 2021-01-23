@@ -11,7 +11,7 @@ const execOptions = [
 
 const execPath = './node_modules/.bin/ts-node'
 
-describe('when good-defaults is required directly:', () => {
+describe('when good-defaults is required directly', () => {
   it('setProcessDefaults should be defined and be a function', () => {
     expect.assertions(2)
 
@@ -20,7 +20,7 @@ describe('when good-defaults is required directly:', () => {
   })
 })
 
-describe('when good-defaults is required from outside:', () => {
+describe('when good-defaults is required from outside', () => {
   it('setProcessDefaults should be defined and be a function', () => {
     expect.assertions(2)
 

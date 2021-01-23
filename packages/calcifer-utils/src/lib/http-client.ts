@@ -1,7 +1,5 @@
 import got, { ExtendOptions } from 'got'
-import hyperid from 'hyperid'
-
-const idGenerator = hyperid()
+import { v4 as uuidv4 } from 'uuid'
 
 /**
  * Handler for unhandledRejection
@@ -14,7 +12,7 @@ function getClient(options: ExtendOptions = {}) {
     hooks: {
       beforeRequest: [(requestOptions) => {
         // eslint-disable-next-line no-param-reassign
-        requestOptions.headers['x-request-id'] = requestOptions.headers['x-request-id'] ?? idGenerator()
+        requestOptions.headers['x-request-id'] = requestOptions.headers['x-request-id'] ?? uuidv4()
       }],
     },
   }))

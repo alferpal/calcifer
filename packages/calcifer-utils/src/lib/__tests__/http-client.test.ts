@@ -4,7 +4,7 @@ import { describe, expect, it } from '@jest/globals'
 import * as exported from '../..'
 import * as innerLib from '../http-client'
 
-describe('when http-client is required directly:', () => {
+describe('when http-client is required directly', () => {
   describe('getClient', () => {
     it('should be defined', () => {
       expect.assertions(1)
@@ -51,7 +51,7 @@ describe('getClient', () => {
     const client = exported.getClient()
 
     nock('http://example.com').get('/test').reply(function testHeaders() {
-      expect(this.req.headers).toMatchObject({ 'x-request-id': 'randomId' })
+      expect(this.req.headers).toMatchObject({ 'x-request-id': '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d' })
 
       return [200, 'test']
     })

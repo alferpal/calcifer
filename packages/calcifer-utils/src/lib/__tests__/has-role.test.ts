@@ -4,7 +4,7 @@ import { describe, expect, it } from '@jest/globals'
 import * as exported from '../..'
 import * as innerLib from '../has-role'
 
-describe('when has-role is required directly:', () => {
+describe('when has-role is required directly', () => {
   describe('hasRole', () => {
     it('should be defined', () => {
       expect.assertions(1)

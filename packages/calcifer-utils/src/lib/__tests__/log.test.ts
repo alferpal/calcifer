@@ -3,7 +3,7 @@ import { describe, expect, it } from '@jest/globals'
 import * as exported from '../..'
 import * as innerLib from '../log'
 
-describe('when log is required directly:', () => {
+describe('when log is required directly', () => {
   describe('logger', () => {
     it('should be defined', () => {
       expect.assertions(1)
