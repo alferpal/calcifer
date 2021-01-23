@@ -37,7 +37,7 @@ importers:
       '@alferpal/eslint-config-calcifer': link:../eslint-config-calcifer
       '@jest/globals': 26.6.2
       '@types/hapi__hapi': 20.0.4
-      '@types/ioredis': 4.19.1
+      '@types/ioredis': 4.19.2
       '@types/jest': 26.0.20
       '@types/lodash': 4.14.168
       '@types/node': 14.14.22
@@ -69,7 +69,7 @@ importers:
       '@hapi/boom': ~9.1.1
       '@jest/globals': ^26.6.2
       '@types/hapi__hapi': ~20.0.4
-      '@types/ioredis': ~4.19.1
+      '@types/ioredis': ~4.19.2
       '@types/jest': ~26.0.20
       '@types/lodash': ~4.14.168
       '@types/node': ~14.14.22
@@ -340,8 +340,8 @@ importers:
   packages/calcifer-utils:
     dependencies:
       got: 11.8.1
-      hyperid: 2.1.0
       pino: 6.11.0
+      uuid: 8.3.2
     devDependencies:
       '@alferpal/calcifer-types': link:../calcifer-types
       '@alferpal/calcifer-typings': link:../calcifer-typings
@@ -350,6 +350,7 @@ importers:
       '@types/jest': 26.0.20
       '@types/node': 14.14.22
       '@types/pino': 6.3.5
+      '@types/uuid': 8.3.0
       '@typescript-eslint/eslint-plugin': 4.14.0_980e7d90d2d08155204a38366bd3b934
       '@typescript-eslint/parser': 4.14.0_eslint@7.18.0+typescript@4.1.3
       eslint: 7.18.0
@@ -374,6 +375,7 @@ importers:
       '@types/jest': ~26.0.20
       '@types/node': ~14.14.22
       '@types/pino': ~6.3.5
+      '@types/uuid': ~8.3.0
       '@typescript-eslint/eslint-plugin': ~4.14.0
       '@typescript-eslint/parser': ~4.14.0
       eslint: ~7.18.0
@@ -382,7 +384,6 @@ importers:
       eslint-plugin-jest: ~24.1.3
       eslint-plugin-node: ~11.1.0
       got: ~11.8.1
-      hyperid: ~2.1.0
       jest: ~26.6.3
       nock: ~13.0.6
       npm-run-all: ~4.1.5
@@ -393,6 +394,7 @@ importers:
       ts-jest: ~26.4.4
       ts-node: ~9.1.1
       typescript: ~4.1.3
+      uuid: ~8.3.2
   packages/eslint-config-calcifer:
     dependencies:
       eslint-config-airbnb-typescript: 12.0.0_c78a2df07f621d0985ff93590e53411b
@@ -1162,7 +1164,7 @@ packages:
       '@hapi/hoek': 9.1.1
       '@hapi/mimos': 5.0.0
       '@hapi/podium': 4.1.1
-      '@hapi/shot': 5.0.4
+      '@hapi/shot': 5.0.5
       '@hapi/somever': 3.0.0
       '@hapi/statehood': 7.0.3
       '@hapi/subtext': 7.0.3
@@ -1255,13 +1257,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-jh7a6+5Z4FUWzx8fgmxjaAa1DTBu+Qfg+NbVdo0f++rE5DgsVidUYrLDp3db65+QjDLleA2MfKQXkpT8ylBDXA==
-  /@hapi/shot/5.0.4:
+  /@hapi/shot/5.0.5:
     dependencies:
       '@hapi/hoek': 9.1.1
       '@hapi/validate': 1.1.3
     dev: false
     resolution:
-      integrity: sha512-PcEz0WJgFDA3xNSMeONgQmothFr7jhbbRRSAKaDh7chN7zOXBlhl13bvKZW6CMb2xVfJUmt34CW3e/oExMgBhQ==
+      integrity: sha512-x5AMSZ5+j+Paa8KdfCoKh+klB78otxF+vcJR/IoN91Vo2e5ulXIW6HUsFTCU+4W6P/Etaip9nmdAx2zWDimB2A==
   /@hapi/somever/3.0.0:
     dependencies:
       '@hapi/bounce': 2.0.0
@@ -1771,12 +1773,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-c3Xy026kOF7QOTn00hbIllV1dLR9hG9NkSrLQgCVs8NF6sBU+VGWjD3wLPhmh1TYAc7ugCFsvHYMN4VcBN1U1A==
-  /@types/ioredis/4.19.1:
+  /@types/ioredis/4.19.2:
     dependencies:
       '@types/node': 14.14.22
     dev: true
     resolution:
-      integrity: sha512-+q10eLAgjbYJMY/fAM7+zmNBegCAk3FZwcvgjdsPy5xK4MzFcVXB6yxa69bTB5Ouz24WqJiub6lPzasLE5BYZQ==
+      integrity: sha512-fejSsJ4pYvA8zVLvAgQFI9T2uvxhUW7Ph95KodnNxMZvnUhQrn4ohxjH7fuU+jUw7Q4JCDcaba7JxDmszFmrCA==
   /@types/istanbul-lib-coverage/2.0.3:
     dev: true
     resolution:
@@ -1883,6 +1885,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-RJJrrySY7A8havqpGObOB4W92QXKJo63/jFLLgpvOtsGUqbQZ9Sbgl35KMm1DjC6j7AvmmU2bIno+3IyEaemaw==
+  /@types/uuid/8.3.0:
+    dev: true
+    resolution:
+      integrity: sha512-eQ9qFW/fhfGJF8WKHGEHZEyVWfZxrT+6CLIJGBcZPfxUh/+BnEj+UCGYMlr9qZuX/2AltsvwrGqp0LhEW8D0zQ==
   /@types/yargs-parser/20.2.0:
     dev: true
     resolution:
@@ -4917,13 +4923,6 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-LCqqsB0PzJQ/AlCgfrfzRe3e3+NvmefAdKQhRYpxS4u6clblBoDdzzvHi8fmxKRzvMxPY/1WZWzomPZww0Anow==
-  /hyperid/2.1.0:
-    dependencies:
-      uuid: 3.4.0
-      uuid-parse: 1.1.0
-    dev: false
-    resolution:
-      integrity: sha512-cSakhxbUsaIuqjfvvcUuvl/Fl342J65xgLLYrYxSSr9qmJ/EJK+S8crS6mIlQd/a7i+Pe4D0MgSrtZPLze+aCw==
   /iconv-lite/0.4.24:
     dependencies:
       safer-buffer: 2.1.2
@@ -9303,18 +9302,13 @@ packages:
   /util-deprecate/1.0.2:
     resolution:
       integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
-  /uuid-parse/1.1.0:
-    dev: false
-    resolution:
-      integrity: sha512-OdmXxA8rDsQ7YpNVbKSJkNzTw2I+S5WsbMDnCtIWSQaosNAcWtFuI/YK1TjzUI6nbkgiqEyh8gWngfcv8Asd9A==
   /uuid/3.4.0:
+    dev: true
     hasBin: true
     resolution:
       integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
   /uuid/8.3.2:
-    dev: true
     hasBin: true
-    optional: true
     resolution:
       integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
   /v8-compile-cache/2.2.0:
