@@ -28,7 +28,7 @@
   },
   "license": "Parity-7.0.0",
   "devDependencies": {
-    "@changesets/cli": "~2.13.1",
+    "@changesets/cli": "~2.14.0",
     "codecov": "~3.8.1",
     "commitizen": "~4.2.3",
     "cz-conventional-changelog": "~3.3.0",
