@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "change-this-please",
   "scripts": {
-    "build:fast": "tsc --build tsconfig-src.json",
+    "build:fast": "tsc --build tsconfig-src.json --incremental",
     "build:watch": "onchange -i -k -v \"src/**/*.ts\" -- npm run build:fast",
     "//build": "tsc --build tsconfig-src.json",
     "clean": "rimraf .nyc_output coverage* dist",
