@@ -34,8 +34,6 @@ async function init(options: CalciferTypes.Server.CalciferServerOptions) {
 
   const routes = await getRoutes(routesPath, baseApiPath)
 
-  server.route(routes)
-
   if (initTokenValidation) {
     await initValidation()
   }
@@ -89,6 +87,8 @@ async function init(options: CalciferTypes.Server.CalciferServerOptions) {
     // @ts-ignore
     server.plugins.mrhorse.addPolicy(name, policy)
   })
+
+  server.route(routes)
 
   /* eslint-enable global-require */
 
