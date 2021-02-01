@@ -44,7 +44,7 @@
     "ioredis": "~4.19.4",
     "knex": "~0.21.17",
     "pg": "~8.5.1",
-    "pino-pretty": "~4.4.0"
+    "pino-pretty": "~4.5.0"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "workspace:~1.0.0",
