@@ -47,7 +47,8 @@
     "hapi-swagger": "~14.1.0",
     "mrhorse": "~6.0.1",
     "quick-lru": "~6.0.0",
-    "set-interval-async": "~1.0.34"
+    "set-interval-async": "~1.0.34",
+    "uuid": "~8.3.2"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "workspace:~1.0.0",
@@ -61,8 +62,9 @@
     "@types/node": "~14.14.22",
     "@types/pino": "~6.3.5",
     "@types/set-interval-async": "~1.0.0",
-    "@typescript-eslint/eslint-plugin": "~4.14.1",
-    "@typescript-eslint/parser": "~4.14.1",
+    "@types/uuid": "~8.3.0",
+    "@typescript-eslint/eslint-plugin": "~4.14.2",
+    "@typescript-eslint/parser": "~4.14.2",
     "cz-conventional-changelog": "~3.3.0",
     "dotenv": "~8.2.0",
     "eslint": "~7.19.0",
