@@ -1,0 +1,57 @@
+name: Update
+
+on:
+  schedule:
+  - cron: "16 8 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Cache Node.js modules
+      uses: actions/cache@v2
+      with:
+        path: ~/.pnpm-store
+        key: ${{ runner.OS }}-node-${{ hashFiles('pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.OS }}-node-
+          ${{ runner.OS }}-
+    - name: Install pnpm
+      uses: pnpm/action-setup@v1.2.1
+      with:
+        version: latest
+    - name: Install
+      run: pnpm install
+    - name: Update
+      run: pnpm run updateAll
+    - name: Build
+      run: pnpm run build
+    - name: Test
+      run: pnpm run test
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        commit-message: "chore: update deps"
+        committer: Alex Ferrando <alferpal@gmail.com>
+        author: Alex Ferrando <alferpal@gmail.com>
+        branch: chore/automatic-updates
+        labels: |
+            automerge
+            dependencies
+        title: Update dependencies
+    - name: Check outputs
+      run: |
+        echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+        echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
+
