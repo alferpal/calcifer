@@ -43,8 +43,6 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         commit-message: "chore: update deps"
-        committer: Alex Ferrando <alferpal@gmail.com>
-        author: Alex Ferrando <alferpal@gmail.com>
         branch: chore/automatic-updates
         labels: |
             automerge
