@@ -13,7 +13,7 @@
     "knex:migrate:make": "dotenv knex --knexfile ./knexfile.ts migrate:make -x ts",
     "knex:migrate:latest": "dotenv knex --knexfile ./knexfile.ts migrate:latest",
     "knex:migrate:rollback": "dotenv knex --knexfile ./knexfile.ts migrate:rollback",
-    "lint": "eslint --ext .ts src",
+    "lint": "eslint --ext .ts src --fix",
     "prebuild:fast": "npm run lint",
     "prebuild": "npm-run-all -p  clean lint",
     "predev": "npm run build:fast",
