@@ -7,9 +7,10 @@
     "clean": "pnpm run clean -r --parallel --stream",
     "codecov": "codecov --clear",
     "commit": "git-cz",
+    "postUpdate": "pnpm run -r postUpdate --parallel --stream",
     "lint": "pnpm run lint -r --parallel --stream",
-    "updateAll": "pnpm update -r --latest",
     "test": "pnpm run test -r --no-bail --stream",
+    "updateAll": "pnpm update -r --latest",
     "updateCOC": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
     "updateContrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
   },

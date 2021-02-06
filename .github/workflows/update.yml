@@ -35,6 +35,8 @@ jobs:
       run: pnpm install
     - name: Update
       run: pnpm run updateAll
+    - name: Post Update
+      run: pnpm run postUpdate
     - name: Build
       run: pnpm run build
     - name: Test

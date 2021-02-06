@@ -2,6 +2,9 @@
   "name": "@alferpal/eslint-config-calcifer",
   "version": "1.0.0",
   "description": "Shared eslint rules for calcifer packages",
+  "scripts": {
+    "postUpdate": "node ./set-peerdeps.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:alferpal/calcifer.git",
