@@ -91,7 +91,7 @@ async function loadInvalid() {
 */
 function validateJWTHandler(
   decoded: CalciferTypes.Server.CalciferHapiDecodedCredentials,
-): {isValid: boolean, } {
+): { isValid: boolean, } {
   return decoded.tokenId
   && decoded.tokenId.length
   && !invalid.includes(decoded.tokenId)

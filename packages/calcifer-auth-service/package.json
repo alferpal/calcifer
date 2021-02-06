@@ -41,7 +41,7 @@
     "@alferpal/calcifer-server-loader": "workspace:~1.0.0",
     "@alferpal/calcifer-utils": "workspace:~1.0.0",
     "@hapi/boom": "~9.1.1",
-    "ioredis": "~4.19.4",
+    "ioredis": "~4.22.0",
     "knex": "~0.21.17",
     "pg": "~8.5.1",
     "pino-pretty": "~4.5.0"
@@ -62,7 +62,6 @@
     "dotenv": "~8.2.0",
     "dotenv-cli": "~4.0.0",
     "eslint": "~7.19.0",
-    "eslint-config-airbnb-typescript": "~12.0.0",
     "eslint-plugin-import": "~2.22.1",
     "eslint-plugin-jest": "~24.1.3",
     "eslint-plugin-node": "~11.1.0",
