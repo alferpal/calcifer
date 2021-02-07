@@ -1,9 +1,9 @@
-import { prepareServer, server } from '../../server-loader'
+import { getServer } from '../../server-loader'
 
 const isMain = Object.keys(require.main?.exports ?? {}).length > 0
 
-async function init() {
-  await prepareServer({
+async function initServer() {
+  const server = await getServer({
     routesPath: '',
     initTokenValidation: false,
     plugins: [{
@@ -33,7 +33,7 @@ async function init() {
 }
 
 if (isMain) {
-  init()
+  initServer()
 }
 
-export { init, server }
+export { initServer }

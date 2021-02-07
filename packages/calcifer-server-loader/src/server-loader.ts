@@ -1,30 +1,35 @@
 import CalciferTypes from '@alferpal/calcifer-types'
+import boom from '@hapi/boom'
 import hapi from '@hapi/hapi'
 import policies from '@alferpal/calcifer-policies'
 import { ServerError } from '@alferpal/calcifer-errors'
 import { logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
+import { v4 as uuidv4 } from 'uuid'
 
 import { getRoutes } from './route-loader'
 import { init as initValidation, validateJWTHandler } from './jwt-validator'
 
-const port = process.env.PORT
-  ? process.env.PORT
-  : 0
+function isBoom(response: any): response is boom.Boom {
+  return !!response.isBoom
+}
 
 setProcessDefaults()
-
-const server = new hapi.Server({
-  port,
-}) as CalciferTypes.Server.CalciferHapiServer
 
 /**
  * Prepares the server instance exported in this module according to the options passed.
  * @param options - The options for preparing the server
  */
-async function init(options: CalciferTypes.Server.CalciferServerOptions) {
+async function getServer(options: CalciferTypes.Server.CalciferGetServerOptions) {
   const {
-    baseApiPath = '', extraPolicies = {}, initTokenValidation = true, plugins = [], routesPath,
+    baseApiPath = '', extraPolicies = {}, initTokenValidation = true, plugins = [], routesPath, port = 0,
   } = options
+
+  const server = new hapi.Server({
+    app: {
+      REQUEST_ID_HEADER: 'x-request-id',
+    },
+    port,
+  }) as CalciferTypes.Server.CalciferHapiServer
 
   const JWTSignature = process.env.JWT_SIGNATURE as string
 
@@ -83,18 +88,42 @@ async function init(options: CalciferTypes.Server.CalciferServerOptions) {
     },
   })
 
-  allPolicies.forEach(([name, policy]) => {
-    // @ts-ignore
-    server.plugins.mrhorse.addPolicy(name, policy)
-  })
-
-  server.route(routes)
-
   /* eslint-enable global-require */
 
   if (plugins.length) {
     await server.register(plugins)
   }
+
+  server.route(routes)
+
+  const reqIdHeader = server.settings.app.REQUEST_ID_HEADER
+
+  server.ext('onRequest', (request: CalciferTypes.Server.CalciferHapiRequest | hapi.Request,
+    h: hapi.ResponseToolkit) => {
+    (
+      request as CalciferTypes.Server.CalciferHapiRequest
+    ).id = request.headers[reqIdHeader] || uuidv4()
+
+    return h.continue
+  })
+
+  server.ext('onPreResponse', (request: CalciferTypes.Server.CalciferHapiRequest | hapi.Request,
+    h: hapi.ResponseToolkit) => {
+    const { id } = (request as CalciferTypes.Server.CalciferHapiRequest)
+
+    const { response } = request
+
+    if (isBoom(response)) {
+      // @ts-ignore
+      response.output.headers[reqIdHeader] = id
+    } else {
+      response.header(reqIdHeader, id)
+    }
+
+    return h.continue
+  })
+
+  return server
 }
 
-export { init as prepareServer, server }
+export { getServer }
