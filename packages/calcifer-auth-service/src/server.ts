@@ -1,3 +1,4 @@
+import type CalciferTypes from '@alferpal/calcifer-types'
 import { getServer } from '@alferpal/calcifer-server-loader'
 
 const isMain = Object.keys(require.main?.exports ?? {}).length > 0
@@ -6,12 +7,12 @@ const port = process.env.PORT
   ? process.env.PORT
   : 0
 
-async function initServer() {
+async function initServer(): Promise<CalciferTypes.Server.CalciferHapiServer> {
   const server = await getServer({
     /* istanbul ignore next */
     initTokenValidation: process.env.NODE_ENV !== 'test',
-    routesPath: __dirname,
     port,
+    routesPath: __dirname,
   })
 
   if (isMain) {
