@@ -51,7 +51,7 @@ function setProcessDefaults() {
  * @param err The uncaught error
  */
 function uncaughtException(err: Error) {
-  finalLogger.fatal(err)
+  finalLogger.fatal(err, 'Unhandled exception')
 
   exit(1)
 }
@@ -62,7 +62,7 @@ function uncaughtException(err: Error) {
  * @param reason The error
  */
 function unhandledRejection(reason: Error | any) {
-  finalLogger.fatal(reason)
+  finalLogger.fatal(reason, 'Unhandled rejection')
 
   exit(1)
 }
@@ -73,7 +73,7 @@ function unhandledRejection(reason: Error | any) {
  * @param warn The error
  */
 function warning(warn: Error) {
-  logger.warn(warn)
+  logger.warn(warn, 'Warning')
 }
 
 export { setProcessDefaults }
