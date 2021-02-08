@@ -7,7 +7,7 @@ importers:
       cz-conventional-changelog: 3.3.0
       husky: 4.3.8
       npm-run-all: 4.1.5
-      simple-git: 2.32.0
+      simple-git: 2.34.2
       standard-version: 9.1.0
       weallbehave: 1.2.0
       weallcontribute: 1.0.9
@@ -18,7 +18,7 @@ importers:
       cz-conventional-changelog: ~3.3.0
       husky: ~4.3.8
       npm-run-all: ~4.1.5
-      simple-git: ~2.32.0
+      simple-git: ~2.34.2
       standard-version: ~9.1.0
       weallbehave: ~1.2.0
       weallcontribute: ~1.0.9
@@ -1625,11 +1625,11 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-8Broas6vTtW4GIXTAHDoE32hnN2M5ykgCpWGbuXHQ15vEMqr23pB76e/GZcYsZCHALv50ktd24qhEyKr6wBtow==
-  /@sideway/address/4.1.0:
+  /@sideway/address/4.1.1:
     dependencies:
       '@hapi/hoek': 9.1.1
     resolution:
-      integrity: sha512-wAH/JYRXeIFQRsxerIuLjgUu2Xszam+O5xKeatJ4oudShOOirfmsQ1D6LL54XOU2tizpCYku+s1wmU0SYdpoSA==
+      integrity: sha512-+I5aaQr3m0OAmMr7RQ3fR9zx55sejEYR2BFJaxL+zT3VM2611X0SHvPWIbAUBZVTn/YzYKbV8gJ2oT/QELknfQ==
   /@sideway/formula/3.0.0:
     resolution:
       integrity: sha512-vHe7wZ4NOXVfkoRb8T5otiENVlT7a3IAiw7H5M2+GO+9CDgcVUUsX1zalAztCmwyOr2RUTGJdgB+ZvSVqmdHmg==
@@ -1737,7 +1737,7 @@ packages:
       '@types/hapi__podium': 3.4.1
       '@types/hapi__shot': 4.1.1
       '@types/node': 14.14.25
-      joi: 17.3.0
+      joi: 17.4.0
     dev: true
     resolution:
       integrity: sha512-xzGVjTr2i4xsJKKVrIOxVUq6H2m04ATtDiwOQHXdVBVnuEZoWbkN8tbb0L2S+DRXV7k2Zw5pW73YzDQHhbX5pw==
@@ -2435,7 +2435,7 @@ packages:
       '@hapi/hoek': 9.1.1
       chalk: 4.1.0
       easy-table: 1.1.1
-      joi: 17.3.0
+      joi: 17.4.0
     dev: false
     resolution:
       integrity: sha512-QA5amT0IFJgCFgJeWw2udD2zZLui60NgqXTyvbSq+qpVbS6jfqELTRlC8PWW0yD4+chdZ2a+svnN6WE9zqfK5Q==
@@ -5948,15 +5948,15 @@ packages:
       node: '>= 0.6.0'
     resolution:
       integrity: sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
-  /joi/17.3.0:
+  /joi/17.4.0:
     dependencies:
       '@hapi/hoek': 9.1.1
       '@hapi/topo': 5.0.0
-      '@sideway/address': 4.1.0
+      '@sideway/address': 4.1.1
       '@sideway/formula': 3.0.0
       '@sideway/pinpoint': 2.0.0
     resolution:
-      integrity: sha512-Qh5gdU6niuYbUIUV5ejbsMiiFmBdw8Kcp8Buj2JntszCkCfxJ9Cz76OtHxOZMPXrt5810iDIXs+n1nNVoquHgg==
+      integrity: sha512-F4WiW2xaV6wc1jxete70Rw4V/VuMd6IN+a5ilZsxG4uYtUXWu2kq9W5P2dz30e7Gmw8RCbY/u/uk+dMPma9tAg==
   /joycon/2.2.5:
     dev: false
     engines:
@@ -8322,14 +8322,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
-  /simple-git/2.32.0:
+  /simple-git/2.34.2:
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
       debug: 4.3.1
     dev: true
     resolution:
-      integrity: sha512-swz7avV2JADYgTmvs+j/eDBt+gPx3SAyh2MxlDVvxqHzHLkKr6kLr4N62qZCv5LBxc9Wx8TIXVeJKmTTY8UdSQ==
+      integrity: sha512-/EX4FtcpAj5L/Bs5zgaBGYDrnkrKflFVNppNLH9VXpIjZBLHx5cZ6/mOYJCoKXKlLRuk3iTvzrIsHo7v42zWHg==
   /sisteransi/1.0.5:
     dev: true
     resolution:
@@ -9017,7 +9017,7 @@ packages:
       bs-logger: 0.2.6
       buffer-from: 1.1.1
       fast-json-stable-stringify: 2.1.0
-      jest: 26.6.3
+      jest: 26.6.3_ts-node@9.1.1
       jest-util: 26.6.2
       json5: 2.2.0
       lodash: 4.17.20
