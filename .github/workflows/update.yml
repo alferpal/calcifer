@@ -41,6 +41,9 @@ jobs:
       run: pnpm run build
     - name: Test
       run: pnpm run test
+    - name: Generate PR Body
+      run: echo ::set-output name=markdown::$(node ./get-changed-packages.js)
+      id: generate-pr-body
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
@@ -50,6 +53,7 @@ jobs:
             automerge
             dependencies
         title: Update dependencies
+        body: ${{ steps.generate-pr-body.outputs.markdown }}
     - name: Check outputs
       run: |
         echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
