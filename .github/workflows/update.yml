@@ -41,6 +41,14 @@ jobs:
       run: pnpm run build
     - name: Test
       run: pnpm run test
+    - name: Generate PR Body
+      run: |
+        prBody=$(node ./get-changed-packages.js)
+        prBody="${prBody//'%'/'%25'}"
+        prBody="${prBody//$'\n'/'%0A'}"
+        prBody="${prBody//$'\r'/'%0D'}"
+        echo "::set-output name=markdown::$prBody"
+      id: generate-pr-body
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
@@ -50,6 +58,7 @@ jobs:
             automerge
             dependencies
         title: Update dependencies
+        body: ${{ steps.generate-pr-body.outputs.markdown }}
     - name: Check outputs
       run: |
         echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
