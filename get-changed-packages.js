@@ -54,6 +54,11 @@ async function generateDifferences() {
     })
   })
 
+  if (!Object.keys(differencesMap).length) {
+    console.log('# Only lockfile changes\n')
+    return
+  }
+
   let output = '# Updated dependencies\n'
 
   Object.entries(differencesMap).forEach(([package, updates]) => {
@@ -63,7 +68,7 @@ async function generateDifferences() {
       output += `- ${pkg}: ${version.old} -> ${version.new}\n`
     })
 
-    output+='\n'
+    output += '\n'
   })
 
   console.log(output)
