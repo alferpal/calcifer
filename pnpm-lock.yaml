@@ -1344,12 +1344,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-VjeHSlIzpv/NyD3N0YuHfXOPDIixcA1q2ZV98wsMqcYlPmv2n3Yb2lYP9XMElnaFVXg5A7YLTeLu6V84uQDjmQ==
-  /@istanbuljs/schema/0.1.2:
+  /@istanbuljs/schema/0.1.3:
     dev: true
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
+      integrity: sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
   /@jest/console/26.6.2:
     dependencies:
       '@jest/types': 26.6.2
@@ -1877,10 +1877,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-l3MXskUBef0KnHtEaOMq0OdPDG5+9nRNP3AmeuW+RJCIbOPRuVaEhJUCe5xE9LGPqgU4psF0okb38h1tp2ZVZw==
-  /@types/prettier/2.2.0:
+  /@types/prettier/2.2.1:
     dev: true
     resolution:
-      integrity: sha512-O3SQC6+6AySHwrspYn2UvC6tjo6jCTMMmylxZUFhE1CulVu5l3AxU6ca9lrJDTQDVllF62LIxVSx5fuYL6LiZg==
+      integrity: sha512-DxZZbyMAM9GWEzXL+BMZROWz9oo6A9EilwwOMET2UVu2uZTqMWS5S69KVtuVKaRjCUpcrOXRalet86/OpG4kqw==
   /@types/responselike/1.0.0:
     dependencies:
       '@types/node': 14.14.27
@@ -2383,7 +2383,7 @@ packages:
     dependencies:
       '@babel/helper-plugin-utils': 7.12.13
       '@istanbuljs/load-nyc-config': 1.1.0
-      '@istanbuljs/schema': 0.1.2
+      '@istanbuljs/schema': 0.1.3
       istanbul-lib-instrument: 4.0.3
       test-exclude: 6.0.0
     dev: true
@@ -4706,7 +4706,7 @@ packages:
       node: '>=0.4.7'
     hasBin: true
     optionalDependencies:
-      uglify-js: 3.12.7
+      uglify-js: 3.12.8
     resolution:
       integrity: sha512-1f2BACcBfiwAfStCKZNrUCgqNZkGsAT7UM3kkYtXuLo0KnaVfjKOyf7PRzB6++aK9STyT1Pd2ZCPe3EGOXleXA==
   /hapi-auth-jwt2/10.2.0:
@@ -5439,7 +5439,7 @@ packages:
   /istanbul-lib-instrument/4.0.3:
     dependencies:
       '@babel/core': 7.12.16
-      '@istanbuljs/schema': 0.1.2
+      '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.0.0
       semver: 6.3.0
     dev: true
@@ -5974,7 +5974,7 @@ packages:
       '@babel/types': 7.12.13
       '@jest/types': 26.6.2
       '@types/babel__traverse': 7.11.0
-      '@types/prettier': 2.2.0
+      '@types/prettier': 2.2.1
       chalk: 4.1.0
       expect: 26.6.2
       graceful-fs: 4.2.6
@@ -6748,7 +6748,7 @@ packages:
       redent: 3.0.0
       trim-newlines: 3.0.0
       type-fest: 0.18.1
-      yargs-parser: 20.2.4
+      yargs-parser: 20.2.5
     dev: true
     engines:
       node: '>=10'
@@ -7113,7 +7113,7 @@ packages:
   /nyc/15.1.0:
     dependencies:
       '@istanbuljs/load-nyc-config': 1.1.0
-      '@istanbuljs/schema': 0.1.2
+      '@istanbuljs/schema': 0.1.3
       caching-transform: 4.0.0
       convert-source-map: 1.7.0
       decamelize: 1.2.0
@@ -9142,7 +9142,7 @@ packages:
       integrity: sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==
   /test-exclude/6.0.0:
     dependencies:
-      '@istanbuljs/schema': 0.1.2
+      '@istanbuljs/schema': 0.1.3
       glob: 7.1.6
       minimatch: 3.0.4
     dev: true
@@ -9313,7 +9313,7 @@ packages:
       mkdirp: 1.0.4
       semver: 7.3.4
       typescript: 4.1.5
-      yargs-parser: 20.2.4
+      yargs-parser: 20.2.5
     dev: true
     engines:
       node: '>= 10'
@@ -9458,13 +9458,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-6OSu9PTIzmn9TCDiovULTnET6BgXtDYL4Gg4szY+cGsc3JP1dQL8qvE8kShTRx1NIw4Q9IBHlwODjkjWEtMUyA==
-  /uglify-js/3.12.7:
+  /uglify-js/3.12.8:
     engines:
       node: '>=0.8.0'
     hasBin: true
     optional: true
     resolution:
-      integrity: sha512-SIZhkoh+U/wjW+BHGhVwE9nt8tWJspncloBcFapkpGRwNPqcH8pzX36BXe3TPBjzHWPMUZotpCigak/udWNr1Q==
+      integrity: sha512-fvBeuXOsvqjecUtF/l1dwsrrf5y2BCUk9AOJGzGcm6tE7vegku5u/YvqjyDaAGr422PLoLnrxg3EnRvTqsdC1w==
   /unc-path-regex/0.1.2:
     dev: false
     engines:
@@ -9799,12 +9799,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==
-  /yargs-parser/20.2.4:
+  /yargs-parser/20.2.5:
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-WOkpgNhPTlE73h4VFAFsOnomJVaovO8VqLDzy5saChRBFQFBoMYirowyW+Q9HB4HFF4Z7VZTiG3iSzJJA29yRA==
+      integrity: sha512-jYRGS3zWy20NtDtK2kBgo/TlAoy5YUuhD9/LZ7z7W4j1Fdw2cqD0xEEclf8fxc8xjD6X5Qr+qQQwCEsP8iRiYg==
   /yargs-parser/4.2.1:
     dependencies:
       camelcase: 3.0.0
