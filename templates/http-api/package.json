@@ -16,7 +16,7 @@
     "prerelease": "npm test ",
     "pretest": "npm run build",
     "start": "node dist/server.js | pino-pretty -c -t",
-    "//test": "nyc jest --runInBand"
+    "//test": "nyc jest"
   },
   "repository": {
     "type": "git",
