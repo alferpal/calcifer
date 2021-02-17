@@ -35,6 +35,8 @@ async function generateDifferences() {
 
         if (type === 'templates') {
           package = `calcifer-${packageFolder}-template`
+        } else if (packageFolder === undefined) {
+          package = 'root'
         } else {
           package = packageFolder
         }
