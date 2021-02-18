@@ -8,7 +8,7 @@ importers:
       husky: 5.0.9
       npm-run-all: 4.1.5
       simple-git: 2.35.0
-      standard-version: 9.1.0
+      standard-version: 9.1.1
       weallbehave: 1.2.0
       weallcontribute: 1.0.9
     specifiers:
@@ -19,7 +19,7 @@ importers:
       husky: ~5.0.9
       npm-run-all: ~4.1.5
       simple-git: ~2.35.0
-      standard-version: ~9.1.0
+      standard-version: ~9.1.1
       weallbehave: ~1.2.0
       weallcontribute: ~1.0.9
   packages/calcifer-auth-service:
@@ -55,7 +55,7 @@ importers:
       nyc: 15.1.0
       onchange: 7.1.0
       rimraf: 3.0.2
-      standard-version: 9.1.0
+      standard-version: 9.1.1
       ts-jest: 26.5.1_jest@26.6.3+typescript@4.1.5
       ts-node: 9.1.1_typescript@4.1.5
       typescript: 4.1.5
@@ -90,7 +90,7 @@ importers:
       pg: ~8.5.1
       pino-pretty: ~4.5.0
       rimraf: ~3.0.2
-      standard-version: ~9.1.0
+      standard-version: ~9.1.1
       ts-jest: ~26.5.1
       ts-node: ~9.1.1
       typescript: ~4.1.5
@@ -160,7 +160,7 @@ importers:
       nyc: 15.1.0
       onchange: 7.1.0
       rimraf: 3.0.2
-      standard-version: 9.1.0
+      standard-version: 9.1.1
       ts-jest: 26.5.1_jest@26.6.3+typescript@4.1.5
       ts-node: 9.1.1_typescript@4.1.5
       typescript: 4.1.5
@@ -185,7 +185,7 @@ importers:
       nyc: ~15.1.0
       onchange: ~7.1.0
       rimraf: ~3.0.2
-      standard-version: ~9.1.0
+      standard-version: ~9.1.1
       ts-jest: ~26.5.1
       ts-node: ~9.1.1
       typescript: ~4.1.5
@@ -238,7 +238,7 @@ importers:
       nyc: 15.1.0
       onchange: 7.1.0
       rimraf: 3.0.2
-      standard-version: 9.1.0
+      standard-version: 9.1.1
       ts-jest: 26.5.1_jest@26.6.3+typescript@4.1.5
       ts-node: 9.1.1_typescript@4.1.5
       typescript: 4.1.5
@@ -288,7 +288,7 @@ importers:
       quick-lru: ~6.0.0
       rimraf: ~3.0.2
       set-interval-async: ~1.0.34
-      standard-version: ~9.1.0
+      standard-version: ~9.1.1
       ts-jest: ~26.5.1
       ts-node: ~9.1.1
       typescript: ~4.1.5
@@ -441,7 +441,7 @@ importers:
       nyc: 15.1.0
       onchange: 7.1.0
       rimraf: 3.0.2
-      standard-version: 9.1.0
+      standard-version: 9.1.1
       ts-jest: 26.5.1_jest@26.6.3+typescript@4.1.5
       typescript: 4.1.5
     specifiers:
@@ -474,7 +474,7 @@ importers:
       onchange: ~7.1.0
       pino-pretty: ~4.5.0
       rimraf: ~3.0.2
-      standard-version: ~9.1.0
+      standard-version: ~9.1.1
       ts-jest: ~26.5.1
       typescript: ~4.1.5
   templates/plain-module:
@@ -2649,16 +2649,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-MIvur/3ygRkFHvodkyITyRuPkuc=
-  /camelcase-keys/4.2.0:
-    dependencies:
-      camelcase: 4.1.0
-      map-obj: 2.0.0
-      quick-lru: 1.1.0
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-oqpfsa9oh1glnDLBQUJteJI7m3c=
   /camelcase-keys/6.2.2:
     dependencies:
       camelcase: 5.3.1
@@ -2827,6 +2817,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-t6wbgtoCXvAzst7QgXxJYqPt0usEfbgQdftEPbLL/cvv6HPE5VgvqCuAIDR0NgU52ds6rFwqrgakNLrHEjCbrQ==
+  /cliui/7.0.4:
+    dependencies:
+      string-width: 4.2.0
+      strip-ansi: 6.0.0
+      wrap-ansi: 7.0.0
+    dev: true
+    resolution:
+      integrity: sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ==
   /clone-response/1.0.2:
     dependencies:
       mimic-response: 1.0.1
@@ -3155,13 +3153,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-OG9kQtmMZBJD/32NEw5IhN5+HnBqVjy03eC+I71I0oQRFA5rOgA4OtPOYG7mz1GkCfCNxn3gKIX8EiHJYuf1cA==
-  /conventional-recommended-bump/6.0.11:
+  /conventional-recommended-bump/6.1.0:
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog-preset-loader: 2.3.4
       conventional-commits-filter: 2.0.7
       conventional-commits-parser: 3.2.1
-      git-raw-commits: 2.0.0
+      git-raw-commits: 2.0.10
       git-semver-tags: 4.1.1
       meow: 8.1.2
       q: 1.5.1
@@ -3170,7 +3168,7 @@ packages:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-FciYBMwzwwBZ1K4NS8c57rsOfSc51e1V6UVSNIosrjH+A6xXkyiA4ELwoWyRKdMhJ+m3O6ru9ZJ7F2QFjjYJdQ==
+      integrity: sha512-uiApbSiNGM/kkdL9GTOLAqC4hbptObFo4wW2QRyHsKciGAfQuLU1ShZ1BIVI/+K2BE/W1AWYQMCXAsv4dyKPaw==
   /convert-source-map/1.7.0:
     dependencies:
       safe-buffer: 5.1.2
@@ -3325,14 +3323,6 @@ packages:
       '@commitlint/load': 11.0.0
     resolution:
       integrity: sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==
-  /dargs/4.1.0:
-    dependencies:
-      number-is-nan: 1.0.1
-    dev: true
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-A6nbtLXC8Tm/FK5T8LiipqhvThc=
   /dargs/7.0.0:
     dev: true
     engines:
@@ -3690,6 +3680,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-Um/+FxMr9CISWh0bi5Zv0iOD+4cFh5qLeks1qhAopKVAJw3drgKbKySikp7wGhDL0HPeaja0P5ULZrxLkniUVg==
+  /escalade/3.1.1:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==
   /escape-string-regexp/1.0.5:
     engines:
       node: '>=0.8.0'
@@ -4345,7 +4341,7 @@ packages:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
-      mime-types: 2.1.28
+      mime-types: 2.1.29
     dev: true
     engines:
       node: '>= 0.12'
@@ -4355,7 +4351,7 @@ packages:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
-      mime-types: 2.1.28
+      mime-types: 2.1.29
     dev: false
     engines:
       node: '>= 0.12'
@@ -4531,19 +4527,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
-  /git-raw-commits/2.0.0:
-    dependencies:
-      dargs: 4.1.0
-      lodash.template: 4.5.0
-      meow: 4.0.1
-      split2: 2.2.0
-      through2: 2.0.5
-    dev: true
-    engines:
-      node: '>=6.9.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-w4jFEJFgKXMQJ0H0ikBk2S+4KP2VEjhCvLCNqbNRQC8BgGWgLKNCO7a9K9LI+TVT7Gfoloje502sEnctibffgg==
   /git-raw-commits/2.0.10:
     dependencies:
       dargs: 7.0.0
@@ -5023,12 +5006,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-ji1INIdCEhtKghi3oTfppSBJ3IA=
-  /indent-string/3.2.0:
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-Sl/W0nzDMvN+VBmlBNu4NxBckok=
   /indent-string/4.0.0:
     dev: true
     engines:
@@ -6494,10 +6471,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==
-  /lodash._reinterpolate/3.0.0:
-    dev: true
-    resolution:
-      integrity: sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
   /lodash.defaults/4.2.0:
     dev: false
     resolution:
@@ -6566,19 +6539,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-lDbjTtJgk+1/+uGTYUQ1CRXZrdg=
-  /lodash.template/4.5.0:
-    dependencies:
-      lodash._reinterpolate: 3.0.0
-      lodash.templatesettings: 4.2.0
-    dev: true
-    resolution:
-      integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
-  /lodash.templatesettings/4.2.0:
-    dependencies:
-      lodash._reinterpolate: 3.0.0
-    dev: true
-    resolution:
-      integrity: sha512-stgLz+i3Aa9mZgnjr/O+v9ruKZsPsndy7qPZOchbqk2cnTU1ZaldKK+v7m54WoKIyxiuMZTKT2H81F8BeAc3ZQ==
   /lodash/4.17.20:
     resolution:
       integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -6660,12 +6620,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-2TPOuSBdgr3PSIb2dCvcK03qFG0=
-  /map-obj/2.0.0:
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-plzSkIepJZi4eRJXpSPgISIqwfk=
   /map-obj/4.1.0:
     dev: true
     engines:
@@ -6702,22 +6656,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-cstmi0JSKCkKu/qFaJJYcwioAfs=
-  /meow/4.0.1:
-    dependencies:
-      camelcase-keys: 4.2.0
-      decamelize-keys: 1.1.0
-      loud-rejection: 1.6.0
-      minimist: 1.2.5
-      minimist-options: 3.0.2
-      normalize-package-data: 2.5.0
-      read-pkg-up: 3.0.0
-      redent: 2.0.0
-      trim-newlines: 2.0.0
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-xcSBHD5Z86zaOc+781KrupuHAzeGXSLtiAOmBsiLDiPSaYSB6hdew2ng9EBAnZ62jagG9MHAOdxpDi/lWBFJ/A==
   /meow/6.1.1:
     dependencies:
       '@types/minimist': 1.2.1
@@ -6800,24 +6738,18 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-y7FpHSbMUMoyPbYUSzO6PaZ6FyRnQOpHuKwbo1G+Knck95XVU4QAiKdGEnj5wwoS7PlOgthX/09u5iFJ+aYf5Q==
-  /mime-db/1.45.0:
-    engines:
-      node: '>= 0.6'
-    resolution:
-      integrity: sha512-CkqLUxUk15hofLoLyljJSrukZi8mAtgd+yE5uO4tqRZsdsAJKv0O+rFMhVDRJgozy+yG6md5KwuXhD4ocIoP+w==
   /mime-db/1.46.0:
-    dev: false
     engines:
       node: '>= 0.6'
     resolution:
       integrity: sha512-svXaP8UQRZ5K7or+ZmfNhg2xX3yKDMUzqadsSqi4NCH/KomcH75MAMYAGVlvXn4+b/xOPhS3I2uHKRUzvjY7BQ==
-  /mime-types/2.1.28:
+  /mime-types/2.1.29:
     dependencies:
-      mime-db: 1.45.0
+      mime-db: 1.46.0
     engines:
       node: '>= 0.6'
     resolution:
-      integrity: sha512-0TO2yJ5YHYr7M2zzT7gDU1tbwHxEUWBCLt0lscSNpcdAfFyJOVEpRYNS7EXVcTLNj/25QO8gulHC5JtTzSE2UQ==
+      integrity: sha512-Y/jMt/S5sR9OaqteJtslsFZKWOIIqMACsJSiHghlCAyhf7jfVYjKBmLiX8OgpWeW+fjJ2b+Az69aPFPkUOY6xQ==
   /mime/1.6.0:
     dev: false
     engines:
@@ -6861,15 +6793,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
-  /minimist-options/3.0.2:
-    dependencies:
-      arrify: 1.0.1
-      is-plain-obj: 1.1.0
-    dev: true
-    engines:
-      node: '>= 4'
-    resolution:
-      integrity: sha512-FyBrT/d0d4+uiZRbqznPXqw3IpZZG3gl3wKWiX784FycUKVwBt0uLBFkQrtE4tZOrgo78nZp2jnKz3L65T5LdQ==
   /minimist-options/4.1.0:
     dependencies:
       arrify: 1.0.1
@@ -7957,12 +7880,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-RyYpQ6Q5/drsJyOhrWHYMWTedvjTIat+FTwv0K4yoUxzvekw2aRHMQJLlnvt8UantkZg2++bEzD9EdxXqkWf4A==
-  /quick-lru/1.1.0:
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=
   /quick-lru/4.0.1:
     dev: true
     engines:
@@ -8138,15 +8055,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-z5Fqsf1fHxbfsggi3W7H9zDCr94=
-  /redent/2.0.0:
-    dependencies:
-      indent-string: 3.2.0
-      strip-indent: 2.0.0
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-wbIAe0LVfrE4kHmzyDM2OdXhzKo=
   /redent/3.0.0:
     dependencies:
       indent-string: 4.0.0
@@ -8260,7 +8168,7 @@ packages:
       is-typedarray: 1.0.0
       isstream: 0.1.2
       json-stringify-safe: 5.0.1
-      mime-types: 2.1.28
+      mime-types: 2.1.29
       oauth-sign: 0.9.0
       performance-now: 2.1.0
       qs: 6.5.2
@@ -8732,12 +8640,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-mTyOoPbrivtXnwnIxZRFYRrPNtEFKlpB2fvjSnCQUiAA6qAZzqwna5envK4uk6OIeP17CsdF3rSBGYVBsU0Tkg==
-  /split2/2.2.0:
-    dependencies:
-      through2: 2.0.5
-    dev: true
-    resolution:
-      integrity: sha512-RAb22TG39LhI31MbreBgIuKiIKhVsawfTgEGqKHTK87aG+ul/PB8Sqoi3I7kVdRWiCfrKxK3uo4/YUkpNvhPbw==
   /split2/3.2.2:
     dependencies:
       readable-stream: 3.6.0
@@ -8775,13 +8677,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NQOxSeB8gOI5WjSaxjBgog2QFw55FV8TkS6Y07BiB3VJ8xNTvUYm0wl0s8ObgQ5NhdpnNfigMIKjgPESzgr4tg==
-  /standard-version/9.1.0:
+  /standard-version/9.1.1:
     dependencies:
       chalk: 2.4.2
       conventional-changelog: 3.1.24
       conventional-changelog-config-spec: 2.1.0
       conventional-changelog-conventionalcommits: 4.5.0
-      conventional-recommended-bump: 6.0.11
+      conventional-recommended-bump: 6.1.0
       detect-indent: 6.0.0
       detect-newline: 3.1.0
       dotgitignore: 2.1.0
@@ -8791,13 +8693,13 @@ packages:
       git-semver-tags: 4.1.1
       semver: 7.3.4
       stringify-package: 1.0.1
-      yargs: 15.4.1
+      yargs: 16.2.0
     dev: true
     engines:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-EJcbKUGKBuHjiDSUL5XjPhT1KGVM+UCvv/ti70fHnJwJyJqTSJWl0mWj/Wj0WwsoskyvKWURESzBsZmCCMUZzg==
+      integrity: sha512-PF9JnRauBwH7DAkmefYu1mB2Kx0MVG13udqDTFmDUiogbyikBAHBdMrVuauxtAb2YIkyZ3FMYCNv0hqUKMOPww==
   /static-extend/0.1.2:
     dependencies:
       define-property: 0.2.5
@@ -8981,12 +8883,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha1-DHlipq3vp7vUrDZkYKY4VSrhoKI=
-  /strip-indent/2.0.0:
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-XvjbKV0B5u1sv3qrlpmNeCJSe2g=
   /strip-indent/3.0.0:
     dependencies:
       min-indent: 1.0.1
@@ -9281,12 +9177,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-WIeWa7WCpFA6QetST301ARgVphM=
-  /trim-newlines/2.0.0:
-    dev: true
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha1-tAPQuRvlDDMd/EuC7s6yLD3hbSA=
   /trim-newlines/3.0.0:
     dev: true
     engines:
@@ -9721,6 +9611,16 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
+  /wrap-ansi/7.0.0:
+    dependencies:
+      ansi-styles: 4.3.0
+      string-width: 4.2.0
+      strip-ansi: 6.0.0
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
   /wrappy/1.0.2:
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
@@ -9772,6 +9672,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-wNcy4NvjMYL8gogWWYAO7ZFWFfHcbdbE57tZO8e4cbpj8tfUcwrwqSl3ad8HxpYWCdXcJUCeKKZS62Av1affwQ==
+  /y18n/5.0.5:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-hsRUr4FFrvhhRH12wOdfs38Gy7k2FFzB9qgN9v3aLykRq0dRcdcpz5C9FxdS2NuhOrI/628b/KSTJ3rwHysYSg==
   /yallist/2.1.2:
     dev: true
     resolution:
@@ -9829,6 +9735,20 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
+  /yargs/16.2.0:
+    dependencies:
+      cliui: 7.0.4
+      escalade: 3.1.1
+      get-caller-file: 2.0.5
+      require-directory: 2.1.1
+      string-width: 4.2.0
+      y18n: 5.0.5
+      yargs-parser: 20.2.5
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==
   /yargs/6.6.0:
     dependencies:
       camelcase: 3.0.0
