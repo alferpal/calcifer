@@ -42,9 +42,9 @@
     "@alferpal/calcifer-utils": "workspace:~1.0.0",
     "@hapi/boom": "~9.1.1",
     "ioredis": "~4.23.0",
-    "knex": "~0.21.18",
+    "knex": "~0.21.19",
     "pg": "~8.5.1",
-    "pino-pretty": "~4.5.0"
+    "pino-pretty": "~4.6.0"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "workspace:~1.0.0",
