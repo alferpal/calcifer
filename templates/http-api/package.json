@@ -41,7 +41,7 @@
     "bluebird": "~3.7.2",
     "hapi-pino": "~8.3.0",
     "lodash": "~4.17.21",
-    "pino-pretty": "~4.6.0"
+    "pino-pretty": "~4.7.0"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "workspace:~1.0.0",
