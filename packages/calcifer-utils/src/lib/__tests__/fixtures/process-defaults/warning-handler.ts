@@ -4,4 +4,7 @@ setProcessDefaults()
 
 process.emitWarning('fixtureDesignedWarning')
 
-setTimeout(process.exit, 16)
+setTimeout(() => {
+  // eslint-disable-next-line no-process-exit
+  process.exit()
+}, 16)

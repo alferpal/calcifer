@@ -11,8 +11,8 @@ const config = {
 config.coverageThreshold['./src/lib/process-defaults'] = {
   branches: 0,
   functions: 0,
-  lines: 18.75,
-  statements: 18.75,
+  lines: 17.65,
+  statements: 17.65,
 }
 
 module.exports = config

@@ -27,7 +27,7 @@ importers:
       '@alferpal/calcifer-server-loader': link:../calcifer-server-loader
       '@alferpal/calcifer-utils': link:../calcifer-utils
       '@hapi/boom': 9.1.1
-      ioredis: 4.23.0
+      ioredis: 4.24.0
       knex: 0.95.2_pg@8.5.1
       pg: 8.5.1
       pino-pretty: 4.7.1
@@ -48,7 +48,7 @@ importers:
       dotenv-cli: 4.0.0
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.2.1_eslint@7.22.0+typescript@4.2.3
+      eslint-plugin-jest: 24.3.1_a9dadc128f4373c1604aa4e12640269a
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3_ts-node@9.1.1
       npm-run-all: 4.1.5
@@ -79,9 +79,9 @@ importers:
       dotenv-cli: ~4.0.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.2.1
+      eslint-plugin-jest: ~24.3.1
       eslint-plugin-node: ~11.1.0
-      ioredis: ~4.23.0
+      ioredis: ~4.24.0
       jest: ~26.6.3
       knex: ~0.95.2
       npm-run-all: ~4.1.5
@@ -107,7 +107,7 @@ importers:
       '@typescript-eslint/parser': 4.17.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.2.1_eslint@7.22.0+typescript@4.2.3
+      eslint-plugin-jest: 24.3.1_a9dadc128f4373c1604aa4e12640269a
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3
       npm-run-all: 4.1.5
@@ -128,7 +128,7 @@ importers:
       '@typescript-eslint/parser': ~4.17.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.2.1
+      eslint-plugin-jest: ~24.3.1
       eslint-plugin-node: ~11.1.0
       jest: ~26.6.3
       npm-run-all: ~4.1.5
@@ -153,7 +153,7 @@ importers:
       cz-conventional-changelog: 3.3.0
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.2.1_eslint@7.22.0+typescript@4.2.3
+      eslint-plugin-jest: 24.3.1_a9dadc128f4373c1604aa4e12640269a
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3_ts-node@9.1.1
       npm-run-all: 4.1.5
@@ -178,7 +178,7 @@ importers:
       cz-conventional-changelog: ~3.3.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.2.1
+      eslint-plugin-jest: ~24.3.1
       eslint-plugin-node: ~11.1.0
       jest: ~26.6.3
       npm-run-all: ~4.1.5
@@ -230,7 +230,7 @@ importers:
       dotenv: 8.2.0
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.2.1_eslint@7.22.0+typescript@4.2.3
+      eslint-plugin-jest: 24.3.1_a9dadc128f4373c1604aa4e12640269a
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3_ts-node@9.1.1
       nock: 13.0.11
@@ -270,7 +270,7 @@ importers:
       dotenv: ~8.2.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.2.1
+      eslint-plugin-jest: ~24.3.1
       eslint-plugin-node: ~11.1.0
       fast-glob: ~3.2.5
       got: ~11.8.2
@@ -304,7 +304,7 @@ importers:
       '@typescript-eslint/parser': 4.17.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.2.1_eslint@7.22.0+typescript@4.2.3
+      eslint-plugin-jest: 24.3.1_a9dadc128f4373c1604aa4e12640269a
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3
       npm-run-all: 4.1.5
@@ -321,7 +321,7 @@ importers:
       '@typescript-eslint/parser': ~4.17.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.2.1
+      eslint-plugin-jest: ~24.3.1
       eslint-plugin-node: ~11.1.0
       jest: ~26.6.3
       npm-run-all: ~4.1.5
@@ -351,7 +351,7 @@ importers:
       '@typescript-eslint/parser': 4.17.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.2.1_eslint@7.22.0+typescript@4.2.3
+      eslint-plugin-jest: 24.3.1_a9dadc128f4373c1604aa4e12640269a
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3_ts-node@9.1.1
       nock: 13.0.11
@@ -375,7 +375,7 @@ importers:
       '@typescript-eslint/parser': ~4.17.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.2.1
+      eslint-plugin-jest: ~24.3.1
       eslint-plugin-node: ~11.1.0
       got: ~11.8.2
       jest: ~26.6.3
@@ -397,7 +397,7 @@ importers:
       '@typescript-eslint/parser': 4.17.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.2.1_eslint@7.22.0+typescript@4.2.3
+      eslint-plugin-jest: 24.3.1_a9dadc128f4373c1604aa4e12640269a
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       typescript: 4.2.3
     specifiers:
@@ -406,7 +406,7 @@ importers:
       eslint: ~7.22.0
       eslint-config-airbnb-typescript: ~12.3.1
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.2.1
+      eslint-plugin-jest: ~24.3.1
       eslint-plugin-node: ~11.1.0
       typescript: ~4.2.3
   templates/http-api:
@@ -434,7 +434,7 @@ importers:
       dotenv: 8.2.0
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.2.1_eslint@7.22.0+typescript@4.2.3
+      eslint-plugin-jest: 24.3.1_a9dadc128f4373c1604aa4e12640269a
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3
       npm-run-all: 4.1.5
@@ -464,7 +464,7 @@ importers:
       dotenv: ~8.2.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.2.1
+      eslint-plugin-jest: ~24.3.1
       eslint-plugin-node: ~11.1.0
       hapi-pino: ~8.3.0
       jest: ~26.6.3
@@ -490,7 +490,7 @@ importers:
       '@typescript-eslint/parser': 4.17.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.2.1_eslint@7.22.0+typescript@4.2.3
+      eslint-plugin-jest: 24.3.1_a9dadc128f4373c1604aa4e12640269a
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3
       npm-run-all: 4.1.5
@@ -511,7 +511,7 @@ importers:
       '@typescript-eslint/parser': ~4.17.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.2.1
+      eslint-plugin-jest: ~24.3.1
       eslint-plugin-node: ~11.1.0
       jest: ~26.6.3
       npm-run-all: ~4.1.5
@@ -1727,7 +1727,7 @@ packages:
       '@babel/types': 7.13.0
       '@types/babel__generator': 7.6.2
       '@types/babel__template': 7.4.0
-      '@types/babel__traverse': 7.11.0
+      '@types/babel__traverse': 7.11.1
     dev: true
     resolution:
       integrity: sha512-wMTHiiTiBAAPebqaPiPDLFA4LYPKr6Ph0Xq/6rq1Ur3v66HXyG+clfR9CNETkD7MQS8ZHvpQOtA53DLws5WAEQ==
@@ -1744,12 +1744,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-NTPErx4/FiPCGScH7foPyr+/1Dkzkni+rHiYHHoTjvwou7AQzJkNeD60A9CXRy+ZEN2B1bggmkTMCDb+Mv5k+A==
-  /@types/babel__traverse/7.11.0:
+  /@types/babel__traverse/7.11.1:
     dependencies:
       '@babel/types': 7.13.0
     dev: true
     resolution:
-      integrity: sha512-kSjgDMZONiIfSH1Nxcr5JIRMwUetDki63FSQfpTCz8ogF3Ulqm8+mr5f78dUYs6vMiB6gBusQqfQmBvHZj/lwg==
+      integrity: sha512-Vs0hm0vPahPMYi9tDjtP66llufgO3ST16WXaSTtDGEl9cewAl3AibmxWw6TINOqHPT9z0uABKAYjT9jNSg4npw==
   /@types/bluebird/3.5.33:
     dev: true
     resolution:
@@ -2419,7 +2419,7 @@ packages:
       '@babel/template': 7.12.13
       '@babel/types': 7.13.0
       '@types/babel__core': 7.1.12
-      '@types/babel__traverse': 7.11.0
+      '@types/babel__traverse': 7.11.1
     dev: true
     engines:
       node: '>= 10.14.2'
@@ -3255,7 +3255,7 @@ packages:
       import-fresh: 3.3.0
       parse-json: 5.2.0
       path-type: 4.0.0
-      yaml: 1.10.0
+      yaml: 1.10.2
     dev: true
     engines:
       node: '>=10'
@@ -3900,18 +3900,23 @@ packages:
       eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0
     resolution:
       integrity: sha512-8K7JjINHOpH64ozkAhpT3sd+FswIZTfMZTjdx052pnWrgRCVfp8op9tbjpAk3DdUeI/Ba4C8OjdC0r90erHEOw==
-  /eslint-plugin-jest/24.2.1_eslint@7.22.0+typescript@4.2.3:
+  /eslint-plugin-jest/24.3.1_a9dadc128f4373c1604aa4e12640269a:
     dependencies:
+      '@typescript-eslint/eslint-plugin': 4.17.0_1761b76df9b5dd3adf5d03ef124e1b23
       '@typescript-eslint/experimental-utils': 4.17.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
     dev: true
     engines:
       node: '>=10'
     peerDependencies:
+      '@typescript-eslint/eslint-plugin': '>= 4'
       eslint: '>=5'
       typescript: '*'
+    peerDependenciesMeta:
+      '@typescript-eslint/eslint-plugin':
+        optional: true
     resolution:
-      integrity: sha512-s24ve8WUu3DLVidvlSzaqlOpTZre9lTkZTAO+a7X0WMtj8HraWTiTEkW3pbDT1xVxqEHMWSv+Kx7MyqR50nhBw==
+      integrity: sha512-RQt59rfMSHyvedImT72iaf8JcvCcR4P7Uq499dALtjY8mrCjbwWrFi1UceG4sid2wVIeDi+0tjxXZ8CZEVO7Zw==
   /eslint-plugin-node/11.1.0_eslint@7.22.0:
     dependencies:
       eslint: 7.22.0
@@ -5160,7 +5165,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-EEqOSqym09jNFXqO+L+rLXo//bY=
-  /ioredis/4.23.0:
+  /ioredis/4.24.0:
     dependencies:
       cluster-key-slot: 1.1.0
       debug: 4.3.1
@@ -5171,12 +5176,12 @@ packages:
       redis-commands: 1.7.0
       redis-errors: 1.2.0
       redis-parser: 3.0.0
-      standard-as-callback: 2.0.1
+      standard-as-callback: 2.1.0
     dev: false
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-R5TDCODwnEH3J3A5TSoB17+6a+SeJTtIOW6vsy5Q1yag/AM8FejHjZC5R2O1QepSXV8hwOnGSm/4buJc/LeXTQ==
+      integrity: sha512-touuGtcOq+qdsFqk/5Tw5rpi+XSYs6FunetQOH4BVQ1Xdlq8VyA+Mkh+rZizFqK8Qmrwnbz0LSxYC6geONjPdA==
   /ip/1.1.5:
     dev: false
     resolution:
@@ -6045,7 +6050,7 @@ packages:
     dependencies:
       '@babel/types': 7.13.0
       '@jest/types': 26.6.2
-      '@types/babel__traverse': 7.11.0
+      '@types/babel__traverse': 7.11.1
       '@types/prettier': 2.2.2
       chalk: 4.1.0
       expect: 26.6.2
@@ -7731,7 +7736,7 @@ packages:
       flatstr: 1.0.12
       pino-std-serializers: 3.2.0
       quick-format-unescaped: 4.0.1
-      sonic-boom: 1.3.2
+      sonic-boom: 1.4.0
     dev: false
     hasBin: true
     resolution:
@@ -8611,13 +8616,13 @@ packages:
       npm: '>= 3.0.0'
     resolution:
       integrity: sha512-oZCsJJxapULAYJaEYBSzMcz8m3jqgGrHaGhkmU/o/PQfFWYWxkAaA0UMGImb6s6tEXfKi959X6VJjMMQ3P6TTQ==
-  /sonic-boom/1.3.2:
+  /sonic-boom/1.4.0:
     dependencies:
       atomic-sleep: 1.0.0
       flatstr: 1.0.12
     dev: false
     resolution:
-      integrity: sha512-/B4tAuK2+hIlR94GhhWU1mJHWk5lt0CEuBvG0kvk1qIAzQc4iB1TieMio8DCZxY+Y7tsuzOxSUDOGmaUm3vXMg==
+      integrity: sha512-1xUAszhQBOrjk7uisbStQZYkZxD3vkYlCUw5qzOblWQ1ILN5v0dVPAs+QPgszzoPmbdWx6jyT9XiLJ95JdlLiQ==
   /source-map-resolve/0.5.3:
     dependencies:
       atob: 2.1.2
@@ -8745,10 +8750,10 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-gL//fkxfWUsIlFL2Tl42Cl6+HFALEaB1FU76I/Fy+oZjRreP7OPMXFlGbxM7NQsI0ZpUfw76sHnv0WNYuTb7Iw==
-  /standard-as-callback/2.0.1:
+  /standard-as-callback/2.1.0:
     dev: false
     resolution:
-      integrity: sha512-NQOxSeB8gOI5WjSaxjBgog2QFw55FV8TkS6Y07BiB3VJ8xNTvUYm0wl0s8ObgQ5NhdpnNfigMIKjgPESzgr4tg==
+      integrity: sha512-qoRRSyROncaz1z0mvYqIE4lCd9p2R90i6GxW3uZv5ucSu8tU7B5HXUP1gG8pVZsYNVaXjk8ClXHPttLyxAL48A==
   /standard-version/9.1.1:
     dependencies:
       chalk: 2.4.2
@@ -9778,13 +9783,13 @@ packages:
   /yallist/4.0.0:
     resolution:
       integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
-  /yaml/1.10.0:
+  /yaml/1.10.2:
     dev: true
     engines:
       node: '>= 6'
     optional: true
     resolution:
-      integrity: sha512-yr2icI4glYaNG+KWONODapy2/jDdMSDnrONSjblABjD9B4Z5LgiircSt8m8sRZFNi08kG9Sm0uSHtEmP3zaEGg==
+      integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
   /yargs-parser/18.1.3:
     dependencies:
       camelcase: 5.3.1

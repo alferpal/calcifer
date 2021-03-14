@@ -19,7 +19,10 @@ function environmentDefaults() {
  * @param code The numeric code to be used as exist code
  */
 function exit(code: number) {
-  process.nextTick(process.exit, code)
+  process.nextTick(() => {
+    // eslint-disable-next-line no-process-exit
+    process.exit(code)
+  })
 }
 
 /**
