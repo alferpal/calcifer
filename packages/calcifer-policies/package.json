@@ -31,7 +31,7 @@
   "license": "Parity-7.0.0",
   "dependencies": {
     "@alferpal/calcifer-utils": "workspace:~1.0.0",
-    "@hapi/boom": "~9.1.1"
+    "@hapi/boom": "~9.1.2"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "workspace:~1.0.0",
@@ -40,8 +40,8 @@
     "@jest/globals": "~26.6.2",
     "@types/hapi__hapi": "~20.0.5",
     "@types/jest": "~26.0.20",
-    "@typescript-eslint/eslint-plugin": "~4.17.0",
-    "@typescript-eslint/parser": "~4.17.0",
+    "@typescript-eslint/eslint-plugin": "~4.18.0",
+    "@typescript-eslint/parser": "~4.18.0",
     "cz-conventional-changelog": "~3.3.0",
     "eslint": "~7.22.0",
     "eslint-plugin-import": "~2.22.1",
