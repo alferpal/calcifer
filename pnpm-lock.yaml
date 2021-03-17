@@ -48,7 +48,7 @@ importers:
       dotenv-cli: 4.0.0
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.3.1_bd1161c0c7c67f0d46bcad0719e6112c
+      eslint-plugin-jest: 24.3.2_bd1161c0c7c67f0d46bcad0719e6112c
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3_ts-node@9.1.1
       npm-run-all: 4.1.5
@@ -79,7 +79,7 @@ importers:
       dotenv-cli: ~4.0.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.3.1
+      eslint-plugin-jest: ~24.3.2
       eslint-plugin-node: ~11.1.0
       ioredis: ~4.24.2
       jest: ~26.6.3
@@ -107,7 +107,7 @@ importers:
       '@typescript-eslint/parser': 4.18.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.3.1_bd1161c0c7c67f0d46bcad0719e6112c
+      eslint-plugin-jest: 24.3.2_bd1161c0c7c67f0d46bcad0719e6112c
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3
       npm-run-all: 4.1.5
@@ -128,7 +128,7 @@ importers:
       '@typescript-eslint/parser': ~4.18.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.3.1
+      eslint-plugin-jest: ~24.3.2
       eslint-plugin-node: ~11.1.0
       jest: ~26.6.3
       npm-run-all: ~4.1.5
@@ -153,7 +153,7 @@ importers:
       cz-conventional-changelog: 3.3.0
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.3.1_bd1161c0c7c67f0d46bcad0719e6112c
+      eslint-plugin-jest: 24.3.2_bd1161c0c7c67f0d46bcad0719e6112c
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3_ts-node@9.1.1
       npm-run-all: 4.1.5
@@ -178,7 +178,7 @@ importers:
       cz-conventional-changelog: ~3.3.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.3.1
+      eslint-plugin-jest: ~24.3.2
       eslint-plugin-node: ~11.1.0
       jest: ~26.6.3
       npm-run-all: ~4.1.5
@@ -230,7 +230,7 @@ importers:
       dotenv: 8.2.0
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.3.1_bd1161c0c7c67f0d46bcad0719e6112c
+      eslint-plugin-jest: 24.3.2_bd1161c0c7c67f0d46bcad0719e6112c
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3_ts-node@9.1.1
       nock: 13.0.11
@@ -270,7 +270,7 @@ importers:
       dotenv: ~8.2.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.3.1
+      eslint-plugin-jest: ~24.3.2
       eslint-plugin-node: ~11.1.0
       fast-glob: ~3.2.5
       got: ~11.8.2
@@ -304,7 +304,7 @@ importers:
       '@typescript-eslint/parser': 4.18.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.3.1_bd1161c0c7c67f0d46bcad0719e6112c
+      eslint-plugin-jest: 24.3.2_bd1161c0c7c67f0d46bcad0719e6112c
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3
       npm-run-all: 4.1.5
@@ -321,7 +321,7 @@ importers:
       '@typescript-eslint/parser': ~4.18.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.3.1
+      eslint-plugin-jest: ~24.3.2
       eslint-plugin-node: ~11.1.0
       jest: ~26.6.3
       npm-run-all: ~4.1.5
@@ -351,7 +351,7 @@ importers:
       '@typescript-eslint/parser': 4.18.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.3.1_bd1161c0c7c67f0d46bcad0719e6112c
+      eslint-plugin-jest: 24.3.2_bd1161c0c7c67f0d46bcad0719e6112c
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3_ts-node@9.1.1
       nock: 13.0.11
@@ -375,7 +375,7 @@ importers:
       '@typescript-eslint/parser': ~4.18.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.3.1
+      eslint-plugin-jest: ~24.3.2
       eslint-plugin-node: ~11.1.0
       got: ~11.8.2
       jest: ~26.6.3
@@ -397,7 +397,7 @@ importers:
       '@typescript-eslint/parser': 4.18.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.3.1_bd1161c0c7c67f0d46bcad0719e6112c
+      eslint-plugin-jest: 24.3.2_bd1161c0c7c67f0d46bcad0719e6112c
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       typescript: 4.2.3
     specifiers:
@@ -406,7 +406,7 @@ importers:
       eslint: ~7.22.0
       eslint-config-airbnb-typescript: ~12.3.1
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.3.1
+      eslint-plugin-jest: ~24.3.2
       eslint-plugin-node: ~11.1.0
       typescript: ~4.2.3
   templates/http-api:
@@ -434,7 +434,7 @@ importers:
       dotenv: 8.2.0
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.3.1_bd1161c0c7c67f0d46bcad0719e6112c
+      eslint-plugin-jest: 24.3.2_bd1161c0c7c67f0d46bcad0719e6112c
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3
       npm-run-all: 4.1.5
@@ -464,7 +464,7 @@ importers:
       dotenv: ~8.2.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.3.1
+      eslint-plugin-jest: ~24.3.2
       eslint-plugin-node: ~11.1.0
       hapi-pino: ~8.3.0
       jest: ~26.6.3
@@ -490,7 +490,7 @@ importers:
       '@typescript-eslint/parser': 4.18.0_eslint@7.22.0+typescript@4.2.3
       eslint: 7.22.0
       eslint-plugin-import: 2.22.1_eslint@7.22.0
-      eslint-plugin-jest: 24.3.1_bd1161c0c7c67f0d46bcad0719e6112c
+      eslint-plugin-jest: 24.3.2_bd1161c0c7c67f0d46bcad0719e6112c
       eslint-plugin-node: 11.1.0_eslint@7.22.0
       jest: 26.6.3
       npm-run-all: 4.1.5
@@ -511,7 +511,7 @@ importers:
       '@typescript-eslint/parser': ~4.18.0
       eslint: ~7.22.0
       eslint-plugin-import: ~2.22.1
-      eslint-plugin-jest: ~24.3.1
+      eslint-plugin-jest: ~24.3.2
       eslint-plugin-node: ~11.1.0
       jest: ~26.6.3
       npm-run-all: ~4.1.5
@@ -1514,7 +1514,7 @@ packages:
       jest-worker: 26.6.2
       slash: 3.0.0
       source-map: 0.6.1
-      string-length: 4.0.1
+      string-length: 4.0.2
       terminal-link: 2.1.1
       v8-to-istanbul: 7.1.0
     dev: true
@@ -2567,7 +2567,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001202
       colorette: 1.2.2
-      electron-to-chromium: 1.3.689
+      electron-to-chromium: 1.3.690
       escalade: 3.1.1
       node-releases: 1.1.71
     dev: true
@@ -3692,10 +3692,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==
-  /electron-to-chromium/1.3.689:
+  /electron-to-chromium/1.3.690:
     dev: true
     resolution:
-      integrity: sha512-WCn+ZaU3V8WttlLNSOGOAlR2XpxibGre7slwGrYBB6oTjYPgP29LNDGG6wLvLTMseLdE+G1vno7PfY7JyDV48g==
+      integrity: sha512-zPbaSv1c8LUKqQ+scNxJKv01RYFkVVF1xli+b+3Ty8ONujHjAMg+t/COmdZqrtnS1gT+g4hbSodHillymt1Lww==
   /emittery/0.7.2:
     dev: true
     engines:
@@ -3900,7 +3900,7 @@ packages:
       eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0
     resolution:
       integrity: sha512-8K7JjINHOpH64ozkAhpT3sd+FswIZTfMZTjdx052pnWrgRCVfp8op9tbjpAk3DdUeI/Ba4C8OjdC0r90erHEOw==
-  /eslint-plugin-jest/24.3.1_bd1161c0c7c67f0d46bcad0719e6112c:
+  /eslint-plugin-jest/24.3.2_bd1161c0c7c67f0d46bcad0719e6112c:
     dependencies:
       '@typescript-eslint/eslint-plugin': 4.18.0_ef0f217f6395606fd8bbe7b0291eff7e
       '@typescript-eslint/experimental-utils': 4.18.0_eslint@7.22.0+typescript@4.2.3
@@ -3916,7 +3916,7 @@ packages:
       '@typescript-eslint/eslint-plugin':
         optional: true
     resolution:
-      integrity: sha512-RQt59rfMSHyvedImT72iaf8JcvCcR4P7Uq499dALtjY8mrCjbwWrFi1UceG4sid2wVIeDi+0tjxXZ8CZEVO7Zw==
+      integrity: sha512-cicWDr+RvTAOKS3Q/k03+Z3odt3VCiWamNUHWd6QWbVQWcYJyYgUTu8x0mx9GfeDEimawU5kQC+nQ3MFxIM6bw==
   /eslint-plugin-node/11.1.0_eslint@7.22.0:
     dependencies:
       eslint: 7.22.0
@@ -6103,7 +6103,7 @@ packages:
       ansi-escapes: 4.3.1
       chalk: 4.1.0
       jest-util: 26.6.2
-      string-length: 4.0.1
+      string-length: 4.0.2
     dev: true
     engines:
       node: '>= 10.14.2'
@@ -8600,13 +8600,13 @@ packages:
     dependencies:
       agent-base: 6.0.2
       debug: 4.3.1
-      socks: 2.5.1
+      socks: 2.6.0
     dev: false
     engines:
       node: '>= 6'
     resolution:
       integrity: sha512-lEpa1zsWCChxiynk+lCycKuC502RxDWLKJZoIhnxrWNjLSDGYRFflHA1/228VkRcnv9TIb8w98derGbpKxJRgA==
-  /socks/2.5.1:
+  /socks/2.6.0:
     dependencies:
       ip: 1.1.5
       smart-buffer: 4.1.0
@@ -8615,7 +8615,7 @@ packages:
       node: '>= 10.13.0'
       npm: '>= 3.0.0'
     resolution:
-      integrity: sha512-oZCsJJxapULAYJaEYBSzMcz8m3jqgGrHaGhkmU/o/PQfFWYWxkAaA0UMGImb6s6tEXfKi959X6VJjMMQ3P6TTQ==
+      integrity: sha512-mNmr9owlinMplev0Wd7UHFlqI4ofnBnNzFuzrm63PPaHgbkqCFe4T5LzwKmtQ/f2tX0NTpcdVLyD/FHxFBstYw==
   /sonic-boom/1.4.0:
     dependencies:
       atomic-sleep: 1.0.0
@@ -8810,7 +8810,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-LQXH1pUksoef5Ijo6+2ihnjLLZtZuoqu1vhut6a7xZ77nrLA/shbbx2FAzVC/nkb6wwrPzOO98700mv4HDQcWg==
-  /string-length/4.0.1:
+  /string-length/4.0.2:
     dependencies:
       char-regex: 1.0.2
       strip-ansi: 6.0.0
@@ -8818,7 +8818,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-PKyXUd0LK0ePjSOnWn34V2uD6acUWev9uy0Ft05k0E8xRW+SKcA0F7eMr7h5xlzfn+4O3N+55rduYyet3Jk+jw==
+      integrity: sha512-+l6rNN5fYHNhZZy41RXsYptCjA2Igmq4EG7kZAYFQI1E1VTXarr6ZPXBg6eq7Y6eK4FEhY6AJlyuFIb/v/S0VQ==
   /string-width/1.0.2:
     dependencies:
       code-point-at: 1.1.0
