@@ -38,7 +38,7 @@ importers:
       '@jest/globals': 26.6.2
       '@types/hapi__hapi': 20.0.5
       '@types/ioredis': 4.22.0
-      '@types/jest': 26.0.20
+      '@types/jest': 26.0.21
       '@types/lodash': 4.14.168
       '@types/node': 14.14.35
       '@typescript-eslint/eslint-plugin': 4.18.0_ef0f217f6395606fd8bbe7b0291eff7e
@@ -56,7 +56,7 @@ importers:
       onchange: 7.1.0
       rimraf: 3.0.2
       standard-version: 9.1.1
-      ts-jest: 26.5.3_jest@26.6.3+typescript@4.2.3
+      ts-jest: 26.5.4_jest@26.6.3+typescript@4.2.3
       ts-node: 9.1.1_typescript@4.2.3
       typescript: 4.2.3
     specifiers:
@@ -69,7 +69,7 @@ importers:
       '@jest/globals': ^26.6.2
       '@types/hapi__hapi': ~20.0.5
       '@types/ioredis': ~4.22.0
-      '@types/jest': ~26.0.20
+      '@types/jest': ~26.0.21
       '@types/lodash': ~4.14.168
       '@types/node': ~14.14.35
       '@typescript-eslint/eslint-plugin': ~4.18.0
@@ -91,7 +91,7 @@ importers:
       pino-pretty: ~4.7.1
       rimraf: ~3.0.2
       standard-version: ~9.1.1
-      ts-jest: ~26.5.3
+      ts-jest: ~26.5.4
       ts-node: ~9.1.1
       typescript: ~4.2.3
   packages/calcifer-errors:
@@ -101,7 +101,7 @@ importers:
       '@alferpal/eslint-config-calcifer': link:../eslint-config-calcifer
       '@jest/globals': 26.6.2
       '@types/bluebird': 3.5.33
-      '@types/jest': 26.0.20
+      '@types/jest': 26.0.21
       '@types/node': 14.14.35
       '@typescript-eslint/eslint-plugin': 4.18.0_ef0f217f6395606fd8bbe7b0291eff7e
       '@typescript-eslint/parser': 4.18.0_eslint@7.22.0+typescript@4.2.3
@@ -114,7 +114,7 @@ importers:
       nyc: 15.1.0
       onchange: 7.1.0
       rimraf: 3.0.2
-      ts-jest: 26.5.3_jest@26.6.3+typescript@4.2.3
+      ts-jest: 26.5.4_jest@26.6.3+typescript@4.2.3
       typescript: 4.2.3
     specifiers:
       '@alferpal/calcifer-types': workspace:~1.0.0
@@ -122,7 +122,7 @@ importers:
       '@alferpal/eslint-config-calcifer': workspace:~1.0.0
       '@jest/globals': ~26.6.2
       '@types/bluebird': ~3.5.33
-      '@types/jest': ~26.0.20
+      '@types/jest': ~26.0.21
       '@types/node': ~14.14.35
       '@typescript-eslint/eslint-plugin': ~4.18.0
       '@typescript-eslint/parser': ~4.18.0
@@ -135,7 +135,7 @@ importers:
       nyc: ~15.1.0
       onchange: ~7.1.0
       rimraf: ~3.0.2
-      ts-jest: ~26.5.3
+      ts-jest: ~26.5.4
       typescript: ~4.2.3
   packages/calcifer-policies:
     dependencies:
@@ -147,7 +147,7 @@ importers:
       '@alferpal/eslint-config-calcifer': link:../eslint-config-calcifer
       '@jest/globals': 26.6.2
       '@types/hapi__hapi': 20.0.5
-      '@types/jest': 26.0.20
+      '@types/jest': 26.0.21
       '@typescript-eslint/eslint-plugin': 4.18.0_ef0f217f6395606fd8bbe7b0291eff7e
       '@typescript-eslint/parser': 4.18.0_eslint@7.22.0+typescript@4.2.3
       cz-conventional-changelog: 3.3.0
@@ -161,7 +161,7 @@ importers:
       onchange: 7.1.0
       rimraf: 3.0.2
       standard-version: 9.1.1
-      ts-jest: 26.5.3_jest@26.6.3+typescript@4.2.3
+      ts-jest: 26.5.4_jest@26.6.3+typescript@4.2.3
       ts-node: 9.1.1_typescript@4.2.3
       typescript: 4.2.3
     specifiers:
@@ -172,7 +172,7 @@ importers:
       '@hapi/boom': ~9.1.2
       '@jest/globals': ~26.6.2
       '@types/hapi__hapi': ~20.0.5
-      '@types/jest': ~26.0.20
+      '@types/jest': ~26.0.21
       '@typescript-eslint/eslint-plugin': ~4.18.0
       '@typescript-eslint/parser': ~4.18.0
       cz-conventional-changelog: ~3.3.0
@@ -186,7 +186,7 @@ importers:
       onchange: ~7.1.0
       rimraf: ~3.0.2
       standard-version: ~9.1.1
-      ts-jest: ~26.5.3
+      ts-jest: ~26.5.4
       ts-node: ~9.1.1
       typescript: ~4.2.3
   packages/calcifer-server-loader:
@@ -218,7 +218,7 @@ importers:
       '@jest/globals': 26.6.2
       '@types/hapi-pino': 8.0.1
       '@types/hapi__hapi': 20.0.5
-      '@types/jest': 26.0.20
+      '@types/jest': 26.0.21
       '@types/lodash': 4.14.168
       '@types/node': 14.14.35
       '@types/pino': 6.3.6
@@ -239,7 +239,7 @@ importers:
       onchange: 7.1.0
       rimraf: 3.0.2
       standard-version: 9.1.1
-      ts-jest: 26.5.3_jest@26.6.3+typescript@4.2.3
+      ts-jest: 26.5.4_jest@26.6.3+typescript@4.2.3
       ts-node: 9.1.1_typescript@4.2.3
       typescript: 4.2.3
     specifiers:
@@ -256,7 +256,7 @@ importers:
       '@jest/globals': ~26.6.2
       '@types/hapi-pino': ~8.0.1
       '@types/hapi__hapi': ~20.0.5
-      '@types/jest': ~26.0.20
+      '@types/jest': ~26.0.21
       '@types/lodash': ~4.14.168
       '@types/node': ~14.14.35
       '@types/pino': ~6.3.6
@@ -289,7 +289,7 @@ importers:
       rimraf: ~3.0.2
       set-interval-async: ~1.0.34
       standard-version: ~9.1.1
-      ts-jest: ~26.5.3
+      ts-jest: ~26.5.4
       ts-node: ~9.1.1
       typescript: ~4.2.3
       uuid: ~8.3.2
@@ -343,7 +343,7 @@ importers:
       '@alferpal/calcifer-typings': link:../calcifer-typings
       '@alferpal/eslint-config-calcifer': link:../eslint-config-calcifer
       '@jest/globals': 26.6.2
-      '@types/jest': 26.0.20
+      '@types/jest': 26.0.21
       '@types/node': 14.14.35
       '@types/pino': 6.3.6
       '@types/uuid': 8.3.0
@@ -359,7 +359,7 @@ importers:
       nyc: 15.1.0
       onchange: 7.1.0
       rimraf: 3.0.2
-      ts-jest: 26.5.3_jest@26.6.3+typescript@4.2.3
+      ts-jest: 26.5.4_jest@26.6.3+typescript@4.2.3
       ts-node: 9.1.1_typescript@4.2.3
       typescript: 4.2.3
     specifiers:
@@ -367,7 +367,7 @@ importers:
       '@alferpal/calcifer-typings': workspace:~1.0.0
       '@alferpal/eslint-config-calcifer': workspace:~1.0.0
       '@jest/globals': ~26.6.2
-      '@types/jest': ~26.0.20
+      '@types/jest': ~26.0.21
       '@types/node': ~14.14.35
       '@types/pino': ~6.3.6
       '@types/uuid': ~8.3.0
@@ -385,7 +385,7 @@ importers:
       onchange: ~7.1.0
       pino: ~6.11.2
       rimraf: ~3.0.2
-      ts-jest: ~26.5.3
+      ts-jest: ~26.5.4
       ts-node: ~9.1.1
       typescript: ~4.2.3
       uuid: ~8.3.2
@@ -425,7 +425,7 @@ importers:
       '@alferpal/eslint-config-calcifer': link:../../packages/eslint-config-calcifer
       '@jest/globals': 26.6.2
       '@types/hapi__hapi': 20.0.5
-      '@types/jest': 26.0.20
+      '@types/jest': 26.0.21
       '@types/lodash': 4.14.168
       '@types/node': 14.14.35
       '@typescript-eslint/eslint-plugin': 4.18.0_ef0f217f6395606fd8bbe7b0291eff7e
@@ -442,7 +442,7 @@ importers:
       onchange: 7.1.0
       rimraf: 3.0.2
       standard-version: 9.1.1
-      ts-jest: 26.5.3_jest@26.6.3+typescript@4.2.3
+      ts-jest: 26.5.4_jest@26.6.3+typescript@4.2.3
       typescript: 4.2.3
     specifiers:
       '@alferpal/calcifer-types': workspace:~1.0.0
@@ -453,7 +453,7 @@ importers:
       '@hapi/hapi': ~20.1.1
       '@jest/globals': ~26.6.2
       '@types/hapi__hapi': ~20.0.5
-      '@types/jest': ~26.0.20
+      '@types/jest': ~26.0.21
       '@types/lodash': ~4.14.168
       '@types/node': ~14.14.35
       '@typescript-eslint/eslint-plugin': ~4.18.0
@@ -475,7 +475,7 @@ importers:
       pino-pretty: ~4.7.1
       rimraf: ~3.0.2
       standard-version: ~9.1.1
-      ts-jest: ~26.5.3
+      ts-jest: ~26.5.4
       typescript: ~4.2.3
   templates/plain-module:
     devDependencies:
@@ -484,7 +484,7 @@ importers:
       '@alferpal/eslint-config-calcifer': link:../../packages/eslint-config-calcifer
       '@jest/globals': 26.6.2
       '@types/bluebird': 3.5.33
-      '@types/jest': 26.0.20
+      '@types/jest': 26.0.21
       '@types/node': 14.14.35
       '@typescript-eslint/eslint-plugin': 4.18.0_ef0f217f6395606fd8bbe7b0291eff7e
       '@typescript-eslint/parser': 4.18.0_eslint@7.22.0+typescript@4.2.3
@@ -497,7 +497,7 @@ importers:
       nyc: 15.1.0
       onchange: 7.1.0
       rimraf: 3.0.2
-      ts-jest: 26.5.3_jest@26.6.3+typescript@4.2.3
+      ts-jest: 26.5.4_jest@26.6.3+typescript@4.2.3
       typescript: 4.2.3
     specifiers:
       '@alferpal/calcifer-types': workspace:~1.0.0
@@ -505,7 +505,7 @@ importers:
       '@alferpal/eslint-config-calcifer': workspace:~1.0.0
       '@jest/globals': ~26.6.2
       '@types/bluebird': ~3.5.33
-      '@types/jest': ~26.0.20
+      '@types/jest': ~26.0.21
       '@types/node': ~14.14.35
       '@typescript-eslint/eslint-plugin': ~4.18.0
       '@typescript-eslint/parser': ~4.18.0
@@ -518,7 +518,7 @@ importers:
       nyc: ~15.1.0
       onchange: ~7.1.0
       rimraf: ~3.0.2
-      ts-jest: ~26.5.3
+      ts-jest: ~26.5.4
       typescript: ~4.2.3
 lockfileVersion: 5.2
 packages:
@@ -1836,13 +1836,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-nwKNbvnwJ2/mndE9ItP/zc2TCzw6uuodnF4EHYWD+gCQDVBuRQL5UzbZD0/ezy1iKsFU2ZQiDqg4M9dN4+wZgA==
-  /@types/jest/26.0.20:
+  /@types/jest/26.0.21:
     dependencies:
       jest-diff: 26.6.2
       pretty-format: 26.6.2
     dev: true
     resolution:
-      integrity: sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
+      integrity: sha512-ab9TyM/69yg7eew9eOwKMUmvIZAKEGZYlq/dhe5/0IMUd/QLJv5ldRMdddSn+u22N13FP3s5jYyktxuBwY0kDA==
   /@types/json-schema/7.0.7:
     dev: true
     resolution:
@@ -2567,7 +2567,7 @@ packages:
     dependencies:
       caniuse-lite: 1.0.30001202
       colorette: 1.2.2
-      electron-to-chromium: 1.3.690
+      electron-to-chromium: 1.3.691
       escalade: 3.1.1
       node-releases: 1.1.71
     dev: true
@@ -3692,10 +3692,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==
-  /electron-to-chromium/1.3.690:
+  /electron-to-chromium/1.3.691:
     dev: true
     resolution:
-      integrity: sha512-zPbaSv1c8LUKqQ+scNxJKv01RYFkVVF1xli+b+3Ty8ONujHjAMg+t/COmdZqrtnS1gT+g4hbSodHillymt1Lww==
+      integrity: sha512-ZqiO69KImmOGCyoH0icQPU3SndJiW93juEvf63gQngyhODO6SpQIPMTOHldtCs5DS5GMKvAkquk230E2zt2vpw==
   /emittery/0.7.2:
     dev: true
     engines:
@@ -9270,7 +9270,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
-  /ts-jest/26.5.3_jest@26.6.3+typescript@4.2.3:
+  /ts-jest/26.5.4_jest@26.6.3+typescript@4.2.3:
     dependencies:
       bs-logger: 0.2.6
       buffer-from: 1.1.1
@@ -9292,7 +9292,7 @@ packages:
       jest: '>=26 <27'
       typescript: '>=3.8 <5.0'
     resolution:
-      integrity: sha512-nBiiFGNvtujdLryU7MiMQh1iPmnZ/QvOskBbD2kURiI1MwqvxlxNnaAB/z9TbslMqCsSbu5BXvSSQPc5tvHGeA==
+      integrity: sha512-I5Qsddo+VTm94SukBJ4cPimOoFZsYTeElR2xy6H2TOVs+NsvgYglW8KuQgKoApOKuaU/Ix/vrF9ebFZlb5D2Pg==
   /ts-node/9.1.1_typescript@4.2.3:
     dependencies:
       arg: 4.1.3
