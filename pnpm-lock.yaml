@@ -195,7 +195,7 @@ importers:
       '@alferpal/calcifer-policies': link:../calcifer-policies
       '@alferpal/calcifer-utils': link:../calcifer-utils
       '@hapi/boom': 9.1.2
-      '@hapi/hapi': 20.1.1
+      '@hapi/hapi': 20.1.2
       '@hapi/inert': 6.0.3
       '@hapi/vision': 6.0.1
       async: 3.2.0
@@ -205,7 +205,7 @@ importers:
       hapi-auth-jwt2: 10.2.0
       hapi-pino: 8.3.0
       hapi-pulse: 3.0.0
-      hapi-swagger: 14.1.0_@hapi+hapi@20.1.1
+      hapi-swagger: 14.1.0_@hapi+hapi@20.1.2
       honeycomb-beeline: 2.6.0
       mrhorse: 6.0.1
       quick-lru: 6.0.0
@@ -250,7 +250,7 @@ importers:
       '@alferpal/calcifer-utils': workspace:~1.0.0
       '@alferpal/eslint-config-calcifer': workspace:~1.0.0
       '@hapi/boom': ~9.1.2
-      '@hapi/hapi': ~20.1.1
+      '@hapi/hapi': ~20.1.2
       '@hapi/inert': ~6.0.3
       '@hapi/vision': ~6.0.1
       '@jest/globals': ~26.6.2
@@ -413,7 +413,7 @@ importers:
     dependencies:
       '@alferpal/calcifer-utils': link:../../packages/calcifer-utils
       '@hapi/boom': 9.1.2
-      '@hapi/hapi': 20.1.1
+      '@hapi/hapi': 20.1.2
       blipp: 4.0.2
       bluebird: 3.7.2
       hapi-pino: 8.3.0
@@ -450,7 +450,7 @@ importers:
       '@alferpal/calcifer-utils': workspace:~1.0.0
       '@alferpal/eslint-config-calcifer': workspace:~1.0.0
       '@hapi/boom': ~9.1.2
-      '@hapi/hapi': ~20.1.1
+      '@hapi/hapi': ~20.1.2
       '@jest/globals': ~26.6.2
       '@types/hapi__hapi': ~20.0.5
       '@types/jest': ~26.0.21
@@ -1169,7 +1169,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-V87P8fv7PI0LH7LiVi8Lkf3x+KCO7pQozXRssAHNXXL9L1K+uyu4XypLXwxqVDKgyQai6qj3/KteNlrqDx4W5A==
-  /@hapi/hapi/20.1.1:
+  /@hapi/hapi/20.1.2:
     dependencies:
       '@hapi/accept': 5.0.2
       '@hapi/ammo': 5.0.1
@@ -1193,7 +1193,7 @@ packages:
     engines:
       node: '>=12.0.0'
     resolution:
-      integrity: sha512-FvszZ51i/mlTUyhqL/Be2bjmJcEiVzEcKCM9Z3fiyEYKfnilidhNjso/VgqmVTyEqv2uzRBQ6G4zjeD//j13jg==
+      integrity: sha512-yLppH93as7vw+uaAMVcHEB13eBojuzGhcX948y/CGukNRAlnPV+c1EJGbYPLXVffpH8wCNsI7TrTaeifSFS6Vw==
   /@hapi/heavy/7.0.1:
     dependencies:
       '@hapi/boom': 9.1.2
@@ -4812,10 +4812,10 @@ packages:
       node: '>=12'
     resolution:
       integrity: sha512-q15+1lqvFd2T/cK5kqZ0zLe0mHaB8m4FomAhAxCH9qML/GS5ZZyDVNw6Rl/oB8qEmkHCcvP4uOWIZmwQFcRm6Q==
-  /hapi-swagger/14.1.0_@hapi+hapi@20.1.1:
+  /hapi-swagger/14.1.0_@hapi+hapi@20.1.2:
     dependencies:
       '@hapi/boom': 9.1.2
-      '@hapi/hapi': 20.1.1
+      '@hapi/hapi': 20.1.2
       '@hapi/hoek': 9.1.1
       handlebars: 4.7.7
       http-status: 1.5.0
