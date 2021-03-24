@@ -41,7 +41,7 @@
     "@alferpal/calcifer-server-loader": "workspace:~1.0.0",
     "@alferpal/calcifer-utils": "workspace:~1.0.0",
     "@hapi/boom": "~9.1.2",
-    "ioredis": "~4.24.3",
+    "ioredis": "~4.24.4",
     "knex": "~0.95.2",
     "pg": "~8.5.1",
     "pino-pretty": "~4.7.1"
