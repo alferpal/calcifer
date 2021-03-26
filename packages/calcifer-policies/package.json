@@ -39,7 +39,7 @@
     "@alferpal/eslint-config-calcifer": "workspace:~1.0.0",
     "@jest/globals": "~26.6.2",
     "@types/hapi__hapi": "~20.0.5",
-    "@types/jest": "~26.0.21",
+    "@types/jest": "~26.0.22",
     "@typescript-eslint/eslint-plugin": "~4.19.0",
     "@typescript-eslint/parser": "~4.19.0",
     "cz-conventional-changelog": "~3.3.0",
