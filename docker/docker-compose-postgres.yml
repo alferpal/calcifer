@@ -1,7 +1,7 @@
 version: '2.4'
 
 services:
-  db:
+  postgres:
     image: postgres
     restart: always
     environment:
@@ -20,3 +20,6 @@ services:
 networks:
   postgres:
     driver: bridge
+
+volumes:
+  postgres:

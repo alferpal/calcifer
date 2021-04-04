@@ -2,7 +2,7 @@ version: '2.4'
 
 services:
   zookeeper:
-    image: zookeeper:3.4.9
+    image: zookeeper:3.6.2
     hostname: zookeeper
     ports:
       - "2181:2181"
@@ -15,7 +15,7 @@ services:
       - ./zk-single-kafka-single/zookeeper/datalog:/datalog
 
   kafka:
-    image: confluentinc/cp-kafka:5.5.1
+    image: confluentinc/cp-kafka:6.1.1
     hostname: kafka
     ports:
       - "9092:9092"
