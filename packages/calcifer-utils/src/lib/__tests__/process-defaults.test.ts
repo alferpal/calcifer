@@ -1,4 +1,3 @@
-import { describe, expect, it } from '@jest/globals'
 import { execFile } from 'child_process'
 
 import * as exported from '../..'

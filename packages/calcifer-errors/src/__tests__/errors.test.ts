@@ -1,4 +1,3 @@
-import { describe, expect, it } from '@jest/globals'
 import * as errors from '../index'
 
 describe('when errors is required', () => {

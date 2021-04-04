@@ -1,12 +1,9 @@
-import nock from 'nock'
-import {
-  afterEach, beforeAll, beforeEach, describe, expect, it, jest,
-} from '@jest/globals'
 
 import * as SIA from 'set-interval-async'
 import * as SIAD from 'set-interval-async/dynamic'
+import nock from 'nock'
+import { logger } from '@alferpal/calcifer-utils'
 
-// eslint-disable-next-line import/first
 import * as jwtValidator from '../jwt-validator'
 
 describe('jwt-validator', () => {
@@ -69,16 +66,13 @@ describe('jwt-validator', () => {
 
       failInvalid = true
 
-      const clearSpy = jest.spyOn(SIA, 'clearIntervalAsync')
-      const setSpy = jest.spyOn(SIAD, 'setIntervalAsync')
+      const logSpy = jest.spyOn(logger, 'error')
 
       await jwtValidator.init()
 
-      expect(clearSpy).toHaveBeenCalledTimes(1)
-      expect(setSpy).toHaveBeenCalledTimes(1)
+      await jwtValidator.init()
 
-      clearSpy.mockRestore()
-      setSpy.mockRestore()
+      expect(logSpy).toHaveBeenCalledTimes(2)
     })
   })
 

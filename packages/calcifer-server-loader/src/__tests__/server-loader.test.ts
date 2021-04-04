@@ -1,7 +1,5 @@
 import boom from '@hapi/boom'
-import {
-  describe, expect, jest, it,
-} from '@jest/globals'
+
 import { execFile } from 'child_process'
 
 // eslint-disable-next-line import/first
