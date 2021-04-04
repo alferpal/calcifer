@@ -1,0 +1,22 @@
+version: '2.4'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      PGDATA: /data/postgres
+      POSTGRES_DB: calcifer
+      POSTGRES_PASSWORD: 5b;sgkF,)S:fA;3\
+      POSTGRES_USER: calcifer
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  postgres:
+    driver: bridge
