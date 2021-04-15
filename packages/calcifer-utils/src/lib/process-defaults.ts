@@ -1,5 +1,6 @@
 import os from 'os'
-import { logger, finalLogger } from './log'
+
+import { finalLogger, logger } from './log'
 
 /**
  *  Sets some environmental defaults as listed:

@@ -1,7 +1,7 @@
-import * as CalciferTypes from '@alferpal/calcifer-types'
-import { Got } from 'got'
-import { clearIntervalAsync } from 'set-interval-async'
+import type * as CalciferTypes from '@alferpal/calcifer-types'
 import { getClient, logger } from '@alferpal/calcifer-utils'
+import type{ Got } from 'got'
+import { clearIntervalAsync } from 'set-interval-async'
 import { setIntervalAsync, SetIntervalAsyncTimer } from 'set-interval-async/dynamic'
 
 const { AUTH_PASSWORD, AUTH_URL, AUTH_USER } = process.env
@@ -69,8 +69,10 @@ async function init() {
 
   await loadInvalid()
 
+  console.dir({ interval })
+
   if (interval) {
-    clearIntervalAsync(interval)
+    await clearIntervalAsync(interval)
   }
 
   interval = setIntervalAsync(loadInvalid, 65536)

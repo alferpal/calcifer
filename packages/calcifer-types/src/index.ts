@@ -1,5 +1,3 @@
-import * as AuthService from './auth'
-import * as Server from './server'
-import * as User from './user'
-
-export { AuthService, Server, User }
+export * as AuthService from './auth'
+export * as Server from './server'
+export * as User from './user'

@@ -16,7 +16,8 @@
   "plugins": [
     "@typescript-eslint/eslint-plugin",
     "jest",
-    "node"
+    "node",
+    "simple-import-sort"
   ],
   "rules": {
     "@typescript-eslint/member-delimiter-style": [
@@ -59,6 +60,8 @@
       }
     ],
     "node/no-unsupported-features/es-syntax": "off",
-    "node/no-missing-import": "off"
+    "node/no-missing-import": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   }
 }

@@ -1,13 +1,13 @@
+import { ServerError } from '@alferpal/calcifer-errors'
+import policies from '@alferpal/calcifer-policies'
 import CalciferTypes from '@alferpal/calcifer-types'
+import { logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 import boom from '@hapi/boom'
 import hapi from '@hapi/hapi'
-import policies from '@alferpal/calcifer-policies'
-import { ServerError } from '@alferpal/calcifer-errors'
-import { logger as log, setProcessDefaults } from '@alferpal/calcifer-utils'
 import { v4 as uuidv4 } from 'uuid'
 
-import { getRoutes } from './route-loader'
 import { init as initValidation, validateJWTHandler } from './jwt-validator'
+import { getRoutes } from './route-loader'
 
 function isBoom(response: any): response is boom.Boom {
   return !!response.isBoom

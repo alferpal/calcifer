@@ -7,4 +7,4 @@ const childLogger = logger.child({
 })
 const finalLogger = pino.final(childLogger)
 
-export { childLogger as logger, finalLogger }
+export { finalLogger, childLogger as logger }

@@ -1,5 +1,6 @@
 import * as Hapi from '@hapi/hapi'
 import * as Pino from 'pino'
+
 import { UserAuth } from './user'
 
 export interface CalciferHapiDecodedCredentials extends Hapi.AuthCredentials, UserAuth{}
@@ -40,6 +41,6 @@ export interface CalciferGetServerOptions {
   },
   initTokenValidation?: boolean,
   plugins?: Array<Hapi.ServerRegisterPluginObject<unknown>>,
-  routesPath: string,
   port? : string | number,
+  routesPath: string,
 }

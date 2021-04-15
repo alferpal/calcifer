@@ -1,5 +1,5 @@
-import type CalciferTypes from '@alferpal/calcifer-types'
 import { getServer } from '@alferpal/calcifer-server-loader'
+import type CalciferTypes from '@alferpal/calcifer-types'
 
 const isMain = Object.keys(require.main?.exports ?? {}).length > 0
 

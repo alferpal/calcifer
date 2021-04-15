@@ -1,5 +1,4 @@
 import boom from '@hapi/boom'
-
 import { execFile } from 'child_process'
 
 // eslint-disable-next-line import/first

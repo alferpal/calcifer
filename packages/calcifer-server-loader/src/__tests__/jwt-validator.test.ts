@@ -1,8 +1,8 @@
 
+import { logger } from '@alferpal/calcifer-utils'
+import nock from 'nock'
 import * as SIA from 'set-interval-async'
 import * as SIAD from 'set-interval-async/dynamic'
-import nock from 'nock'
-import { logger } from '@alferpal/calcifer-utils'
 
 import * as jwtValidator from '../jwt-validator'
 
