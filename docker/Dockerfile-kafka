@@ -1,0 +1,7 @@
+FROM confluentinc/cp-kafka:latest
+
+COPY ./docker/init-kafka.sh /bin
+
+CMD sh -c /bin/init-connect.sh
+
+ENTRYPOINT []
