@@ -8,15 +8,17 @@
     "codecov": "codecov --clear",
     "commit": "git-cz",
     "docker:grafana:down": "docker-compose -f docker/prometheus/docker-compose.yml down",
-    "docker:grafana:start": "docker-compose -f docker/prometheus/docker-compose.yml up -d --build",
+    "docker:grafana:up": "docker-compose -f docker/prometheus/docker-compose.yml up -d --build",
     "docker:infra:down": "docker-compose -f docker/docker-compose.yml down",
-    "docker:infra:start": "docker-compose -f docker/docker-compose.yml up -d --build",
+    "docker:infra:up": "docker-compose -f docker/docker-compose.yml up -d --build",
+    "docker:jaeger:down": "docker-compose -f docker/docker-compose-jaeger.yml down",
+    "docker:jaeger:up": "docker-compose -f docker/docker-compose-jaeger.yml up -d --build",
     "lint": "pnpm run lint -r --parallel --stream",
     "postUpdate": "pnpm run -r postUpdate --parallel --stream",
     "test": "pnpm run test -r --no-bail --stream",
     "updateAll": "pnpm update -r --latest",
-    "updateCOC": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
-    "updateContrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
+    "updateCOC": "weallbehave -o .",
+    "updateContrib": "weallcontribute -o ."
   },
   "repository": {
     "type": "git",
@@ -40,7 +42,7 @@
     "eslint-plugin-simple-import-sort": "~7.0.0",
     "husky": "~6.0.0",
     "npm-run-all": "~4.1.5",
-    "simple-git": "~2.38.0",
+    "simple-git": "~2.38.1",
     "standard-version": "~9.3.0",
     "weallbehave": "~1.2.0",
     "weallcontribute": "~1.0.9"

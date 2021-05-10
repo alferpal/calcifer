@@ -44,7 +44,7 @@
     "ioredis": "~4.27.2",
     "knex": "~0.95.4",
     "pg": "~8.6.0",
-    "pino-pretty": "~4.7.1"
+    "pino-pretty": "~4.8.0"
   },
   "devDependencies": {
     "@alferpal/calcifer-types": "workspace:~1.0.0",
@@ -52,14 +52,14 @@
     "@alferpal/eslint-config-calcifer": "workspace:~1.0.0",
     "@jest/globals": "^26.6.2",
     "@types/hapi__hapi": "~20.0.8",
-    "@types/ioredis": "~4.26.1",
+    "@types/ioredis": "~4.26.2",
     "@types/jest": "~26.0.23",
     "@types/lodash": "~4.14.168",
     "@types/node": "~15.0.2",
-    "@typescript-eslint/eslint-plugin": "~4.22.1",
-    "@typescript-eslint/parser": "~4.22.1",
+    "@typescript-eslint/eslint-plugin": "~4.23.0",
+    "@typescript-eslint/parser": "~4.23.0",
     "cz-conventional-changelog": "~3.3.0",
-    "dotenv": "~9.0.0",
+    "dotenv": "~9.0.2",
     "dotenv-cli": "~4.0.0",
     "eslint": "~7.26.0",
     "eslint-plugin-import": "~2.22.1",

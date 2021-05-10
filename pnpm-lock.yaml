@@ -86,7 +86,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 4.22.1_b96c9280c6ac79e4dfcda76a733858e3
       '@typescript-eslint/parser': 4.22.1_eslint@7.26.0+typescript@4.2.4
       cz-conventional-changelog: 3.3.0
-      dotenv: 9.0.0
+      dotenv: 9.0.1
       dotenv-cli: 4.0.0
       eslint: 7.26.0
       eslint-plugin-import: 2.22.1_eslint@7.26.0
@@ -109,7 +109,6 @@ importers:
       '@alferpal/calcifer-typings': workspace:~1.0.0
       '@alferpal/eslint-config-calcifer': workspace:~1.0.0
       '@jest/globals': ~26.6.2
-      '@types/bluebird': ~3.5.34
       '@types/jest': ~26.0.23
       '@types/node': ~15.0.2
       '@typescript-eslint/eslint-plugin': ~4.22.1
@@ -131,7 +130,6 @@ importers:
       '@alferpal/calcifer-typings': link:../calcifer-typings
       '@alferpal/eslint-config-calcifer': link:../eslint-config-calcifer
       '@jest/globals': 26.6.2
-      '@types/bluebird': 3.5.34
       '@types/jest': 26.0.23
       '@types/node': 15.0.2
       '@typescript-eslint/eslint-plugin': 4.22.1_b96c9280c6ac79e4dfcda76a733858e3
@@ -155,7 +153,6 @@ importers:
       '@alferpal/calcifer-typings': workspace:~1.0.0
       '@alferpal/eslint-config-calcifer': workspace:~1.0.0
       '@jest/globals': ~26.6.2
-      '@types/bluebird': ~3.5.34
       '@types/jest': ~26.0.23
       '@types/node': ~15.0.2
       '@typescript-eslint/eslint-plugin': ~4.22.1
@@ -180,7 +177,6 @@ importers:
       '@alferpal/calcifer-typings': link:../calcifer-typings
       '@alferpal/eslint-config-calcifer': link:../eslint-config-calcifer
       '@jest/globals': 26.6.2
-      '@types/bluebird': 3.5.34
       '@types/jest': 26.0.23
       '@types/node': 15.0.2
       '@typescript-eslint/eslint-plugin': 4.22.1_b96c9280c6ac79e4dfcda76a733858e3
@@ -343,7 +339,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 4.22.1_b96c9280c6ac79e4dfcda76a733858e3
       '@typescript-eslint/parser': 4.22.1_eslint@7.26.0+typescript@4.2.4
       cz-conventional-changelog: 3.3.0
-      dotenv: 9.0.0
+      dotenv: 9.0.1
       eslint: 7.26.0
       eslint-plugin-import: 2.22.1_eslint@7.26.0
       eslint-plugin-jest: 24.3.6_349aff0699b9d4a8ff4e5c6da6dc1c9b
@@ -504,7 +500,6 @@ importers:
       '@typescript-eslint/eslint-plugin': ~4.22.1
       '@typescript-eslint/parser': ~4.22.1
       blipp: ~4.0.2
-      bluebird: ~3.7.2
       cz-conventional-changelog: ~3.3.0
       dotenv: ~9.0.0
       eslint: ~7.26.0
@@ -528,7 +523,6 @@ importers:
       '@hapi/boom': 9.1.2
       '@hapi/hapi': 20.1.2
       blipp: 4.0.2
-      bluebird: 3.7.2
       hapi-pino: 8.3.0
       lodash: 4.17.21
       pino-pretty: 4.7.1
@@ -544,7 +538,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 4.22.1_b96c9280c6ac79e4dfcda76a733858e3
       '@typescript-eslint/parser': 4.22.1_eslint@7.26.0+typescript@4.2.4
       cz-conventional-changelog: 3.3.0
-      dotenv: 9.0.0
+      dotenv: 9.0.1
       eslint: 7.26.0
       eslint-plugin-import: 2.22.1_eslint@7.26.0
       eslint-plugin-jest: 24.3.6_349aff0699b9d4a8ff4e5c6da6dc1c9b
@@ -565,7 +559,6 @@ importers:
       '@alferpal/calcifer-typings': workspace:~1.0.0
       '@alferpal/eslint-config-calcifer': workspace:~1.0.0
       '@jest/globals': ~26.6.2
-      '@types/bluebird': ~3.5.34
       '@types/jest': ~26.0.23
       '@types/node': ~15.0.2
       '@typescript-eslint/eslint-plugin': ~4.22.1
@@ -587,7 +580,6 @@ importers:
       '@alferpal/calcifer-typings': link:../../packages/calcifer-typings
       '@alferpal/eslint-config-calcifer': link:../../packages/eslint-config-calcifer
       '@jest/globals': 26.6.2
-      '@types/bluebird': 3.5.34
       '@types/jest': 26.0.23
       '@types/node': 15.0.2
       '@typescript-eslint/eslint-plugin': 4.22.1_b96c9280c6ac79e4dfcda76a733858e3
@@ -1822,10 +1814,6 @@ packages:
       '@babel/types': 7.14.1
     dev: true
 
-  /@types/bluebird/3.5.34:
-    resolution: {integrity: sha512-QMc57Pf067Rr78l6f4FftvuIXPYxu0VYFRKrZk1Clv+LWy7gN2fTBiAiv68askFHEHZcTLPFd01kNlpKOiSPgQ==}
-    dev: true
-
   /@types/cacheable-request/6.0.1:
     resolution: {integrity: sha512-ykFq2zmBGOCbpIXtoVbz4SKY5QriWPh3AjyU4G74RYbtt5yOc5OfaY75ftjg7mikMOla1CTGpX3lLbuJh8DTrQ==}
     dependencies:
@@ -2548,10 +2536,6 @@ packages:
       chalk: 4.1.1
       easy-table: 1.1.1
       joi: 17.4.0
-    dev: false
-
-  /bluebird/3.7.2:
-    resolution: {integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==}
     dev: false
 
   /boxen/1.3.0:
@@ -3605,8 +3589,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /dotenv/9.0.0:
-    resolution: {integrity: sha512-yy3x9XjojW8ROTBePD25AcMoHqGHsvHmtfw8QWlpEXyMMXXPj6brUA464AptUvHuTPRmNz6Sd3ZLNLeJl6dHJA==}
+  /dotenv/9.0.1:
+    resolution: {integrity: sha512-W8FNeNnnvJoYfgkFRKzp8kTgz0T2YY4TJ9xy1Ma0hSebPTK8iquRtpG12TUrSTX5zIN9D/wSLEEuI+Ad35tlyw==}
     engines: {node: '>=10'}
     dev: true
 
@@ -3697,7 +3681,7 @@ packages:
     dependencies:
       is-callable: 1.2.3
       is-date-object: 1.0.4
-      is-symbol: 1.0.3
+      is-symbol: 1.0.4
 
   /es6-error/4.1.1:
     resolution: {integrity: sha512-Um/+FxMr9CISWh0bi5Zv0iOD+4cFh5qLeks1qhAopKVAJw3drgKbKySikp7wGhDL0HPeaja0P5ULZrxLkniUVg==}
@@ -5243,8 +5227,8 @@ packages:
       better-path-resolve: 1.0.0
     dev: true
 
-  /is-symbol/1.0.3:
-    resolution: {integrity: sha512-OwijhaRSgqvhm/0ZdAcXNZt9lYdKFpcRDT5ULUuYXPoT794UNOdU+gpT6Rzo7b4V2HUl/op6GqY894AZwv9faQ==}
+  /is-symbol/1.0.4:
+    resolution: {integrity: sha512-C/CPBqKWnvdcxqIARxyOh4v1UUEOCHpgDa0WYgpKDFMszcrPcffg5uhwSgPCLD2WWxmq6isisz87tzT01tuGhg==}
     engines: {node: '>= 0.4'}
     dependencies:
       has-symbols: 1.0.2
@@ -8885,7 +8869,7 @@ packages:
       bs-logger: 0.2.6
       buffer-from: 1.1.1
       fast-json-stable-stringify: 2.1.0
-      jest: 26.6.3_ts-node@9.1.1
+      jest: 26.6.3
       jest-util: 26.6.2
       json5: 2.2.0
       lodash: 4.17.21
@@ -9212,7 +9196,7 @@ packages:
       is-boolean-object: 1.1.1
       is-number-object: 1.0.5
       is-string: 1.0.6
-      is-symbol: 1.0.3
+      is-symbol: 1.0.4
 
   /which-module/1.0.0:
     resolution: {integrity: sha1-u6Y8qGGUiZT/MHc2CJ47lgJsKk8=}
