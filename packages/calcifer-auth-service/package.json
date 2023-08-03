@@ -42,7 +42,7 @@
     "@alferpal/calcifer-utils": "workspace:~1.0.0",
     "@hapi/boom": "~9.1.2",
     "ioredis": "~4.27.2",
-    "knex": "~0.95.4",
+    "knex": "~2.4.0",
     "pg": "~8.6.0",
     "pino-pretty": "~4.8.0"
   },
